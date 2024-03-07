@@ -71,7 +71,7 @@
             this.B6 = new System.Windows.Forms.TextBox();
             this.A6 = new System.Windows.Forms.TextBox();
             this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.G6 = new System.Windows.Forms.TextBox();
             this.F6 = new System.Windows.Forms.TextBox();
             this.E6 = new System.Windows.Forms.TextBox();
             this.textBox47 = new System.Windows.Forms.TextBox();
@@ -81,7 +81,7 @@
             this.B5 = new System.Windows.Forms.TextBox();
             this.A5 = new System.Windows.Forms.TextBox();
             this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.G5 = new System.Windows.Forms.TextBox();
             this.F5 = new System.Windows.Forms.TextBox();
             this.E5 = new System.Windows.Forms.TextBox();
             this.textBox57 = new System.Windows.Forms.TextBox();
@@ -91,7 +91,7 @@
             this.B8 = new System.Windows.Forms.TextBox();
             this.A8 = new System.Windows.Forms.TextBox();
             this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
+            this.G8 = new System.Windows.Forms.TextBox();
             this.F8 = new System.Windows.Forms.TextBox();
             this.E8 = new System.Windows.Forms.TextBox();
             this.textBox67 = new System.Windows.Forms.TextBox();
@@ -101,7 +101,7 @@
             this.B7 = new System.Windows.Forms.TextBox();
             this.A7 = new System.Windows.Forms.TextBox();
             this.textBox73 = new System.Windows.Forms.TextBox();
-            this.textBox74 = new System.Windows.Forms.TextBox();
+            this.G7 = new System.Windows.Forms.TextBox();
             this.F7 = new System.Windows.Forms.TextBox();
             this.E7 = new System.Windows.Forms.TextBox();
             this.textBox77 = new System.Windows.Forms.TextBox();
@@ -111,7 +111,7 @@
             this.B14 = new System.Windows.Forms.TextBox();
             this.A14 = new System.Windows.Forms.TextBox();
             this.textBox83 = new System.Windows.Forms.TextBox();
-            this.textBox84 = new System.Windows.Forms.TextBox();
+            this.G14 = new System.Windows.Forms.TextBox();
             this.F14 = new System.Windows.Forms.TextBox();
             this.E14 = new System.Windows.Forms.TextBox();
             this.textBox87 = new System.Windows.Forms.TextBox();
@@ -121,7 +121,7 @@
             this.B13 = new System.Windows.Forms.TextBox();
             this.A13 = new System.Windows.Forms.TextBox();
             this.textBox93 = new System.Windows.Forms.TextBox();
-            this.textBox94 = new System.Windows.Forms.TextBox();
+            this.G13 = new System.Windows.Forms.TextBox();
             this.F13 = new System.Windows.Forms.TextBox();
             this.E13 = new System.Windows.Forms.TextBox();
             this.textBox97 = new System.Windows.Forms.TextBox();
@@ -131,7 +131,7 @@
             this.B16 = new System.Windows.Forms.TextBox();
             this.A16 = new System.Windows.Forms.TextBox();
             this.textBox103 = new System.Windows.Forms.TextBox();
-            this.textBox104 = new System.Windows.Forms.TextBox();
+            this.G16 = new System.Windows.Forms.TextBox();
             this.F16 = new System.Windows.Forms.TextBox();
             this.E16 = new System.Windows.Forms.TextBox();
             this.textBox107 = new System.Windows.Forms.TextBox();
@@ -141,7 +141,7 @@
             this.B15 = new System.Windows.Forms.TextBox();
             this.A15 = new System.Windows.Forms.TextBox();
             this.textBox113 = new System.Windows.Forms.TextBox();
-            this.textBox114 = new System.Windows.Forms.TextBox();
+            this.G15 = new System.Windows.Forms.TextBox();
             this.F15 = new System.Windows.Forms.TextBox();
             this.E15 = new System.Windows.Forms.TextBox();
             this.textBox117 = new System.Windows.Forms.TextBox();
@@ -151,7 +151,7 @@
             this.B10 = new System.Windows.Forms.TextBox();
             this.A10 = new System.Windows.Forms.TextBox();
             this.textBox123 = new System.Windows.Forms.TextBox();
-            this.textBox124 = new System.Windows.Forms.TextBox();
+            this.G10 = new System.Windows.Forms.TextBox();
             this.F10 = new System.Windows.Forms.TextBox();
             this.E10 = new System.Windows.Forms.TextBox();
             this.textBox127 = new System.Windows.Forms.TextBox();
@@ -161,7 +161,7 @@
             this.B9 = new System.Windows.Forms.TextBox();
             this.A9 = new System.Windows.Forms.TextBox();
             this.textBox133 = new System.Windows.Forms.TextBox();
-            this.textBox134 = new System.Windows.Forms.TextBox();
+            this.G9 = new System.Windows.Forms.TextBox();
             this.F9 = new System.Windows.Forms.TextBox();
             this.E9 = new System.Windows.Forms.TextBox();
             this.textBox137 = new System.Windows.Forms.TextBox();
@@ -171,7 +171,7 @@
             this.B12 = new System.Windows.Forms.TextBox();
             this.A12 = new System.Windows.Forms.TextBox();
             this.textBox143 = new System.Windows.Forms.TextBox();
-            this.textBox144 = new System.Windows.Forms.TextBox();
+            this.G12 = new System.Windows.Forms.TextBox();
             this.F12 = new System.Windows.Forms.TextBox();
             this.E12 = new System.Windows.Forms.TextBox();
             this.textBox147 = new System.Windows.Forms.TextBox();
@@ -181,7 +181,7 @@
             this.B11 = new System.Windows.Forms.TextBox();
             this.A11 = new System.Windows.Forms.TextBox();
             this.textBox153 = new System.Windows.Forms.TextBox();
-            this.textBox154 = new System.Windows.Forms.TextBox();
+            this.G11 = new System.Windows.Forms.TextBox();
             this.F11 = new System.Windows.Forms.TextBox();
             this.E11 = new System.Windows.Forms.TextBox();
             this.textBox157 = new System.Windows.Forms.TextBox();
@@ -191,7 +191,7 @@
             this.B17 = new System.Windows.Forms.TextBox();
             this.A17 = new System.Windows.Forms.TextBox();
             this.textBox163 = new System.Windows.Forms.TextBox();
-            this.textBox164 = new System.Windows.Forms.TextBox();
+            this.G17 = new System.Windows.Forms.TextBox();
             this.F17 = new System.Windows.Forms.TextBox();
             this.E17 = new System.Windows.Forms.TextBox();
             this.textBox167 = new System.Windows.Forms.TextBox();
@@ -201,7 +201,7 @@
             this.B19 = new System.Windows.Forms.TextBox();
             this.A19 = new System.Windows.Forms.TextBox();
             this.textBox173 = new System.Windows.Forms.TextBox();
-            this.textBox174 = new System.Windows.Forms.TextBox();
+            this.G19 = new System.Windows.Forms.TextBox();
             this.F19 = new System.Windows.Forms.TextBox();
             this.E19 = new System.Windows.Forms.TextBox();
             this.textBox177 = new System.Windows.Forms.TextBox();
@@ -211,7 +211,7 @@
             this.B18 = new System.Windows.Forms.TextBox();
             this.A18 = new System.Windows.Forms.TextBox();
             this.textBox183 = new System.Windows.Forms.TextBox();
-            this.textBox184 = new System.Windows.Forms.TextBox();
+            this.G18 = new System.Windows.Forms.TextBox();
             this.F18 = new System.Windows.Forms.TextBox();
             this.E18 = new System.Windows.Forms.TextBox();
             this.textBox187 = new System.Windows.Forms.TextBox();
@@ -221,7 +221,7 @@
             this.B20 = new System.Windows.Forms.TextBox();
             this.A20 = new System.Windows.Forms.TextBox();
             this.textBox193 = new System.Windows.Forms.TextBox();
-            this.textBox194 = new System.Windows.Forms.TextBox();
+            this.G20 = new System.Windows.Forms.TextBox();
             this.F20 = new System.Windows.Forms.TextBox();
             this.E20 = new System.Windows.Forms.TextBox();
             this.textBox197 = new System.Windows.Forms.TextBox();
@@ -810,17 +810,17 @@
             this.textBox43.Size = new System.Drawing.Size(22, 20);
             this.textBox43.TabIndex = 77;
             // 
-            // textBox44
+            // G6
             // 
-            this.textBox44.BackColor = System.Drawing.Color.Black;
-            this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox44.Enabled = false;
-            this.textBox44.Location = new System.Drawing.Point(358, 185);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(22, 20);
-            this.textBox44.TabIndex = 76;
+            this.G6.BackColor = System.Drawing.Color.Black;
+            this.G6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G6.Enabled = false;
+            this.G6.Location = new System.Drawing.Point(358, 185);
+            this.G6.Margin = new System.Windows.Forms.Padding(0);
+            this.G6.Multiline = true;
+            this.G6.Name = "G6";
+            this.G6.Size = new System.Drawing.Size(22, 20);
+            this.G6.TabIndex = 76;
             // 
             // F6
             // 
@@ -930,17 +930,17 @@
             this.textBox53.Size = new System.Drawing.Size(22, 20);
             this.textBox53.TabIndex = 67;
             // 
-            // textBox54
+            // G5
             // 
-            this.textBox54.BackColor = System.Drawing.Color.Black;
-            this.textBox54.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox54.Enabled = false;
-            this.textBox54.Location = new System.Drawing.Point(358, 165);
-            this.textBox54.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox54.Multiline = true;
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(22, 20);
-            this.textBox54.TabIndex = 66;
+            this.G5.BackColor = System.Drawing.Color.Black;
+            this.G5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G5.Enabled = false;
+            this.G5.Location = new System.Drawing.Point(358, 165);
+            this.G5.Margin = new System.Windows.Forms.Padding(0);
+            this.G5.Multiline = true;
+            this.G5.Name = "G5";
+            this.G5.Size = new System.Drawing.Size(22, 20);
+            this.G5.TabIndex = 66;
             // 
             // F5
             // 
@@ -1050,17 +1050,17 @@
             this.textBox63.Size = new System.Drawing.Size(22, 20);
             this.textBox63.TabIndex = 57;
             // 
-            // textBox64
+            // G8
             // 
-            this.textBox64.BackColor = System.Drawing.Color.Black;
-            this.textBox64.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox64.Enabled = false;
-            this.textBox64.Location = new System.Drawing.Point(358, 225);
-            this.textBox64.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox64.Multiline = true;
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(22, 20);
-            this.textBox64.TabIndex = 56;
+            this.G8.BackColor = System.Drawing.Color.Black;
+            this.G8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G8.Enabled = false;
+            this.G8.Location = new System.Drawing.Point(358, 225);
+            this.G8.Margin = new System.Windows.Forms.Padding(0);
+            this.G8.Multiline = true;
+            this.G8.Name = "G8";
+            this.G8.Size = new System.Drawing.Size(22, 20);
+            this.G8.TabIndex = 56;
             // 
             // F8
             // 
@@ -1170,17 +1170,17 @@
             this.textBox73.Size = new System.Drawing.Size(22, 20);
             this.textBox73.TabIndex = 47;
             // 
-            // textBox74
+            // G7
             // 
-            this.textBox74.BackColor = System.Drawing.Color.Black;
-            this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox74.Enabled = false;
-            this.textBox74.Location = new System.Drawing.Point(358, 205);
-            this.textBox74.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox74.Multiline = true;
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(22, 20);
-            this.textBox74.TabIndex = 46;
+            this.G7.BackColor = System.Drawing.Color.Black;
+            this.G7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G7.Enabled = false;
+            this.G7.Location = new System.Drawing.Point(358, 205);
+            this.G7.Margin = new System.Windows.Forms.Padding(0);
+            this.G7.Multiline = true;
+            this.G7.Name = "G7";
+            this.G7.Size = new System.Drawing.Size(22, 20);
+            this.G7.TabIndex = 46;
             // 
             // F7
             // 
@@ -1290,17 +1290,17 @@
             this.textBox83.Size = new System.Drawing.Size(22, 20);
             this.textBox83.TabIndex = 157;
             // 
-            // textBox84
+            // G14
             // 
-            this.textBox84.BackColor = System.Drawing.Color.Black;
-            this.textBox84.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox84.Enabled = false;
-            this.textBox84.Location = new System.Drawing.Point(358, 344);
-            this.textBox84.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox84.Multiline = true;
-            this.textBox84.Name = "textBox84";
-            this.textBox84.Size = new System.Drawing.Size(22, 20);
-            this.textBox84.TabIndex = 156;
+            this.G14.BackColor = System.Drawing.Color.Black;
+            this.G14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G14.Enabled = false;
+            this.G14.Location = new System.Drawing.Point(358, 344);
+            this.G14.Margin = new System.Windows.Forms.Padding(0);
+            this.G14.Multiline = true;
+            this.G14.Name = "G14";
+            this.G14.Size = new System.Drawing.Size(22, 20);
+            this.G14.TabIndex = 156;
             // 
             // F14
             // 
@@ -1410,17 +1410,17 @@
             this.textBox93.Size = new System.Drawing.Size(22, 20);
             this.textBox93.TabIndex = 147;
             // 
-            // textBox94
+            // G13
             // 
-            this.textBox94.BackColor = System.Drawing.Color.Black;
-            this.textBox94.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox94.Enabled = false;
-            this.textBox94.Location = new System.Drawing.Point(358, 324);
-            this.textBox94.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox94.Multiline = true;
-            this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(22, 20);
-            this.textBox94.TabIndex = 146;
+            this.G13.BackColor = System.Drawing.Color.Black;
+            this.G13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G13.Enabled = false;
+            this.G13.Location = new System.Drawing.Point(358, 324);
+            this.G13.Margin = new System.Windows.Forms.Padding(0);
+            this.G13.Multiline = true;
+            this.G13.Name = "G13";
+            this.G13.Size = new System.Drawing.Size(22, 20);
+            this.G13.TabIndex = 146;
             // 
             // F13
             // 
@@ -1530,17 +1530,17 @@
             this.textBox103.Size = new System.Drawing.Size(22, 20);
             this.textBox103.TabIndex = 137;
             // 
-            // textBox104
+            // G16
             // 
-            this.textBox104.BackColor = System.Drawing.Color.Black;
-            this.textBox104.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox104.Enabled = false;
-            this.textBox104.Location = new System.Drawing.Point(358, 384);
-            this.textBox104.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox104.Multiline = true;
-            this.textBox104.Name = "textBox104";
-            this.textBox104.Size = new System.Drawing.Size(22, 20);
-            this.textBox104.TabIndex = 136;
+            this.G16.BackColor = System.Drawing.Color.Black;
+            this.G16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G16.Enabled = false;
+            this.G16.Location = new System.Drawing.Point(358, 384);
+            this.G16.Margin = new System.Windows.Forms.Padding(0);
+            this.G16.Multiline = true;
+            this.G16.Name = "G16";
+            this.G16.Size = new System.Drawing.Size(22, 20);
+            this.G16.TabIndex = 136;
             // 
             // F16
             // 
@@ -1650,17 +1650,17 @@
             this.textBox113.Size = new System.Drawing.Size(22, 20);
             this.textBox113.TabIndex = 127;
             // 
-            // textBox114
+            // G15
             // 
-            this.textBox114.BackColor = System.Drawing.Color.Black;
-            this.textBox114.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox114.Enabled = false;
-            this.textBox114.Location = new System.Drawing.Point(358, 364);
-            this.textBox114.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox114.Multiline = true;
-            this.textBox114.Name = "textBox114";
-            this.textBox114.Size = new System.Drawing.Size(22, 20);
-            this.textBox114.TabIndex = 126;
+            this.G15.BackColor = System.Drawing.Color.Black;
+            this.G15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G15.Enabled = false;
+            this.G15.Location = new System.Drawing.Point(358, 364);
+            this.G15.Margin = new System.Windows.Forms.Padding(0);
+            this.G15.Multiline = true;
+            this.G15.Name = "G15";
+            this.G15.Size = new System.Drawing.Size(22, 20);
+            this.G15.TabIndex = 126;
             // 
             // F15
             // 
@@ -1770,17 +1770,17 @@
             this.textBox123.Size = new System.Drawing.Size(22, 20);
             this.textBox123.TabIndex = 117;
             // 
-            // textBox124
+            // G10
             // 
-            this.textBox124.BackColor = System.Drawing.Color.Black;
-            this.textBox124.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox124.Enabled = false;
-            this.textBox124.Location = new System.Drawing.Point(358, 265);
-            this.textBox124.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox124.Multiline = true;
-            this.textBox124.Name = "textBox124";
-            this.textBox124.Size = new System.Drawing.Size(22, 20);
-            this.textBox124.TabIndex = 116;
+            this.G10.BackColor = System.Drawing.Color.Black;
+            this.G10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G10.Enabled = false;
+            this.G10.Location = new System.Drawing.Point(358, 265);
+            this.G10.Margin = new System.Windows.Forms.Padding(0);
+            this.G10.Multiline = true;
+            this.G10.Name = "G10";
+            this.G10.Size = new System.Drawing.Size(22, 20);
+            this.G10.TabIndex = 116;
             // 
             // F10
             // 
@@ -1890,17 +1890,17 @@
             this.textBox133.Size = new System.Drawing.Size(22, 20);
             this.textBox133.TabIndex = 107;
             // 
-            // textBox134
+            // G9
             // 
-            this.textBox134.BackColor = System.Drawing.Color.Black;
-            this.textBox134.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox134.Enabled = false;
-            this.textBox134.Location = new System.Drawing.Point(358, 245);
-            this.textBox134.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox134.Multiline = true;
-            this.textBox134.Name = "textBox134";
-            this.textBox134.Size = new System.Drawing.Size(22, 20);
-            this.textBox134.TabIndex = 106;
+            this.G9.BackColor = System.Drawing.Color.Black;
+            this.G9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G9.Enabled = false;
+            this.G9.Location = new System.Drawing.Point(358, 245);
+            this.G9.Margin = new System.Windows.Forms.Padding(0);
+            this.G9.Multiline = true;
+            this.G9.Name = "G9";
+            this.G9.Size = new System.Drawing.Size(22, 20);
+            this.G9.TabIndex = 106;
             // 
             // F9
             // 
@@ -2010,17 +2010,17 @@
             this.textBox143.Size = new System.Drawing.Size(22, 20);
             this.textBox143.TabIndex = 97;
             // 
-            // textBox144
+            // G12
             // 
-            this.textBox144.BackColor = System.Drawing.Color.Black;
-            this.textBox144.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox144.Enabled = false;
-            this.textBox144.Location = new System.Drawing.Point(358, 305);
-            this.textBox144.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox144.Multiline = true;
-            this.textBox144.Name = "textBox144";
-            this.textBox144.Size = new System.Drawing.Size(22, 20);
-            this.textBox144.TabIndex = 96;
+            this.G12.BackColor = System.Drawing.Color.Black;
+            this.G12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G12.Enabled = false;
+            this.G12.Location = new System.Drawing.Point(358, 305);
+            this.G12.Margin = new System.Windows.Forms.Padding(0);
+            this.G12.Multiline = true;
+            this.G12.Name = "G12";
+            this.G12.Size = new System.Drawing.Size(22, 20);
+            this.G12.TabIndex = 96;
             // 
             // F12
             // 
@@ -2130,17 +2130,17 @@
             this.textBox153.Size = new System.Drawing.Size(22, 20);
             this.textBox153.TabIndex = 87;
             // 
-            // textBox154
+            // G11
             // 
-            this.textBox154.BackColor = System.Drawing.Color.Black;
-            this.textBox154.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox154.Enabled = false;
-            this.textBox154.Location = new System.Drawing.Point(358, 285);
-            this.textBox154.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox154.Multiline = true;
-            this.textBox154.Name = "textBox154";
-            this.textBox154.Size = new System.Drawing.Size(22, 20);
-            this.textBox154.TabIndex = 86;
+            this.G11.BackColor = System.Drawing.Color.Black;
+            this.G11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G11.Enabled = false;
+            this.G11.Location = new System.Drawing.Point(358, 285);
+            this.G11.Margin = new System.Windows.Forms.Padding(0);
+            this.G11.Multiline = true;
+            this.G11.Name = "G11";
+            this.G11.Size = new System.Drawing.Size(22, 20);
+            this.G11.TabIndex = 86;
             // 
             // F11
             // 
@@ -2250,17 +2250,17 @@
             this.textBox163.Size = new System.Drawing.Size(22, 20);
             this.textBox163.TabIndex = 167;
             // 
-            // textBox164
+            // G17
             // 
-            this.textBox164.BackColor = System.Drawing.Color.Black;
-            this.textBox164.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox164.Enabled = false;
-            this.textBox164.Location = new System.Drawing.Point(358, 404);
-            this.textBox164.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox164.Multiline = true;
-            this.textBox164.Name = "textBox164";
-            this.textBox164.Size = new System.Drawing.Size(22, 20);
-            this.textBox164.TabIndex = 166;
+            this.G17.BackColor = System.Drawing.Color.Black;
+            this.G17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G17.Enabled = false;
+            this.G17.Location = new System.Drawing.Point(358, 404);
+            this.G17.Margin = new System.Windows.Forms.Padding(0);
+            this.G17.Multiline = true;
+            this.G17.Name = "G17";
+            this.G17.Size = new System.Drawing.Size(22, 20);
+            this.G17.TabIndex = 166;
             // 
             // F17
             // 
@@ -2370,17 +2370,17 @@
             this.textBox173.Size = new System.Drawing.Size(22, 20);
             this.textBox173.TabIndex = 187;
             // 
-            // textBox174
+            // G19
             // 
-            this.textBox174.BackColor = System.Drawing.Color.Black;
-            this.textBox174.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox174.Enabled = false;
-            this.textBox174.Location = new System.Drawing.Point(358, 441);
-            this.textBox174.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox174.Multiline = true;
-            this.textBox174.Name = "textBox174";
-            this.textBox174.Size = new System.Drawing.Size(22, 20);
-            this.textBox174.TabIndex = 186;
+            this.G19.BackColor = System.Drawing.Color.Black;
+            this.G19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G19.Enabled = false;
+            this.G19.Location = new System.Drawing.Point(358, 441);
+            this.G19.Margin = new System.Windows.Forms.Padding(0);
+            this.G19.Multiline = true;
+            this.G19.Name = "G19";
+            this.G19.Size = new System.Drawing.Size(22, 20);
+            this.G19.TabIndex = 186;
             // 
             // F19
             // 
@@ -2490,17 +2490,17 @@
             this.textBox183.Size = new System.Drawing.Size(22, 20);
             this.textBox183.TabIndex = 177;
             // 
-            // textBox184
+            // G18
             // 
-            this.textBox184.BackColor = System.Drawing.Color.Black;
-            this.textBox184.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox184.Enabled = false;
-            this.textBox184.Location = new System.Drawing.Point(358, 421);
-            this.textBox184.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox184.Multiline = true;
-            this.textBox184.Name = "textBox184";
-            this.textBox184.Size = new System.Drawing.Size(22, 20);
-            this.textBox184.TabIndex = 176;
+            this.G18.BackColor = System.Drawing.Color.Black;
+            this.G18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G18.Enabled = false;
+            this.G18.Location = new System.Drawing.Point(358, 421);
+            this.G18.Margin = new System.Windows.Forms.Padding(0);
+            this.G18.Multiline = true;
+            this.G18.Name = "G18";
+            this.G18.Size = new System.Drawing.Size(22, 20);
+            this.G18.TabIndex = 176;
             // 
             // F18
             // 
@@ -2610,17 +2610,17 @@
             this.textBox193.Size = new System.Drawing.Size(22, 20);
             this.textBox193.TabIndex = 197;
             // 
-            // textBox194
+            // G20
             // 
-            this.textBox194.BackColor = System.Drawing.Color.Black;
-            this.textBox194.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox194.Enabled = false;
-            this.textBox194.Location = new System.Drawing.Point(358, 461);
-            this.textBox194.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox194.Multiline = true;
-            this.textBox194.Name = "textBox194";
-            this.textBox194.Size = new System.Drawing.Size(22, 20);
-            this.textBox194.TabIndex = 196;
+            this.G20.BackColor = System.Drawing.Color.Black;
+            this.G20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G20.Enabled = false;
+            this.G20.Location = new System.Drawing.Point(358, 461);
+            this.G20.Margin = new System.Windows.Forms.Padding(0);
+            this.G20.Multiline = true;
+            this.G20.Name = "G20";
+            this.G20.Size = new System.Drawing.Size(22, 20);
+            this.G20.TabIndex = 196;
             // 
             // F20
             // 
@@ -3534,7 +3534,7 @@
             this.Controls.Add(this.B20);
             this.Controls.Add(this.A20);
             this.Controls.Add(this.textBox193);
-            this.Controls.Add(this.textBox194);
+            this.Controls.Add(this.G20);
             this.Controls.Add(this.F20);
             this.Controls.Add(this.E20);
             this.Controls.Add(this.textBox197);
@@ -3544,7 +3544,7 @@
             this.Controls.Add(this.B19);
             this.Controls.Add(this.A19);
             this.Controls.Add(this.textBox173);
-            this.Controls.Add(this.textBox174);
+            this.Controls.Add(this.G19);
             this.Controls.Add(this.F19);
             this.Controls.Add(this.E19);
             this.Controls.Add(this.textBox177);
@@ -3554,7 +3554,7 @@
             this.Controls.Add(this.B18);
             this.Controls.Add(this.A18);
             this.Controls.Add(this.textBox183);
-            this.Controls.Add(this.textBox184);
+            this.Controls.Add(this.G18);
             this.Controls.Add(this.F18);
             this.Controls.Add(this.E18);
             this.Controls.Add(this.textBox187);
@@ -3564,7 +3564,7 @@
             this.Controls.Add(this.B17);
             this.Controls.Add(this.A17);
             this.Controls.Add(this.textBox163);
-            this.Controls.Add(this.textBox164);
+            this.Controls.Add(this.G17);
             this.Controls.Add(this.F17);
             this.Controls.Add(this.E17);
             this.Controls.Add(this.textBox167);
@@ -3574,7 +3574,7 @@
             this.Controls.Add(this.B14);
             this.Controls.Add(this.A14);
             this.Controls.Add(this.textBox83);
-            this.Controls.Add(this.textBox84);
+            this.Controls.Add(this.G14);
             this.Controls.Add(this.F14);
             this.Controls.Add(this.E14);
             this.Controls.Add(this.textBox87);
@@ -3584,7 +3584,7 @@
             this.Controls.Add(this.B13);
             this.Controls.Add(this.A13);
             this.Controls.Add(this.textBox93);
-            this.Controls.Add(this.textBox94);
+            this.Controls.Add(this.G13);
             this.Controls.Add(this.F13);
             this.Controls.Add(this.E13);
             this.Controls.Add(this.textBox97);
@@ -3594,7 +3594,7 @@
             this.Controls.Add(this.B16);
             this.Controls.Add(this.A16);
             this.Controls.Add(this.textBox103);
-            this.Controls.Add(this.textBox104);
+            this.Controls.Add(this.G16);
             this.Controls.Add(this.F16);
             this.Controls.Add(this.E16);
             this.Controls.Add(this.textBox107);
@@ -3604,7 +3604,7 @@
             this.Controls.Add(this.B15);
             this.Controls.Add(this.A15);
             this.Controls.Add(this.textBox113);
-            this.Controls.Add(this.textBox114);
+            this.Controls.Add(this.G15);
             this.Controls.Add(this.F15);
             this.Controls.Add(this.E15);
             this.Controls.Add(this.textBox117);
@@ -3614,7 +3614,7 @@
             this.Controls.Add(this.B10);
             this.Controls.Add(this.A10);
             this.Controls.Add(this.textBox123);
-            this.Controls.Add(this.textBox124);
+            this.Controls.Add(this.G10);
             this.Controls.Add(this.F10);
             this.Controls.Add(this.E10);
             this.Controls.Add(this.textBox127);
@@ -3624,7 +3624,7 @@
             this.Controls.Add(this.B9);
             this.Controls.Add(this.A9);
             this.Controls.Add(this.textBox133);
-            this.Controls.Add(this.textBox134);
+            this.Controls.Add(this.G9);
             this.Controls.Add(this.F9);
             this.Controls.Add(this.E9);
             this.Controls.Add(this.textBox137);
@@ -3634,7 +3634,7 @@
             this.Controls.Add(this.B12);
             this.Controls.Add(this.A12);
             this.Controls.Add(this.textBox143);
-            this.Controls.Add(this.textBox144);
+            this.Controls.Add(this.G12);
             this.Controls.Add(this.F12);
             this.Controls.Add(this.E12);
             this.Controls.Add(this.textBox147);
@@ -3644,7 +3644,7 @@
             this.Controls.Add(this.B11);
             this.Controls.Add(this.A11);
             this.Controls.Add(this.textBox153);
-            this.Controls.Add(this.textBox154);
+            this.Controls.Add(this.G11);
             this.Controls.Add(this.F11);
             this.Controls.Add(this.E11);
             this.Controls.Add(this.textBox157);
@@ -3654,7 +3654,7 @@
             this.Controls.Add(this.B6);
             this.Controls.Add(this.A6);
             this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.textBox44);
+            this.Controls.Add(this.G6);
             this.Controls.Add(this.F6);
             this.Controls.Add(this.E6);
             this.Controls.Add(this.textBox47);
@@ -3664,7 +3664,7 @@
             this.Controls.Add(this.B5);
             this.Controls.Add(this.A5);
             this.Controls.Add(this.textBox53);
-            this.Controls.Add(this.textBox54);
+            this.Controls.Add(this.G5);
             this.Controls.Add(this.F5);
             this.Controls.Add(this.E5);
             this.Controls.Add(this.textBox57);
@@ -3674,7 +3674,7 @@
             this.Controls.Add(this.B8);
             this.Controls.Add(this.A8);
             this.Controls.Add(this.textBox63);
-            this.Controls.Add(this.textBox64);
+            this.Controls.Add(this.G8);
             this.Controls.Add(this.F8);
             this.Controls.Add(this.E8);
             this.Controls.Add(this.textBox67);
@@ -3684,7 +3684,7 @@
             this.Controls.Add(this.B7);
             this.Controls.Add(this.A7);
             this.Controls.Add(this.textBox73);
-            this.Controls.Add(this.textBox74);
+            this.Controls.Add(this.G7);
             this.Controls.Add(this.F7);
             this.Controls.Add(this.E7);
             this.Controls.Add(this.textBox77);
@@ -3784,7 +3784,7 @@
         private System.Windows.Forms.TextBox B6;
         private System.Windows.Forms.TextBox A6;
         private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox G6;
         private System.Windows.Forms.TextBox F6;
         private System.Windows.Forms.TextBox E6;
         private System.Windows.Forms.TextBox textBox47;
@@ -3794,7 +3794,7 @@
         private System.Windows.Forms.TextBox B5;
         private System.Windows.Forms.TextBox A5;
         private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox54;
+        private System.Windows.Forms.TextBox G5;
         private System.Windows.Forms.TextBox F5;
         private System.Windows.Forms.TextBox E5;
         private System.Windows.Forms.TextBox textBox57;
@@ -3804,7 +3804,7 @@
         private System.Windows.Forms.TextBox B8;
         private System.Windows.Forms.TextBox A8;
         private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.TextBox textBox64;
+        private System.Windows.Forms.TextBox G8;
         private System.Windows.Forms.TextBox F8;
         private System.Windows.Forms.TextBox E8;
         private System.Windows.Forms.TextBox textBox67;
@@ -3814,7 +3814,7 @@
         private System.Windows.Forms.TextBox B7;
         private System.Windows.Forms.TextBox A7;
         private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.TextBox textBox74;
+        private System.Windows.Forms.TextBox G7;
         private System.Windows.Forms.TextBox F7;
         private System.Windows.Forms.TextBox E7;
         private System.Windows.Forms.TextBox textBox77;
@@ -3824,7 +3824,7 @@
         private System.Windows.Forms.TextBox B14;
         private System.Windows.Forms.TextBox A14;
         private System.Windows.Forms.TextBox textBox83;
-        private System.Windows.Forms.TextBox textBox84;
+        private System.Windows.Forms.TextBox G14;
         private System.Windows.Forms.TextBox F14;
         private System.Windows.Forms.TextBox E14;
         private System.Windows.Forms.TextBox textBox87;
@@ -3834,7 +3834,7 @@
         private System.Windows.Forms.TextBox B13;
         private System.Windows.Forms.TextBox A13;
         private System.Windows.Forms.TextBox textBox93;
-        private System.Windows.Forms.TextBox textBox94;
+        private System.Windows.Forms.TextBox G13;
         private System.Windows.Forms.TextBox F13;
         private System.Windows.Forms.TextBox E13;
         private System.Windows.Forms.TextBox textBox97;
@@ -3844,7 +3844,7 @@
         private System.Windows.Forms.TextBox B16;
         private System.Windows.Forms.TextBox A16;
         private System.Windows.Forms.TextBox textBox103;
-        private System.Windows.Forms.TextBox textBox104;
+        private System.Windows.Forms.TextBox G16;
         private System.Windows.Forms.TextBox F16;
         private System.Windows.Forms.TextBox E16;
         private System.Windows.Forms.TextBox textBox107;
@@ -3854,7 +3854,7 @@
         private System.Windows.Forms.TextBox B15;
         private System.Windows.Forms.TextBox A15;
         private System.Windows.Forms.TextBox textBox113;
-        private System.Windows.Forms.TextBox textBox114;
+        private System.Windows.Forms.TextBox G15;
         private System.Windows.Forms.TextBox F15;
         private System.Windows.Forms.TextBox E15;
         private System.Windows.Forms.TextBox textBox117;
@@ -3864,7 +3864,7 @@
         private System.Windows.Forms.TextBox B10;
         private System.Windows.Forms.TextBox A10;
         private System.Windows.Forms.TextBox textBox123;
-        private System.Windows.Forms.TextBox textBox124;
+        private System.Windows.Forms.TextBox G10;
         private System.Windows.Forms.TextBox F10;
         private System.Windows.Forms.TextBox E10;
         private System.Windows.Forms.TextBox textBox127;
@@ -3874,7 +3874,7 @@
         private System.Windows.Forms.TextBox B9;
         private System.Windows.Forms.TextBox A9;
         private System.Windows.Forms.TextBox textBox133;
-        private System.Windows.Forms.TextBox textBox134;
+        private System.Windows.Forms.TextBox G9;
         private System.Windows.Forms.TextBox F9;
         private System.Windows.Forms.TextBox E9;
         private System.Windows.Forms.TextBox textBox137;
@@ -3884,7 +3884,7 @@
         private System.Windows.Forms.TextBox B12;
         private System.Windows.Forms.TextBox A12;
         private System.Windows.Forms.TextBox textBox143;
-        private System.Windows.Forms.TextBox textBox144;
+        private System.Windows.Forms.TextBox G12;
         private System.Windows.Forms.TextBox F12;
         private System.Windows.Forms.TextBox E12;
         private System.Windows.Forms.TextBox textBox147;
@@ -3894,7 +3894,7 @@
         private System.Windows.Forms.TextBox B11;
         private System.Windows.Forms.TextBox A11;
         private System.Windows.Forms.TextBox textBox153;
-        private System.Windows.Forms.TextBox textBox154;
+        private System.Windows.Forms.TextBox G11;
         private System.Windows.Forms.TextBox F11;
         private System.Windows.Forms.TextBox E11;
         private System.Windows.Forms.TextBox textBox157;
@@ -3904,7 +3904,7 @@
         private System.Windows.Forms.TextBox B17;
         private System.Windows.Forms.TextBox A17;
         private System.Windows.Forms.TextBox textBox163;
-        private System.Windows.Forms.TextBox textBox164;
+        private System.Windows.Forms.TextBox G17;
         private System.Windows.Forms.TextBox F17;
         private System.Windows.Forms.TextBox E17;
         private System.Windows.Forms.TextBox textBox167;
@@ -3914,7 +3914,7 @@
         private System.Windows.Forms.TextBox B19;
         private System.Windows.Forms.TextBox A19;
         private System.Windows.Forms.TextBox textBox173;
-        private System.Windows.Forms.TextBox textBox174;
+        private System.Windows.Forms.TextBox G19;
         private System.Windows.Forms.TextBox F19;
         private System.Windows.Forms.TextBox E19;
         private System.Windows.Forms.TextBox textBox177;
@@ -3924,7 +3924,7 @@
         private System.Windows.Forms.TextBox B18;
         private System.Windows.Forms.TextBox A18;
         private System.Windows.Forms.TextBox textBox183;
-        private System.Windows.Forms.TextBox textBox184;
+        private System.Windows.Forms.TextBox G18;
         private System.Windows.Forms.TextBox F18;
         private System.Windows.Forms.TextBox E18;
         private System.Windows.Forms.TextBox textBox187;
@@ -3934,7 +3934,7 @@
         private System.Windows.Forms.TextBox B20;
         private System.Windows.Forms.TextBox A20;
         private System.Windows.Forms.TextBox textBox193;
-        private System.Windows.Forms.TextBox textBox194;
+        private System.Windows.Forms.TextBox G20;
         private System.Windows.Forms.TextBox F20;
         private System.Windows.Forms.TextBox E20;
         private System.Windows.Forms.TextBox textBox197;
