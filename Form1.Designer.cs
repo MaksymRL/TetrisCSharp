@@ -300,6 +300,14 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
+            this.X2 = new System.Windows.Forms.TextBox();
+            this.X1 = new System.Windows.Forms.TextBox();
+            this.X4 = new System.Windows.Forms.TextBox();
+            this.X3 = new System.Windows.Forms.TextBox();
+            this.Z2 = new System.Windows.Forms.TextBox();
+            this.Z1 = new System.Windows.Forms.TextBox();
+            this.Z4 = new System.Windows.Forms.TextBox();
+            this.Z3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // C3
@@ -3566,11 +3574,115 @@
             this.textBox18.Size = new System.Drawing.Size(22, 20);
             this.textBox18.TabIndex = 284;
             // 
+            // X2
+            // 
+            this.X2.BackColor = System.Drawing.Color.Black;
+            this.X2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X2.Enabled = false;
+            this.X2.Location = new System.Drawing.Point(393, 78);
+            this.X2.Margin = new System.Windows.Forms.Padding(0);
+            this.X2.Multiline = true;
+            this.X2.Name = "X2";
+            this.X2.Size = new System.Drawing.Size(22, 20);
+            this.X2.TabIndex = 289;
+            // 
+            // X1
+            // 
+            this.X1.BackColor = System.Drawing.Color.Black;
+            this.X1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X1.Enabled = false;
+            this.X1.Location = new System.Drawing.Point(371, 78);
+            this.X1.Margin = new System.Windows.Forms.Padding(0);
+            this.X1.Multiline = true;
+            this.X1.Name = "X1";
+            this.X1.Size = new System.Drawing.Size(22, 20);
+            this.X1.TabIndex = 288;
+            // 
+            // X4
+            // 
+            this.X4.BackColor = System.Drawing.Color.Black;
+            this.X4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X4.Enabled = false;
+            this.X4.Location = new System.Drawing.Point(437, 78);
+            this.X4.Margin = new System.Windows.Forms.Padding(0);
+            this.X4.Multiline = true;
+            this.X4.Name = "X4";
+            this.X4.Size = new System.Drawing.Size(22, 20);
+            this.X4.TabIndex = 287;
+            // 
+            // X3
+            // 
+            this.X3.BackColor = System.Drawing.Color.Black;
+            this.X3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X3.Enabled = false;
+            this.X3.Location = new System.Drawing.Point(415, 78);
+            this.X3.Margin = new System.Windows.Forms.Padding(0);
+            this.X3.Multiline = true;
+            this.X3.Name = "X3";
+            this.X3.Size = new System.Drawing.Size(22, 20);
+            this.X3.TabIndex = 286;
+            // 
+            // Z2
+            // 
+            this.Z2.BackColor = System.Drawing.Color.Black;
+            this.Z2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z2.Enabled = false;
+            this.Z2.Location = new System.Drawing.Point(393, 98);
+            this.Z2.Margin = new System.Windows.Forms.Padding(0);
+            this.Z2.Multiline = true;
+            this.Z2.Name = "Z2";
+            this.Z2.Size = new System.Drawing.Size(22, 20);
+            this.Z2.TabIndex = 293;
+            // 
+            // Z1
+            // 
+            this.Z1.BackColor = System.Drawing.Color.Black;
+            this.Z1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z1.Enabled = false;
+            this.Z1.Location = new System.Drawing.Point(371, 98);
+            this.Z1.Margin = new System.Windows.Forms.Padding(0);
+            this.Z1.Multiline = true;
+            this.Z1.Name = "Z1";
+            this.Z1.Size = new System.Drawing.Size(22, 20);
+            this.Z1.TabIndex = 292;
+            // 
+            // Z4
+            // 
+            this.Z4.BackColor = System.Drawing.Color.Black;
+            this.Z4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z4.Enabled = false;
+            this.Z4.Location = new System.Drawing.Point(437, 98);
+            this.Z4.Margin = new System.Windows.Forms.Padding(0);
+            this.Z4.Multiline = true;
+            this.Z4.Name = "Z4";
+            this.Z4.Size = new System.Drawing.Size(22, 20);
+            this.Z4.TabIndex = 291;
+            // 
+            // Z3
+            // 
+            this.Z3.BackColor = System.Drawing.Color.Black;
+            this.Z3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z3.Enabled = false;
+            this.Z3.Location = new System.Drawing.Point(415, 98);
+            this.Z3.Margin = new System.Windows.Forms.Padding(0);
+            this.Z3.Multiline = true;
+            this.Z3.Name = "Z3";
+            this.Z3.Size = new System.Drawing.Size(22, 20);
+            this.Z3.TabIndex = 290;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 668);
+            this.Controls.Add(this.Z2);
+            this.Controls.Add(this.Z1);
+            this.Controls.Add(this.Z4);
+            this.Controls.Add(this.Z3);
+            this.Controls.Add(this.X2);
+            this.Controls.Add(this.X1);
+            this.Controls.Add(this.X4);
+            this.Controls.Add(this.X3);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.textBox15);
@@ -4125,6 +4237,14 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox X2;
+        private System.Windows.Forms.TextBox X1;
+        private System.Windows.Forms.TextBox X4;
+        private System.Windows.Forms.TextBox X3;
+        private System.Windows.Forms.TextBox Z2;
+        private System.Windows.Forms.TextBox Z1;
+        private System.Windows.Forms.TextBox Z4;
+        private System.Windows.Forms.TextBox Z3;
     }
 }
 
