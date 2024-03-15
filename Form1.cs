@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TetrisFunzioni;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProgettoFineAnno
 {
@@ -23,28 +24,39 @@ namespace ProgettoFineAnno
         private void Form1_Load(object sender, EventArgs e)
         {
             Matrice nuovaCasella = default;
-            nuovaCasella.Casella = new TextBox[200];
             int x = 0;
-            int conta = 0;
-            string[] Lettere = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
-            int PosLettera = 0;
-            while (x < num)
+            int riga = 1;
+            string[] Colonna = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+            int PosColonna = 0;
+            while (x <= num)
             {
-                if (conta < 10)
+                if (riga <= 20)
                 {
-                    nuovaCasella.Casella[x] = (TextBox)this.Controls.Find($"{conta}{Lettere[PosLettera]}", true)[0];
-                    conta++;
+                    nuovaCasella.Colonna = Colonna[PosColonna];
+                    nuovaCasella.Riga = riga;
+                    nuovaCasella.Casella = (System.Windows.Forms.TextBox)this.Controls.Find(nuovaCasella.Colonna + nuovaCasella.Riga, true).FirstOrDefault();
+                    riga = riga + 1;
+                    nuovaCasella.ColoreSfondo = nuovaCasella.Casella.BackColor;
+                    nuovaCasella.TipoBordi = nuovaCasella.Casella.BorderStyle;
                 }
                 else
                 {
-                    conta = 0;
-                    PosLettera++;
+                    if(PosColonna < 9) {
+                        PosColonna = PosColonna + 1;
+                        x--;
+                        riga = 1;
+                    }
                 }
+                elePezzi[x] = nuovaCasella;
                 x++;
             }
+            
 
         }
 
-       
+        private void b_test_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

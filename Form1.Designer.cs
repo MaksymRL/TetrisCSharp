@@ -341,6 +341,8 @@
             this.textBox49 = new System.Windows.Forms.TextBox();
             this.textBox50 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.list_test = new System.Windows.Forms.ListBox();
+            this.b_test = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // C3
@@ -2388,7 +2390,7 @@
             this.B19.BackColor = System.Drawing.Color.Black;
             this.B19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.B19.Enabled = false;
-            this.B19.Location = new System.Drawing.Point(200, 491);
+            this.B19.Location = new System.Drawing.Point(200, 494);
             this.B19.Margin = new System.Windows.Forms.Padding(0);
             this.B19.Multiline = true;
             this.B19.Name = "B19";
@@ -2400,7 +2402,7 @@
             this.A19.BackColor = System.Drawing.Color.Black;
             this.A19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.A19.Enabled = false;
-            this.A19.Location = new System.Drawing.Point(178, 491);
+            this.A19.Location = new System.Drawing.Point(178, 494);
             this.A19.Margin = new System.Windows.Forms.Padding(0);
             this.A19.Multiline = true;
             this.A19.Name = "A19";
@@ -2412,7 +2414,7 @@
             this.H19.BackColor = System.Drawing.Color.Black;
             this.H19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.H19.Enabled = false;
-            this.H19.Location = new System.Drawing.Point(332, 491);
+            this.H19.Location = new System.Drawing.Point(332, 494);
             this.H19.Margin = new System.Windows.Forms.Padding(0);
             this.H19.Multiline = true;
             this.H19.Name = "H19";
@@ -2424,7 +2426,7 @@
             this.G19.BackColor = System.Drawing.Color.Black;
             this.G19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.G19.Enabled = false;
-            this.G19.Location = new System.Drawing.Point(310, 491);
+            this.G19.Location = new System.Drawing.Point(310, 494);
             this.G19.Margin = new System.Windows.Forms.Padding(0);
             this.G19.Multiline = true;
             this.G19.Name = "G19";
@@ -2436,7 +2438,7 @@
             this.F19.BackColor = System.Drawing.Color.Black;
             this.F19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.F19.Enabled = false;
-            this.F19.Location = new System.Drawing.Point(288, 491);
+            this.F19.Location = new System.Drawing.Point(288, 494);
             this.F19.Margin = new System.Windows.Forms.Padding(0);
             this.F19.Multiline = true;
             this.F19.Name = "F19";
@@ -2448,7 +2450,7 @@
             this.E19.BackColor = System.Drawing.Color.Black;
             this.E19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.E19.Enabled = false;
-            this.E19.Location = new System.Drawing.Point(266, 491);
+            this.E19.Location = new System.Drawing.Point(266, 494);
             this.E19.Margin = new System.Windows.Forms.Padding(0);
             this.E19.Multiline = true;
             this.E19.Name = "E19";
@@ -2460,7 +2462,7 @@
             this.J19.BackColor = System.Drawing.Color.Black;
             this.J19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.J19.Enabled = false;
-            this.J19.Location = new System.Drawing.Point(376, 491);
+            this.J19.Location = new System.Drawing.Point(376, 494);
             this.J19.Margin = new System.Windows.Forms.Padding(0);
             this.J19.Multiline = true;
             this.J19.Name = "J19";
@@ -2472,7 +2474,7 @@
             this.I19.BackColor = System.Drawing.Color.Black;
             this.I19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.I19.Enabled = false;
-            this.I19.Location = new System.Drawing.Point(354, 491);
+            this.I19.Location = new System.Drawing.Point(354, 494);
             this.I19.Margin = new System.Windows.Forms.Padding(0);
             this.I19.Multiline = true;
             this.I19.Name = "I19";
@@ -2484,7 +2486,7 @@
             this.D19.BackColor = System.Drawing.Color.Black;
             this.D19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.D19.Enabled = false;
-            this.D19.Location = new System.Drawing.Point(244, 491);
+            this.D19.Location = new System.Drawing.Point(244, 494);
             this.D19.Margin = new System.Windows.Forms.Padding(0);
             this.D19.Multiline = true;
             this.D19.Name = "D19";
@@ -2496,7 +2498,7 @@
             this.C19.BackColor = System.Drawing.Color.Black;
             this.C19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.C19.Enabled = false;
-            this.C19.Location = new System.Drawing.Point(222, 491);
+            this.C19.Location = new System.Drawing.Point(222, 494);
             this.C19.Margin = new System.Windows.Forms.Padding(0);
             this.C19.Multiline = true;
             this.C19.Name = "C19";
@@ -2508,7 +2510,7 @@
             this.B18.BackColor = System.Drawing.Color.Black;
             this.B18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.B18.Enabled = false;
-            this.B18.Location = new System.Drawing.Point(200, 471);
+            this.B18.Location = new System.Drawing.Point(200, 474);
             this.B18.Margin = new System.Windows.Forms.Padding(0);
             this.B18.Multiline = true;
             this.B18.Name = "B18";
@@ -2520,7 +2522,7 @@
             this.A18.BackColor = System.Drawing.Color.Black;
             this.A18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.A18.Enabled = false;
-            this.A18.Location = new System.Drawing.Point(178, 471);
+            this.A18.Location = new System.Drawing.Point(178, 474);
             this.A18.Margin = new System.Windows.Forms.Padding(0);
             this.A18.Multiline = true;
             this.A18.Name = "A18";
@@ -2532,7 +2534,7 @@
             this.H18.BackColor = System.Drawing.Color.Black;
             this.H18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.H18.Enabled = false;
-            this.H18.Location = new System.Drawing.Point(332, 471);
+            this.H18.Location = new System.Drawing.Point(332, 474);
             this.H18.Margin = new System.Windows.Forms.Padding(0);
             this.H18.Multiline = true;
             this.H18.Name = "H18";
@@ -2544,7 +2546,7 @@
             this.G18.BackColor = System.Drawing.Color.Black;
             this.G18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.G18.Enabled = false;
-            this.G18.Location = new System.Drawing.Point(310, 471);
+            this.G18.Location = new System.Drawing.Point(310, 474);
             this.G18.Margin = new System.Windows.Forms.Padding(0);
             this.G18.Multiline = true;
             this.G18.Name = "G18";
@@ -2556,7 +2558,7 @@
             this.F18.BackColor = System.Drawing.Color.Black;
             this.F18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.F18.Enabled = false;
-            this.F18.Location = new System.Drawing.Point(288, 471);
+            this.F18.Location = new System.Drawing.Point(288, 474);
             this.F18.Margin = new System.Windows.Forms.Padding(0);
             this.F18.Multiline = true;
             this.F18.Name = "F18";
@@ -2568,7 +2570,7 @@
             this.E18.BackColor = System.Drawing.Color.Black;
             this.E18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.E18.Enabled = false;
-            this.E18.Location = new System.Drawing.Point(266, 471);
+            this.E18.Location = new System.Drawing.Point(266, 474);
             this.E18.Margin = new System.Windows.Forms.Padding(0);
             this.E18.Multiline = true;
             this.E18.Name = "E18";
@@ -2580,7 +2582,7 @@
             this.J18.BackColor = System.Drawing.Color.Black;
             this.J18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.J18.Enabled = false;
-            this.J18.Location = new System.Drawing.Point(376, 471);
+            this.J18.Location = new System.Drawing.Point(376, 474);
             this.J18.Margin = new System.Windows.Forms.Padding(0);
             this.J18.Multiline = true;
             this.J18.Name = "J18";
@@ -2592,7 +2594,7 @@
             this.I18.BackColor = System.Drawing.Color.Black;
             this.I18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.I18.Enabled = false;
-            this.I18.Location = new System.Drawing.Point(354, 471);
+            this.I18.Location = new System.Drawing.Point(354, 474);
             this.I18.Margin = new System.Windows.Forms.Padding(0);
             this.I18.Multiline = true;
             this.I18.Name = "I18";
@@ -2604,7 +2606,7 @@
             this.D18.BackColor = System.Drawing.Color.Black;
             this.D18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.D18.Enabled = false;
-            this.D18.Location = new System.Drawing.Point(244, 471);
+            this.D18.Location = new System.Drawing.Point(244, 474);
             this.D18.Margin = new System.Windows.Forms.Padding(0);
             this.D18.Multiline = true;
             this.D18.Name = "D18";
@@ -2616,7 +2618,7 @@
             this.C18.BackColor = System.Drawing.Color.Black;
             this.C18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.C18.Enabled = false;
-            this.C18.Location = new System.Drawing.Point(222, 471);
+            this.C18.Location = new System.Drawing.Point(222, 474);
             this.C18.Margin = new System.Windows.Forms.Padding(0);
             this.C18.Multiline = true;
             this.C18.Name = "C18";
@@ -2628,7 +2630,7 @@
             this.B20.BackColor = System.Drawing.Color.Black;
             this.B20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.B20.Enabled = false;
-            this.B20.Location = new System.Drawing.Point(200, 511);
+            this.B20.Location = new System.Drawing.Point(200, 514);
             this.B20.Margin = new System.Windows.Forms.Padding(0);
             this.B20.Multiline = true;
             this.B20.Name = "B20";
@@ -2640,7 +2642,7 @@
             this.A20.BackColor = System.Drawing.Color.Black;
             this.A20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.A20.Enabled = false;
-            this.A20.Location = new System.Drawing.Point(178, 511);
+            this.A20.Location = new System.Drawing.Point(178, 514);
             this.A20.Margin = new System.Windows.Forms.Padding(0);
             this.A20.Multiline = true;
             this.A20.Name = "A20";
@@ -2652,7 +2654,7 @@
             this.H20.BackColor = System.Drawing.Color.Black;
             this.H20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.H20.Enabled = false;
-            this.H20.Location = new System.Drawing.Point(332, 511);
+            this.H20.Location = new System.Drawing.Point(332, 514);
             this.H20.Margin = new System.Windows.Forms.Padding(0);
             this.H20.Multiline = true;
             this.H20.Name = "H20";
@@ -2664,7 +2666,7 @@
             this.G20.BackColor = System.Drawing.Color.Black;
             this.G20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.G20.Enabled = false;
-            this.G20.Location = new System.Drawing.Point(310, 511);
+            this.G20.Location = new System.Drawing.Point(310, 514);
             this.G20.Margin = new System.Windows.Forms.Padding(0);
             this.G20.Multiline = true;
             this.G20.Name = "G20";
@@ -2676,7 +2678,7 @@
             this.F20.BackColor = System.Drawing.Color.Black;
             this.F20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.F20.Enabled = false;
-            this.F20.Location = new System.Drawing.Point(288, 511);
+            this.F20.Location = new System.Drawing.Point(288, 514);
             this.F20.Margin = new System.Windows.Forms.Padding(0);
             this.F20.Multiline = true;
             this.F20.Name = "F20";
@@ -2688,7 +2690,7 @@
             this.E20.BackColor = System.Drawing.Color.Black;
             this.E20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.E20.Enabled = false;
-            this.E20.Location = new System.Drawing.Point(266, 511);
+            this.E20.Location = new System.Drawing.Point(266, 514);
             this.E20.Margin = new System.Windows.Forms.Padding(0);
             this.E20.Multiline = true;
             this.E20.Name = "E20";
@@ -2700,7 +2702,7 @@
             this.J20.BackColor = System.Drawing.Color.Black;
             this.J20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.J20.Enabled = false;
-            this.J20.Location = new System.Drawing.Point(376, 511);
+            this.J20.Location = new System.Drawing.Point(376, 514);
             this.J20.Margin = new System.Windows.Forms.Padding(0);
             this.J20.Multiline = true;
             this.J20.Name = "J20";
@@ -2712,7 +2714,7 @@
             this.I20.BackColor = System.Drawing.Color.Black;
             this.I20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.I20.Enabled = false;
-            this.I20.Location = new System.Drawing.Point(354, 511);
+            this.I20.Location = new System.Drawing.Point(354, 514);
             this.I20.Margin = new System.Windows.Forms.Padding(0);
             this.I20.Multiline = true;
             this.I20.Name = "I20";
@@ -2724,7 +2726,7 @@
             this.D20.BackColor = System.Drawing.Color.Black;
             this.D20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.D20.Enabled = false;
-            this.D20.Location = new System.Drawing.Point(244, 511);
+            this.D20.Location = new System.Drawing.Point(244, 514);
             this.D20.Margin = new System.Windows.Forms.Padding(0);
             this.D20.Multiline = true;
             this.D20.Name = "D20";
@@ -2736,7 +2738,7 @@
             this.C20.BackColor = System.Drawing.Color.Black;
             this.C20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.C20.Enabled = false;
-            this.C20.Location = new System.Drawing.Point(222, 511);
+            this.C20.Location = new System.Drawing.Point(222, 514);
             this.C20.Margin = new System.Windows.Forms.Padding(0);
             this.C20.Multiline = true;
             this.C20.Name = "C20";
@@ -2748,7 +2750,7 @@
             this.textBox205.BackColor = System.Drawing.Color.DarkGray;
             this.textBox205.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox205.Enabled = false;
-            this.textBox205.Location = new System.Drawing.Point(200, 531);
+            this.textBox205.Location = new System.Drawing.Point(200, 534);
             this.textBox205.Margin = new System.Windows.Forms.Padding(0);
             this.textBox205.Multiline = true;
             this.textBox205.Name = "textBox205";
@@ -2760,7 +2762,7 @@
             this.textBox206.BackColor = System.Drawing.Color.DarkGray;
             this.textBox206.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox206.Enabled = false;
-            this.textBox206.Location = new System.Drawing.Point(178, 531);
+            this.textBox206.Location = new System.Drawing.Point(178, 534);
             this.textBox206.Margin = new System.Windows.Forms.Padding(0);
             this.textBox206.Multiline = true;
             this.textBox206.Name = "textBox206";
@@ -2772,7 +2774,7 @@
             this.textBox207.BackColor = System.Drawing.Color.DarkGray;
             this.textBox207.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox207.Enabled = false;
-            this.textBox207.Location = new System.Drawing.Point(332, 531);
+            this.textBox207.Location = new System.Drawing.Point(332, 534);
             this.textBox207.Margin = new System.Windows.Forms.Padding(0);
             this.textBox207.Multiline = true;
             this.textBox207.Name = "textBox207";
@@ -2784,7 +2786,7 @@
             this.textBox208.BackColor = System.Drawing.Color.DarkGray;
             this.textBox208.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox208.Enabled = false;
-            this.textBox208.Location = new System.Drawing.Point(310, 531);
+            this.textBox208.Location = new System.Drawing.Point(310, 534);
             this.textBox208.Margin = new System.Windows.Forms.Padding(0);
             this.textBox208.Multiline = true;
             this.textBox208.Name = "textBox208";
@@ -2796,7 +2798,7 @@
             this.textBox209.BackColor = System.Drawing.Color.DarkGray;
             this.textBox209.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox209.Enabled = false;
-            this.textBox209.Location = new System.Drawing.Point(288, 531);
+            this.textBox209.Location = new System.Drawing.Point(288, 534);
             this.textBox209.Margin = new System.Windows.Forms.Padding(0);
             this.textBox209.Multiline = true;
             this.textBox209.Name = "textBox209";
@@ -2808,7 +2810,7 @@
             this.textBox210.BackColor = System.Drawing.Color.DarkGray;
             this.textBox210.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox210.Enabled = false;
-            this.textBox210.Location = new System.Drawing.Point(266, 531);
+            this.textBox210.Location = new System.Drawing.Point(266, 534);
             this.textBox210.Margin = new System.Windows.Forms.Padding(0);
             this.textBox210.Multiline = true;
             this.textBox210.Name = "textBox210";
@@ -2820,7 +2822,7 @@
             this.textBox211.BackColor = System.Drawing.Color.DarkGray;
             this.textBox211.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox211.Enabled = false;
-            this.textBox211.Location = new System.Drawing.Point(376, 531);
+            this.textBox211.Location = new System.Drawing.Point(376, 534);
             this.textBox211.Margin = new System.Windows.Forms.Padding(0);
             this.textBox211.Multiline = true;
             this.textBox211.Name = "textBox211";
@@ -2832,7 +2834,7 @@
             this.textBox212.BackColor = System.Drawing.Color.DarkGray;
             this.textBox212.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox212.Enabled = false;
-            this.textBox212.Location = new System.Drawing.Point(354, 531);
+            this.textBox212.Location = new System.Drawing.Point(354, 534);
             this.textBox212.Margin = new System.Windows.Forms.Padding(0);
             this.textBox212.Multiline = true;
             this.textBox212.Name = "textBox212";
@@ -2844,7 +2846,7 @@
             this.textBox213.BackColor = System.Drawing.Color.DarkGray;
             this.textBox213.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox213.Enabled = false;
-            this.textBox213.Location = new System.Drawing.Point(244, 531);
+            this.textBox213.Location = new System.Drawing.Point(244, 534);
             this.textBox213.Margin = new System.Windows.Forms.Padding(0);
             this.textBox213.Multiline = true;
             this.textBox213.Name = "textBox213";
@@ -2856,7 +2858,7 @@
             this.textBox214.BackColor = System.Drawing.Color.DarkGray;
             this.textBox214.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox214.Enabled = false;
-            this.textBox214.Location = new System.Drawing.Point(222, 531);
+            this.textBox214.Location = new System.Drawing.Point(222, 534);
             this.textBox214.Margin = new System.Windows.Forms.Padding(0);
             this.textBox214.Multiline = true;
             this.textBox214.Name = "textBox214";
@@ -2868,7 +2870,7 @@
             this.textBox225.BackColor = System.Drawing.Color.DarkGray;
             this.textBox225.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox225.Enabled = false;
-            this.textBox225.Location = new System.Drawing.Point(398, 531);
+            this.textBox225.Location = new System.Drawing.Point(398, 534);
             this.textBox225.Margin = new System.Windows.Forms.Padding(0);
             this.textBox225.Multiline = true;
             this.textBox225.Name = "textBox225";
@@ -2880,7 +2882,7 @@
             this.textBox226.BackColor = System.Drawing.Color.DarkGray;
             this.textBox226.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox226.Enabled = false;
-            this.textBox226.Location = new System.Drawing.Point(398, 511);
+            this.textBox226.Location = new System.Drawing.Point(398, 514);
             this.textBox226.Margin = new System.Windows.Forms.Padding(0);
             this.textBox226.Multiline = true;
             this.textBox226.Name = "textBox226";
@@ -2892,7 +2894,7 @@
             this.textBox227.BackColor = System.Drawing.Color.DarkGray;
             this.textBox227.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox227.Enabled = false;
-            this.textBox227.Location = new System.Drawing.Point(398, 491);
+            this.textBox227.Location = new System.Drawing.Point(398, 494);
             this.textBox227.Margin = new System.Windows.Forms.Padding(0);
             this.textBox227.Multiline = true;
             this.textBox227.Name = "textBox227";
@@ -2904,7 +2906,7 @@
             this.textBox228.BackColor = System.Drawing.Color.DarkGray;
             this.textBox228.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox228.Enabled = false;
-            this.textBox228.Location = new System.Drawing.Point(398, 471);
+            this.textBox228.Location = new System.Drawing.Point(398, 474);
             this.textBox228.Margin = new System.Windows.Forms.Padding(0);
             this.textBox228.Multiline = true;
             this.textBox228.Name = "textBox228";
@@ -3144,7 +3146,7 @@
             this.textBox202.BackColor = System.Drawing.Color.DarkGray;
             this.textBox202.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox202.Enabled = false;
-            this.textBox202.Location = new System.Drawing.Point(156, 531);
+            this.textBox202.Location = new System.Drawing.Point(156, 534);
             this.textBox202.Margin = new System.Windows.Forms.Padding(0);
             this.textBox202.Multiline = true;
             this.textBox202.Name = "textBox202";
@@ -3156,7 +3158,7 @@
             this.textBox203.BackColor = System.Drawing.Color.DarkGray;
             this.textBox203.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox203.Enabled = false;
-            this.textBox203.Location = new System.Drawing.Point(156, 511);
+            this.textBox203.Location = new System.Drawing.Point(156, 514);
             this.textBox203.Margin = new System.Windows.Forms.Padding(0);
             this.textBox203.Multiline = true;
             this.textBox203.Name = "textBox203";
@@ -3168,7 +3170,7 @@
             this.textBox204.BackColor = System.Drawing.Color.DarkGray;
             this.textBox204.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox204.Enabled = false;
-            this.textBox204.Location = new System.Drawing.Point(156, 491);
+            this.textBox204.Location = new System.Drawing.Point(156, 494);
             this.textBox204.Margin = new System.Windows.Forms.Padding(0);
             this.textBox204.Multiline = true;
             this.textBox204.Name = "textBox204";
@@ -3180,7 +3182,7 @@
             this.textBox247.BackColor = System.Drawing.Color.DarkGray;
             this.textBox247.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox247.Enabled = false;
-            this.textBox247.Location = new System.Drawing.Point(156, 471);
+            this.textBox247.Location = new System.Drawing.Point(156, 474);
             this.textBox247.Margin = new System.Windows.Forms.Padding(0);
             this.textBox247.Multiline = true;
             this.textBox247.Name = "textBox247";
@@ -4095,11 +4097,32 @@
             this.label1.TabIndex = 327;
             this.label1.Text = "parte successiva";
             // 
+            // list_test
+            // 
+            this.list_test.FormattingEnabled = true;
+            this.list_test.HorizontalScrollbar = true;
+            this.list_test.Location = new System.Drawing.Point(474, 63);
+            this.list_test.Name = "list_test";
+            this.list_test.Size = new System.Drawing.Size(262, 212);
+            this.list_test.TabIndex = 328;
+            // 
+            // b_test
+            // 
+            this.b_test.Location = new System.Drawing.Point(563, 511);
+            this.b_test.Name = "b_test";
+            this.b_test.Size = new System.Drawing.Size(213, 40);
+            this.b_test.TabIndex = 329;
+            this.b_test.Text = "TEST";
+            this.b_test.UseVisualStyleBackColor = true;
+            this.b_test.Click += new System.EventHandler(this.b_test_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 668);
+            this.Controls.Add(this.b_test);
+            this.Controls.Add(this.list_test);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox50);
             this.Controls.Add(this.textBox49);
@@ -4736,6 +4759,8 @@
         private System.Windows.Forms.TextBox textBox49;
         private System.Windows.Forms.TextBox textBox50;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox list_test;
+        private System.Windows.Forms.Button b_test;
     }
 }
 

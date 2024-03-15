@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,9 @@ namespace TetrisFunzioni
     {
         public string Colonna;
         public int Riga;
-        public TextBox[] Casella;
+        public TextBox Casella;
+        public Color ColoreSfondo;
+        public BorderStyle TipoBordi;
     }
     internal class Lib
     {
