@@ -16,6 +16,16 @@ namespace TetrisFunzioni
         public Color ColoreSfondo;
         public BorderStyle TipoBordi;
     }
+
+    public struct MatriceRandom
+    {
+        public string Colonna;
+        public int Riga;
+        public TextBox Casella;
+        public Color ColoreSfondo;
+        public BorderStyle TipoBordi;
+    }
+
     internal class Lib
     {
     }

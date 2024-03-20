@@ -14,8 +14,12 @@ namespace ProgettoFineAnno
 {
     public partial class Form1 : Form
     {
-        private Matrice[] elePezzi = new Matrice[200];
-        int num = 199;
+        private Matrice[] eleMatrice = new Matrice[200];
+        private MatriceRandom[] eleMatriceRandom = new MatriceRandom[8];
+        private int num = 200;
+        private string[] Colonna = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+        private string[] ColonnaRandom = { "X", "Z" };
+        private int numRandom = 8;
         public Form1()
         {
             InitializeComponent();
@@ -23,12 +27,12 @@ namespace ProgettoFineAnno
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            #region Matrice Main
             Matrice nuovaCasella = default;
             int x = 0;
             int riga = 1;
-            string[] Colonna = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
             int PosColonna = 0;
-            while (x <= num)
+            while (x <= num - 1)
             {
                 if (riga <= 20)
                 {
@@ -41,17 +45,54 @@ namespace ProgettoFineAnno
                 }
                 else
                 {
-                    if(PosColonna < 9) {
+                    if (PosColonna < 9)
+                    {
                         PosColonna = PosColonna + 1;
                         x--;
                         riga = 1;
                     }
                 }
-                elePezzi[x] = nuovaCasella;
+                eleMatrice[x] = nuovaCasella;
                 x++;
             }
-            
+            #endregion Matrice Main
+            #region Matrice Random
+            MatriceRandom nuovaCasellaRandom = default;
+            int y = 0;
+            int rigaRandom = 1;
+            int PosColonnaRandom = 0;
+            while (y <= numRandom - 1)
+            {
+                if (rigaRandom <= 4)
+                {
+                    nuovaCasellaRandom.Colonna = ColonnaRandom[PosColonnaRandom];
+                    nuovaCasellaRandom.Riga = rigaRandom;
+                    nuovaCasellaRandom.Casella = (System.Windows.Forms.TextBox)this.Controls.Find(nuovaCasellaRandom.Colonna + nuovaCasellaRandom.Riga, true).FirstOrDefault();
+                    rigaRandom = rigaRandom + 1;
+                    nuovaCasellaRandom.ColoreSfondo = nuovaCasellaRandom.Casella.BackColor;
+                    nuovaCasellaRandom.TipoBordi = nuovaCasellaRandom.Casella.BorderStyle;
+                }
+                else
+                {
+                    if (PosColonnaRandom < 1)
+                    {
+                        PosColonnaRandom = PosColonnaRandom + 1;
+                        y--;
+                        rigaRandom = 1;
+                    }
+                }
+                eleMatriceRandom[y] = nuovaCasellaRandom;
+                y++;
+            }
+            #endregion Matrice Random
 
+            int z = 0;
+            while (z < numRandom)
+            {
+                eleMatriceRandom[z].Casella.BackColor = Color.Red;
+                list_test.Items.Add($"{eleMatriceRandom[z].Colonna}{eleMatriceRandom[z].Riga}");
+                z++;
+            }
         }
 
         private void b_test_Click(object sender, EventArgs e)
