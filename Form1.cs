@@ -97,7 +97,14 @@ namespace ProgettoFineAnno
 
         private void b_test_Click(object sender, EventArgs e)
         {
-           
+            int z = 0;
+            while (z < numRandom)
+            {
+                eleMatriceRandom[z].Casella.BackColor = Color.Black;
+                eleMatriceRandom[z].Casella.BorderStyle = BorderStyle.None;
+                z++;
+            }
+            int Pezzo = Lib.PezzoRandom(eleMatriceRandom);
         }
     }
 }
