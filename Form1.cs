@@ -86,25 +86,9 @@ namespace ProgettoFineAnno
             }
             #endregion Matrice Random
 
-            int z = 0;
-            while (z < numRandom)
-            {
-                eleMatriceRandom[z].Casella.BackColor = Color.Red;
-                list_test.Items.Add($"{eleMatriceRandom[z].Colonna}{eleMatriceRandom[z].Riga}");
-                z++;
-            }
+            int PezzoRandom = Lib.PezzoRandom(eleMatriceRandom);
         }
 
-        private void b_test_Click(object sender, EventArgs e)
-        {
-            int z = 0;
-            while (z < numRandom)
-            {
-                eleMatriceRandom[z].Casella.BackColor = Color.Black;
-                eleMatriceRandom[z].Casella.BorderStyle = BorderStyle.None;
-                z++;
-            }
-            int Pezzo = Lib.PezzoRandom(eleMatriceRandom);
-        }
+       
     }
 }
