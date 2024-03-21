@@ -83,6 +83,16 @@ namespace ProgettoFineAnno.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maometto {
+            get {
+                object obj = ResourceManager.GetObject("maometto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_03_14_132202 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-03-14 132202", resourceCulture);
