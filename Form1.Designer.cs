@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.C3 = new System.Windows.Forms.TextBox();
             this.D3 = new System.Windows.Forms.TextBox();
             this.J3 = new System.Windows.Forms.TextBox();
@@ -370,6 +371,7 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
+            this.timer_screenupdate = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // C3
@@ -5174,6 +5176,7 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Timer timer_screenupdate;
     }
 }
 

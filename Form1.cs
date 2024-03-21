@@ -23,6 +23,66 @@ namespace ProgettoFineAnno
         public Form1()
         {
             InitializeComponent();
+            InitializeComponent();
+            timer_screenupdate.Interval = 1000;
+            timer_screenupdate.Tick += Timer_Tick;
+            timer_screenupdate.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            #region ScendiTest
+            //Matrice temp = default;
+            //int x = 0;
+            //int riga = 1;
+            //int PosColonna = 0;
+            //int[] rigastart = { 2, 3, 4, 4 };
+            //string[] colonnastart = { "E", "E", "E", "F" };
+            //int PartePos = 0;
+            //while (x <= num - 1)
+            //{
+            //    if (riga < 20 && PosColonna <= 10)
+            //    {
+            //        if (elePezzi[x].Riga == rigastart[PartePos] && elePezzi[x].Colonna == colonnastart[PartePos])
+            //        {
+            //            temp = elePezzi[x];
+            //            elePezzi[x] = elePezzi[x + 1];
+            //            elePezzi[x + 1] = temp;
+            //        }
+            //        else if (elePezzi[x].Riga == rigastart[PartePos + 1] && elePezzi[x].Colonna == colonnastart[PartePos + 1])
+            //        {
+            //            temp = elePezzi[x];
+            //            elePezzi[x] = elePezzi[x + 1];
+            //            elePezzi[x + 1] = temp;
+            //        }
+            //        else if (elePezzi[x].Riga == rigastart[PartePos + 2] && elePezzi[x].Colonna == colonnastart[PartePos + 2])
+            //        {
+            //            temp = elePezzi[x];
+            //            elePezzi[x] = elePezzi[x + 1];
+            //            elePezzi[x + 1] = temp;
+            //        }
+            //        else if (elePezzi[x].Riga == rigastart[PartePos + 3] && elePezzi[x].Colonna == colonnastart[PartePos + 3])
+            //        {
+            //            temp = elePezzi[x];
+            //            elePezzi[x] = elePezzi[x + 1];
+            //            elePezzi[x + 1] = temp;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        PosColonna = PosColonna + 1;
+            //        riga = 0;
+            //    }
+
+            //    riga++;
+            //    x++;
+            //}
+            #endregion ScendiTest
+
+
+
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -89,6 +149,9 @@ namespace ProgettoFineAnno
             int PezzoRandom = Lib.PezzoRandom(eleMatriceRandom);
         }
 
-       
+        private void timer_screenupdate_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
