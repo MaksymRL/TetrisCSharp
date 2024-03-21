@@ -113,5 +113,12 @@ namespace TetrisFunzioni
             }
             return -1;
         }
+
+        public static int ScendiPezzoRandom(MatriceRandom[] eleRandom, Matrice[] ele)
+        {
+
+
+            return -1;
+        }
     }
 }

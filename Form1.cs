@@ -20,6 +20,7 @@ namespace ProgettoFineAnno
         private string[] Colonna = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
         private string[] ColonnaRandom = { "X", "Z" };
         private int numRandom = 8;
+        private int conta = 0;
         public Form1()
         {
             InitializeComponent();
@@ -79,9 +80,22 @@ namespace ProgettoFineAnno
             //}
             #endregion ScendiTest
 
+            #region PezzoRandom
+            
+            if (conta == 0)
+            {
 
-
-
+                int z = 0;
+                while (z < numRandom)
+                {
+                    eleMatriceRandom[z].Casella.BackColor = Color.Black;
+                    eleMatriceRandom[z].Casella.BorderStyle = BorderStyle.None;
+                    z++;
+                }
+                int PezzoRandom = Lib.PezzoRandom(eleMatriceRandom);
+                conta++;
+            }
+            #endregion PezzoRandom
 
         }
 
@@ -146,11 +160,7 @@ namespace ProgettoFineAnno
             }
             #endregion Matrice Random
 
-            int PezzoRandom = Lib.PezzoRandom(eleMatriceRandom);
-        }
-
-        private void timer_screenupdate_Tick(object sender, EventArgs e)
-        {
+            
 
         }
     }
