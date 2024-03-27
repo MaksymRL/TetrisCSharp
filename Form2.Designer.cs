@@ -65,15 +65,6 @@
             this.button1.Text = "GIOCA";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProgettoFineAnno.Properties.Resources.Screenshot_2024_03_14_132202;
-            this.pictureBox1.Location = new System.Drawing.Point(84, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(640, 196);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Cyan;

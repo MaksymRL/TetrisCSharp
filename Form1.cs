@@ -21,78 +21,34 @@ namespace ProgettoFineAnno
         private string[] ColonnaRandom = { "X", "Z" };
         private int numRandom = 8;
         private int conta = 0;
+        private int[] PosPezzo = new int[4];
+        private int Pezzo;
+
         public Form1()
         {
-            InitializeComponent();
             InitializeComponent();
             timer_screenupdate.Interval = 1000;
             timer_screenupdate.Tick += Timer_Tick;
             timer_screenupdate.Start();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.TopMost = true;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            #region ScendiTest
-            //Matrice temp = default;
-            //int x = 0;
-            //int riga = 1;
-            //int PosColonna = 0;
-            //int[] rigastart = { 2, 3, 4, 4 };
-            //string[] colonnastart = { "E", "E", "E", "F" };
-            //int PartePos = 0;
-            //while (x <= num - 1)
-            //{
-            //    if (riga < 20 && PosColonna <= 10)
-            //    {
-            //        if (elePezzi[x].Riga == rigastart[PartePos] && elePezzi[x].Colonna == colonnastart[PartePos])
-            //        {
-            //            temp = elePezzi[x];
-            //            elePezzi[x] = elePezzi[x + 1];
-            //            elePezzi[x + 1] = temp;
-            //        }
-            //        else if (elePezzi[x].Riga == rigastart[PartePos + 1] && elePezzi[x].Colonna == colonnastart[PartePos + 1])
-            //        {
-            //            temp = elePezzi[x];
-            //            elePezzi[x] = elePezzi[x + 1];
-            //            elePezzi[x + 1] = temp;
-            //        }
-            //        else if (elePezzi[x].Riga == rigastart[PartePos + 2] && elePezzi[x].Colonna == colonnastart[PartePos + 2])
-            //        {
-            //            temp = elePezzi[x];
-            //            elePezzi[x] = elePezzi[x + 1];
-            //            elePezzi[x + 1] = temp;
-            //        }
-            //        else if (elePezzi[x].Riga == rigastart[PartePos + 3] && elePezzi[x].Colonna == colonnastart[PartePos + 3])
-            //        {
-            //            temp = elePezzi[x];
-            //            elePezzi[x] = elePezzi[x + 1];
-            //            elePezzi[x + 1] = temp;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        PosColonna = PosColonna + 1;
-            //        riga = 0;
-            //    }
 
-            //    riga++;
-            //    x++;
-            //}
-            #endregion ScendiTest
 
-            #region PezzoRandom
-            
+            #region PezzoScendi
+
+            if (conta == 1)
+            {
+                Lib.Scendi(eleMatrice, PosPezzo, Pezzo);
+            }
+
             if (conta == 0)
             {
-
-                int z = 0;
-                while (z < numRandom)
-                {
-                    eleMatriceRandom[z].Casella.BackColor = Color.Black;
-                    eleMatriceRandom[z].Casella.BorderStyle = BorderStyle.None;
-                    z++;
-                }
-                int PezzoRandom = Lib.PezzoRandom(eleMatriceRandom);
+                Pezzo = Lib.GeneraPezzo(eleMatrice, PosPezzo);
                 conta++;
             }
             #endregion PezzoRandom

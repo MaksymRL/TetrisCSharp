@@ -34,91 +34,229 @@ namespace TetrisFunzioni
     internal class Lib
     {
 
-        public static int PezzoRandom(MatriceRandom[] ele)
+        public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni)
         {
             Random random = new Random();
             int randomNumero = random.Next(6);
+            int[] posizioni = { 60, 61, 80, 81, 100, 101, 120, 121 };
             switch (randomNumero)
             {
                 case 0:
-                    ele[4].Casella.BackColor = Color.LightBlue;
-                    ele[4].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[5].Casella.BackColor = Color.LightBlue;
-                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.LightBlue;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[7].Casella.BackColor = Color.LightBlue;
-                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[60].Casella.BackColor = Color.LightBlue;
+                    ele[60].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[80].Casella.BackColor = Color.LightBlue;
+                    ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[100].Casella.BackColor = Color.LightBlue;
+                    ele[100].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[120].Casella.BackColor = Color.LightBlue;
+                    ele[120].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[0];
+                    elePosizioni[1] = posizioni[2];
+                    elePosizioni[2] = posizioni[4];
+                    elePosizioni[3] = posizioni[6];
                     return (int)Pezzi.IBlock;
                 case 1:
-                    ele[1].Casella.BackColor = Color.Blue;
-                    ele[1].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[5].Casella.BackColor = Color.Blue;
-                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.Blue;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[7].Casella.BackColor = Color.Blue;
-                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[80].Casella.BackColor = Color.Blue;
+                    ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[81].Casella.BackColor = Color.Blue;
+                    ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[101].Casella.BackColor = Color.Blue;
+                    ele[101].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[121].Casella.BackColor = Color.Blue;
+                    ele[121].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[2];
+                    elePosizioni[1] = posizioni[3];
+                    elePosizioni[2] = posizioni[5];
+                    elePosizioni[3] = posizioni[7];
                     return (int)Pezzi.JBlock;
                 case 2:
-                    ele[3].Casella.BackColor = Color.Gold;
-                    ele[3].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[5].Casella.BackColor = Color.Gold;
-                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.Gold;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[7].Casella.BackColor = Color.Gold;
-                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[81].Casella.BackColor = Color.Gold;
+                    ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[101].Casella.BackColor = Color.Gold;
+                    ele[101].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[120].Casella.BackColor = Color.Gold;
+                    ele[120].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[121].Casella.BackColor = Color.Gold;
+                    ele[121].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[3];
+                    elePosizioni[1] = posizioni[5];
+                    elePosizioni[2] = posizioni[6];
+                    elePosizioni[3] = posizioni[7];
                     return (int)Pezzi.LBlock;
                 case 3:
-                    ele[1].Casella.BackColor = Color.Yellow;
-                    ele[1].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[2].Casella.BackColor = Color.Yellow;
-                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[5].Casella.BackColor = Color.Yellow;
-                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.Yellow;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[80].Casella.BackColor = Color.Yellow;
+                    ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[81].Casella.BackColor = Color.Yellow;
+                    ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[100].Casella.BackColor = Color.Yellow;
+                    ele[100].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[101].Casella.BackColor = Color.Yellow;
+                    ele[101].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[2];
+                    elePosizioni[1] = posizioni[3];
+                    elePosizioni[2] = posizioni[4];
+                    elePosizioni[3] = posizioni[5];
                     return (int)Pezzi.OBlock;
                 case 4:
-                    ele[2].Casella.BackColor = Color.LightGreen;
-                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[3].Casella.BackColor = Color.LightGreen;
-                    ele[3].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[5].Casella.BackColor = Color.LightGreen;
-                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.LightGreen;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[81].Casella.BackColor = Color.LightGreen;
+                    ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[100].Casella.BackColor = Color.LightGreen;
+                    ele[100].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[101].Casella.BackColor = Color.LightGreen;
+                    ele[101].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[120].Casella.BackColor = Color.LightGreen;
+                    ele[120].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[3];
+                    elePosizioni[1] = posizioni[4];
+                    elePosizioni[2] = posizioni[5];
+                    elePosizioni[3] = posizioni[6];
                     return (int)Pezzi.SBlock;
                 case 5:
-                    ele[2].Casella.BackColor = Color.Purple;
-                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[5].Casella.BackColor = Color.Purple;
-                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.Purple;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[7].Casella.BackColor = Color.Purple;
-                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[81].Casella.BackColor = Color.Purple;
+                    ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[100].Casella.BackColor = Color.Purple;
+                    ele[100].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[101].Casella.BackColor = Color.Purple;
+                    ele[101].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[121].Casella.BackColor = Color.Purple;
+                    ele[121].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[3];
+                    elePosizioni[1] = posizioni[4];
+                    elePosizioni[2] = posizioni[5];
+                    elePosizioni[3] = posizioni[7];
                     return (int)Pezzi.TBlock;
                 case 6:
-                    ele[1].Casella.BackColor = Color.Red;
-                    ele[1].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[2].Casella.BackColor = Color.Red;
-                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[6].Casella.BackColor = Color.Red;
-                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
-                    ele[7].Casella.BackColor = Color.Red;
-                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[80].Casella.BackColor = Color.Red;
+                    ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[100].Casella.BackColor = Color.Red;
+                    ele[100].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[101].Casella.BackColor = Color.Red;
+                    ele[101].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[121].Casella.BackColor = Color.Red;
+                    ele[121].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    elePosizioni[0] = posizioni[2];
+                    elePosizioni[1] = posizioni[4];
+                    elePosizioni[2] = posizioni[5];
+                    elePosizioni[3] = posizioni[7];
                     return (int)Pezzi.ZBlock;
             }
             return -1;
         }
 
-        public static int ScendiPezzoRandom(MatriceRandom[] eleRandom, Matrice[] ele)
+        public static void Scendi(Matrice[] ele, int[] elePosizioni, int Pezzo)
         {
+            for (int x = 0; x < elePosizioni.Length; x++)
+            {
+                switch (Pezzo)
+                {
+                    case 0:
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        break;
+                    case 1:
+                        if (x != 1)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        break;
+                    case 2:
+                        if (x != 3)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        break;
+                    case 3:
+                        if (x != 1 && x != 3)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        break;
+                    case 4:
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        break;
+                    case 5:
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        break;
+                    case 6:
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 1;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        break;
 
+                }
 
-            return -1;
+            }
+
         }
     }
 }
