@@ -229,14 +229,6 @@
             this.I20 = new System.Windows.Forms.TextBox();
             this.D20 = new System.Windows.Forms.TextBox();
             this.C20 = new System.Windows.Forms.TextBox();
-            this.X2 = new System.Windows.Forms.TextBox();
-            this.X1 = new System.Windows.Forms.TextBox();
-            this.X4 = new System.Windows.Forms.TextBox();
-            this.X3 = new System.Windows.Forms.TextBox();
-            this.Z2 = new System.Windows.Forms.TextBox();
-            this.Z1 = new System.Windows.Forms.TextBox();
-            this.Z4 = new System.Windows.Forms.TextBox();
-            this.Z3 = new System.Windows.Forms.TextBox();
             this.textBox54 = new System.Windows.Forms.TextBox();
             this.textBox52 = new System.Windows.Forms.TextBox();
             this.textBox51 = new System.Windows.Forms.TextBox();
@@ -251,7 +243,6 @@
             this.textBox45 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.textBox39 = new System.Windows.Forms.TextBox();
-            this.LBL_punteggio = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox38 = new System.Windows.Forms.TextBox();
             this.textBox53 = new System.Windows.Forms.TextBox();
@@ -269,20 +260,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox50 = new System.Windows.Forms.TextBox();
             this.textBox49 = new System.Windows.Forms.TextBox();
-            this.PS10 = new System.Windows.Forms.TextBox();
-            this.PS9 = new System.Windows.Forms.TextBox();
-            this.PS12 = new System.Windows.Forms.TextBox();
-            this.PS11 = new System.Windows.Forms.TextBox();
-            this.PS6 = new System.Windows.Forms.TextBox();
-            this.PS5 = new System.Windows.Forms.TextBox();
-            this.PS8 = new System.Windows.Forms.TextBox();
-            this.PS7 = new System.Windows.Forms.TextBox();
-            this.PS2 = new System.Windows.Forms.TextBox();
-            this.PS1 = new System.Windows.Forms.TextBox();
-            this.PS4 = new System.Windows.Forms.TextBox();
-            this.PS3 = new System.Windows.Forms.TextBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -293,7 +271,6 @@
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
@@ -363,15 +340,16 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.timer_screenupdate = new System.Windows.Forms.Timer(this.components);
+            this.LBL_punteggio = new System.Windows.Forms.Label();
+            this.Z2 = new System.Windows.Forms.TextBox();
+            this.Z1 = new System.Windows.Forms.TextBox();
+            this.Z4 = new System.Windows.Forms.TextBox();
+            this.Z3 = new System.Windows.Forms.TextBox();
+            this.X2 = new System.Windows.Forms.TextBox();
+            this.X1 = new System.Windows.Forms.TextBox();
+            this.X4 = new System.Windows.Forms.TextBox();
+            this.X3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // C3
@@ -2774,108 +2752,12 @@
             this.C20.Size = new System.Drawing.Size(22, 20);
             this.C20.TabIndex = 190;
             // 
-            // X2
-            // 
-            this.X2.BackColor = System.Drawing.Color.Black;
-            this.X2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.X2.Enabled = false;
-            this.X2.Location = new System.Drawing.Point(266, 76);
-            this.X2.Margin = new System.Windows.Forms.Padding(0);
-            this.X2.Multiline = true;
-            this.X2.Name = "X2";
-            this.X2.Size = new System.Drawing.Size(22, 20);
-            this.X2.TabIndex = 289;
-            // 
-            // X1
-            // 
-            this.X1.BackColor = System.Drawing.Color.Black;
-            this.X1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.X1.Enabled = false;
-            this.X1.Location = new System.Drawing.Point(244, 76);
-            this.X1.Margin = new System.Windows.Forms.Padding(0);
-            this.X1.Multiline = true;
-            this.X1.Name = "X1";
-            this.X1.Size = new System.Drawing.Size(22, 20);
-            this.X1.TabIndex = 288;
-            // 
-            // X4
-            // 
-            this.X4.BackColor = System.Drawing.Color.Black;
-            this.X4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.X4.Enabled = false;
-            this.X4.Location = new System.Drawing.Point(310, 76);
-            this.X4.Margin = new System.Windows.Forms.Padding(0);
-            this.X4.Multiline = true;
-            this.X4.Name = "X4";
-            this.X4.Size = new System.Drawing.Size(22, 20);
-            this.X4.TabIndex = 287;
-            // 
-            // X3
-            // 
-            this.X3.BackColor = System.Drawing.Color.Black;
-            this.X3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.X3.Enabled = false;
-            this.X3.Location = new System.Drawing.Point(288, 76);
-            this.X3.Margin = new System.Windows.Forms.Padding(0);
-            this.X3.Multiline = true;
-            this.X3.Name = "X3";
-            this.X3.Size = new System.Drawing.Size(22, 20);
-            this.X3.TabIndex = 286;
-            // 
-            // Z2
-            // 
-            this.Z2.BackColor = System.Drawing.Color.Black;
-            this.Z2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Z2.Enabled = false;
-            this.Z2.Location = new System.Drawing.Point(266, 96);
-            this.Z2.Margin = new System.Windows.Forms.Padding(0);
-            this.Z2.Multiline = true;
-            this.Z2.Name = "Z2";
-            this.Z2.Size = new System.Drawing.Size(22, 20);
-            this.Z2.TabIndex = 293;
-            // 
-            // Z1
-            // 
-            this.Z1.BackColor = System.Drawing.Color.Black;
-            this.Z1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Z1.Enabled = false;
-            this.Z1.Location = new System.Drawing.Point(244, 96);
-            this.Z1.Margin = new System.Windows.Forms.Padding(0);
-            this.Z1.Multiline = true;
-            this.Z1.Name = "Z1";
-            this.Z1.Size = new System.Drawing.Size(22, 20);
-            this.Z1.TabIndex = 292;
-            // 
-            // Z4
-            // 
-            this.Z4.BackColor = System.Drawing.Color.Black;
-            this.Z4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Z4.Enabled = false;
-            this.Z4.Location = new System.Drawing.Point(310, 96);
-            this.Z4.Margin = new System.Windows.Forms.Padding(0);
-            this.Z4.Multiline = true;
-            this.Z4.Name = "Z4";
-            this.Z4.Size = new System.Drawing.Size(22, 20);
-            this.Z4.TabIndex = 291;
-            // 
-            // Z3
-            // 
-            this.Z3.BackColor = System.Drawing.Color.Black;
-            this.Z3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Z3.Enabled = false;
-            this.Z3.Location = new System.Drawing.Point(288, 96);
-            this.Z3.Margin = new System.Windows.Forms.Padding(0);
-            this.Z3.Multiline = true;
-            this.Z3.Name = "Z3";
-            this.Z3.Size = new System.Drawing.Size(22, 20);
-            this.Z3.TabIndex = 290;
-            // 
             // textBox54
             // 
             this.textBox54.BackColor = System.Drawing.Color.Black;
             this.textBox54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox54.Enabled = false;
-            this.textBox54.Location = new System.Drawing.Point(552, 196);
+            this.textBox54.Location = new System.Drawing.Point(594, 196);
             this.textBox54.Margin = new System.Windows.Forms.Padding(0);
             this.textBox54.Multiline = true;
             this.textBox54.Name = "textBox54";
@@ -2887,7 +2769,7 @@
             this.textBox52.BackColor = System.Drawing.Color.Black;
             this.textBox52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox52.Enabled = false;
-            this.textBox52.Location = new System.Drawing.Point(530, 196);
+            this.textBox52.Location = new System.Drawing.Point(572, 196);
             this.textBox52.Margin = new System.Windows.Forms.Padding(0);
             this.textBox52.Multiline = true;
             this.textBox52.Name = "textBox52";
@@ -2899,7 +2781,7 @@
             this.textBox51.BackColor = System.Drawing.Color.Black;
             this.textBox51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox51.Enabled = false;
-            this.textBox51.Location = new System.Drawing.Point(508, 196);
+            this.textBox51.Location = new System.Drawing.Point(550, 196);
             this.textBox51.Margin = new System.Windows.Forms.Padding(0);
             this.textBox51.Multiline = true;
             this.textBox51.Name = "textBox51";
@@ -2911,7 +2793,7 @@
             this.textBox48.BackColor = System.Drawing.Color.Black;
             this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox48.Enabled = false;
-            this.textBox48.Location = new System.Drawing.Point(486, 196);
+            this.textBox48.Location = new System.Drawing.Point(528, 196);
             this.textBox48.Margin = new System.Windows.Forms.Padding(0);
             this.textBox48.Multiline = true;
             this.textBox48.Name = "textBox48";
@@ -2923,7 +2805,7 @@
             this.textBox47.BackColor = System.Drawing.Color.Black;
             this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox47.Enabled = false;
-            this.textBox47.Location = new System.Drawing.Point(464, 196);
+            this.textBox47.Location = new System.Drawing.Point(506, 196);
             this.textBox47.Margin = new System.Windows.Forms.Padding(0);
             this.textBox47.Multiline = true;
             this.textBox47.Name = "textBox47";
@@ -2935,7 +2817,7 @@
             this.textBox46.BackColor = System.Drawing.Color.Black;
             this.textBox46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox46.Enabled = false;
-            this.textBox46.Location = new System.Drawing.Point(552, 156);
+            this.textBox46.Location = new System.Drawing.Point(594, 156);
             this.textBox46.Margin = new System.Windows.Forms.Padding(0);
             this.textBox46.Multiline = true;
             this.textBox46.Name = "textBox46";
@@ -2947,7 +2829,7 @@
             this.textBox37.BackColor = System.Drawing.Color.Black;
             this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox37.Enabled = false;
-            this.textBox37.Location = new System.Drawing.Point(464, 156);
+            this.textBox37.Location = new System.Drawing.Point(506, 156);
             this.textBox37.Margin = new System.Windows.Forms.Padding(0);
             this.textBox37.Multiline = true;
             this.textBox37.Name = "textBox37";
@@ -2959,7 +2841,7 @@
             this.textBox41.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox41.Enabled = false;
-            this.textBox41.Location = new System.Drawing.Point(442, 156);
+            this.textBox41.Location = new System.Drawing.Point(484, 156);
             this.textBox41.Margin = new System.Windows.Forms.Padding(0);
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
@@ -2971,7 +2853,7 @@
             this.textBox42.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox42.Enabled = false;
-            this.textBox42.Location = new System.Drawing.Point(442, 176);
+            this.textBox42.Location = new System.Drawing.Point(484, 176);
             this.textBox42.Margin = new System.Windows.Forms.Padding(0);
             this.textBox42.Multiline = true;
             this.textBox42.Name = "textBox42";
@@ -2983,7 +2865,7 @@
             this.textBox43.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox43.Enabled = false;
-            this.textBox43.Location = new System.Drawing.Point(442, 136);
+            this.textBox43.Location = new System.Drawing.Point(484, 136);
             this.textBox43.Margin = new System.Windows.Forms.Padding(0);
             this.textBox43.Multiline = true;
             this.textBox43.Name = "textBox43";
@@ -2995,7 +2877,7 @@
             this.textBox44.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox44.Enabled = false;
-            this.textBox44.Location = new System.Drawing.Point(442, 196);
+            this.textBox44.Location = new System.Drawing.Point(484, 196);
             this.textBox44.Margin = new System.Windows.Forms.Padding(0);
             this.textBox44.Multiline = true;
             this.textBox44.Name = "textBox44";
@@ -3007,7 +2889,7 @@
             this.textBox45.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox45.Enabled = false;
-            this.textBox45.Location = new System.Drawing.Point(442, 216);
+            this.textBox45.Location = new System.Drawing.Point(484, 216);
             this.textBox45.Margin = new System.Windows.Forms.Padding(0);
             this.textBox45.Multiline = true;
             this.textBox45.Name = "textBox45";
@@ -3019,7 +2901,7 @@
             this.textBox40.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox40.Enabled = false;
-            this.textBox40.Location = new System.Drawing.Point(464, 216);
+            this.textBox40.Location = new System.Drawing.Point(506, 216);
             this.textBox40.Margin = new System.Windows.Forms.Padding(0);
             this.textBox40.Multiline = true;
             this.textBox40.Name = "textBox40";
@@ -3031,29 +2913,19 @@
             this.textBox39.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox39.Enabled = false;
-            this.textBox39.Location = new System.Drawing.Point(464, 136);
+            this.textBox39.Location = new System.Drawing.Point(506, 136);
             this.textBox39.Margin = new System.Windows.Forms.Padding(0);
             this.textBox39.Multiline = true;
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(22, 20);
             this.textBox39.TabIndex = 413;
             // 
-            // LBL_punteggio
-            // 
-            this.LBL_punteggio.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LBL_punteggio.ForeColor = System.Drawing.Color.White;
-            this.LBL_punteggio.Location = new System.Drawing.Point(464, 176);
-            this.LBL_punteggio.Name = "LBL_punteggio";
-            this.LBL_punteggio.Size = new System.Drawing.Size(110, 20);
-            this.LBL_punteggio.TabIndex = 412;
-            this.LBL_punteggio.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(483, 156);
+            this.label2.Location = new System.Drawing.Point(525, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 411;
@@ -3065,7 +2937,7 @@
             this.textBox38.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox38.Enabled = false;
-            this.textBox38.Location = new System.Drawing.Point(574, 156);
+            this.textBox38.Location = new System.Drawing.Point(616, 156);
             this.textBox38.Margin = new System.Windows.Forms.Padding(0);
             this.textBox38.Multiline = true;
             this.textBox38.Name = "textBox38";
@@ -3077,7 +2949,7 @@
             this.textBox53.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox53.Enabled = false;
-            this.textBox53.Location = new System.Drawing.Point(574, 176);
+            this.textBox53.Location = new System.Drawing.Point(616, 176);
             this.textBox53.Margin = new System.Windows.Forms.Padding(0);
             this.textBox53.Multiline = true;
             this.textBox53.Name = "textBox53";
@@ -3089,7 +2961,7 @@
             this.textBox55.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox55.Enabled = false;
-            this.textBox55.Location = new System.Drawing.Point(574, 196);
+            this.textBox55.Location = new System.Drawing.Point(616, 196);
             this.textBox55.Margin = new System.Windows.Forms.Padding(0);
             this.textBox55.Multiline = true;
             this.textBox55.Name = "textBox55";
@@ -3101,7 +2973,7 @@
             this.textBox56.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox56.Enabled = false;
-            this.textBox56.Location = new System.Drawing.Point(574, 216);
+            this.textBox56.Location = new System.Drawing.Point(616, 216);
             this.textBox56.Margin = new System.Windows.Forms.Padding(0);
             this.textBox56.Multiline = true;
             this.textBox56.Name = "textBox56";
@@ -3113,7 +2985,7 @@
             this.textBox57.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox57.Enabled = false;
-            this.textBox57.Location = new System.Drawing.Point(552, 136);
+            this.textBox57.Location = new System.Drawing.Point(594, 136);
             this.textBox57.Margin = new System.Windows.Forms.Padding(0);
             this.textBox57.Multiline = true;
             this.textBox57.Name = "textBox57";
@@ -3125,7 +2997,7 @@
             this.textBox58.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox58.Enabled = false;
-            this.textBox58.Location = new System.Drawing.Point(552, 216);
+            this.textBox58.Location = new System.Drawing.Point(594, 216);
             this.textBox58.Margin = new System.Windows.Forms.Padding(0);
             this.textBox58.Multiline = true;
             this.textBox58.Name = "textBox58";
@@ -3137,7 +3009,7 @@
             this.textBox59.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox59.Enabled = false;
-            this.textBox59.Location = new System.Drawing.Point(574, 136);
+            this.textBox59.Location = new System.Drawing.Point(616, 136);
             this.textBox59.Margin = new System.Windows.Forms.Padding(0);
             this.textBox59.Multiline = true;
             this.textBox59.Name = "textBox59";
@@ -3149,7 +3021,7 @@
             this.textBox62.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox62.Enabled = false;
-            this.textBox62.Location = new System.Drawing.Point(508, 136);
+            this.textBox62.Location = new System.Drawing.Point(550, 136);
             this.textBox62.Margin = new System.Windows.Forms.Padding(0);
             this.textBox62.Multiline = true;
             this.textBox62.Name = "textBox62";
@@ -3161,7 +3033,7 @@
             this.textBox63.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox63.Enabled = false;
-            this.textBox63.Location = new System.Drawing.Point(486, 136);
+            this.textBox63.Location = new System.Drawing.Point(528, 136);
             this.textBox63.Margin = new System.Windows.Forms.Padding(0);
             this.textBox63.Multiline = true;
             this.textBox63.Name = "textBox63";
@@ -3173,7 +3045,7 @@
             this.textBox64.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox64.Enabled = false;
-            this.textBox64.Location = new System.Drawing.Point(530, 136);
+            this.textBox64.Location = new System.Drawing.Point(572, 136);
             this.textBox64.Margin = new System.Windows.Forms.Padding(0);
             this.textBox64.Multiline = true;
             this.textBox64.Name = "textBox64";
@@ -3185,7 +3057,7 @@
             this.textBox68.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox68.Enabled = false;
-            this.textBox68.Location = new System.Drawing.Point(508, 216);
+            this.textBox68.Location = new System.Drawing.Point(550, 216);
             this.textBox68.Margin = new System.Windows.Forms.Padding(0);
             this.textBox68.Multiline = true;
             this.textBox68.Name = "textBox68";
@@ -3197,7 +3069,7 @@
             this.textBox69.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox69.Enabled = false;
-            this.textBox69.Location = new System.Drawing.Point(486, 216);
+            this.textBox69.Location = new System.Drawing.Point(528, 216);
             this.textBox69.Margin = new System.Windows.Forms.Padding(0);
             this.textBox69.Multiline = true;
             this.textBox69.Name = "textBox69";
@@ -3209,7 +3081,7 @@
             this.textBox70.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox70.Enabled = false;
-            this.textBox70.Location = new System.Drawing.Point(530, 216);
+            this.textBox70.Location = new System.Drawing.Point(572, 216);
             this.textBox70.Margin = new System.Windows.Forms.Padding(0);
             this.textBox70.Multiline = true;
             this.textBox70.Name = "textBox70";
@@ -3221,7 +3093,7 @@
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(486, 374);
+            this.label1.Location = new System.Drawing.Point(528, 374);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 20);
             this.label1.TabIndex = 459;
@@ -3232,7 +3104,7 @@
             this.textBox50.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox50.Enabled = false;
-            this.textBox50.Location = new System.Drawing.Point(464, 374);
+            this.textBox50.Location = new System.Drawing.Point(506, 374);
             this.textBox50.Margin = new System.Windows.Forms.Padding(0);
             this.textBox50.Multiline = true;
             this.textBox50.Name = "textBox50";
@@ -3244,187 +3116,31 @@
             this.textBox49.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox49.Enabled = false;
-            this.textBox49.Location = new System.Drawing.Point(574, 374);
+            this.textBox49.Location = new System.Drawing.Point(616, 374);
             this.textBox49.Margin = new System.Windows.Forms.Padding(0);
             this.textBox49.Multiline = true;
             this.textBox49.Name = "textBox49";
             this.textBox49.Size = new System.Drawing.Size(22, 20);
             this.textBox49.TabIndex = 457;
             // 
-            // PS10
-            // 
-            this.PS10.BackColor = System.Drawing.Color.Black;
-            this.PS10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS10.Enabled = false;
-            this.PS10.Location = new System.Drawing.Point(508, 434);
-            this.PS10.Margin = new System.Windows.Forms.Padding(0);
-            this.PS10.Multiline = true;
-            this.PS10.Name = "PS10";
-            this.PS10.Size = new System.Drawing.Size(22, 20);
-            this.PS10.TabIndex = 456;
-            // 
-            // PS9
-            // 
-            this.PS9.BackColor = System.Drawing.Color.Black;
-            this.PS9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS9.Enabled = false;
-            this.PS9.Location = new System.Drawing.Point(486, 434);
-            this.PS9.Margin = new System.Windows.Forms.Padding(0);
-            this.PS9.Multiline = true;
-            this.PS9.Name = "PS9";
-            this.PS9.Size = new System.Drawing.Size(22, 20);
-            this.PS9.TabIndex = 455;
-            // 
-            // PS12
-            // 
-            this.PS12.BackColor = System.Drawing.Color.Black;
-            this.PS12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS12.Enabled = false;
-            this.PS12.Location = new System.Drawing.Point(552, 434);
-            this.PS12.Margin = new System.Windows.Forms.Padding(0);
-            this.PS12.Multiline = true;
-            this.PS12.Name = "PS12";
-            this.PS12.Size = new System.Drawing.Size(22, 20);
-            this.PS12.TabIndex = 454;
-            // 
-            // PS11
-            // 
-            this.PS11.BackColor = System.Drawing.Color.Black;
-            this.PS11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS11.Enabled = false;
-            this.PS11.Location = new System.Drawing.Point(530, 434);
-            this.PS11.Margin = new System.Windows.Forms.Padding(0);
-            this.PS11.Multiline = true;
-            this.PS11.Name = "PS11";
-            this.PS11.Size = new System.Drawing.Size(22, 20);
-            this.PS11.TabIndex = 453;
-            // 
-            // PS6
-            // 
-            this.PS6.BackColor = System.Drawing.Color.Black;
-            this.PS6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS6.Enabled = false;
-            this.PS6.Location = new System.Drawing.Point(508, 414);
-            this.PS6.Margin = new System.Windows.Forms.Padding(0);
-            this.PS6.Multiline = true;
-            this.PS6.Name = "PS6";
-            this.PS6.Size = new System.Drawing.Size(22, 20);
-            this.PS6.TabIndex = 452;
-            // 
-            // PS5
-            // 
-            this.PS5.BackColor = System.Drawing.Color.Black;
-            this.PS5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS5.Enabled = false;
-            this.PS5.Location = new System.Drawing.Point(486, 414);
-            this.PS5.Margin = new System.Windows.Forms.Padding(0);
-            this.PS5.Multiline = true;
-            this.PS5.Name = "PS5";
-            this.PS5.Size = new System.Drawing.Size(22, 20);
-            this.PS5.TabIndex = 451;
-            // 
-            // PS8
-            // 
-            this.PS8.BackColor = System.Drawing.Color.Black;
-            this.PS8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS8.Enabled = false;
-            this.PS8.Location = new System.Drawing.Point(552, 414);
-            this.PS8.Margin = new System.Windows.Forms.Padding(0);
-            this.PS8.Multiline = true;
-            this.PS8.Name = "PS8";
-            this.PS8.Size = new System.Drawing.Size(22, 20);
-            this.PS8.TabIndex = 450;
-            // 
-            // PS7
-            // 
-            this.PS7.BackColor = System.Drawing.Color.Black;
-            this.PS7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS7.Enabled = false;
-            this.PS7.Location = new System.Drawing.Point(530, 414);
-            this.PS7.Margin = new System.Windows.Forms.Padding(0);
-            this.PS7.Multiline = true;
-            this.PS7.Name = "PS7";
-            this.PS7.Size = new System.Drawing.Size(22, 20);
-            this.PS7.TabIndex = 449;
-            // 
-            // PS2
-            // 
-            this.PS2.BackColor = System.Drawing.Color.Black;
-            this.PS2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS2.Enabled = false;
-            this.PS2.Location = new System.Drawing.Point(508, 394);
-            this.PS2.Margin = new System.Windows.Forms.Padding(0);
-            this.PS2.Multiline = true;
-            this.PS2.Name = "PS2";
-            this.PS2.Size = new System.Drawing.Size(22, 20);
-            this.PS2.TabIndex = 448;
-            // 
-            // PS1
-            // 
-            this.PS1.BackColor = System.Drawing.Color.Black;
-            this.PS1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS1.Enabled = false;
-            this.PS1.Location = new System.Drawing.Point(486, 394);
-            this.PS1.Margin = new System.Windows.Forms.Padding(0);
-            this.PS1.Multiline = true;
-            this.PS1.Name = "PS1";
-            this.PS1.Size = new System.Drawing.Size(22, 20);
-            this.PS1.TabIndex = 447;
-            // 
-            // PS4
-            // 
-            this.PS4.BackColor = System.Drawing.Color.Black;
-            this.PS4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS4.Enabled = false;
-            this.PS4.Location = new System.Drawing.Point(552, 394);
-            this.PS4.Margin = new System.Windows.Forms.Padding(0);
-            this.PS4.Multiline = true;
-            this.PS4.Name = "PS4";
-            this.PS4.Size = new System.Drawing.Size(22, 20);
-            this.PS4.TabIndex = 446;
-            // 
-            // PS3
-            // 
-            this.PS3.BackColor = System.Drawing.Color.Black;
-            this.PS3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PS3.Enabled = false;
-            this.PS3.Location = new System.Drawing.Point(530, 394);
-            this.PS3.Margin = new System.Windows.Forms.Padding(0);
-            this.PS3.Multiline = true;
-            this.PS3.Name = "PS3";
-            this.PS3.Size = new System.Drawing.Size(22, 20);
-            this.PS3.TabIndex = 445;
-            // 
             // textBox34
             // 
             this.textBox34.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox34.Enabled = false;
-            this.textBox34.Location = new System.Drawing.Point(574, 394);
+            this.textBox34.Location = new System.Drawing.Point(616, 394);
             this.textBox34.Margin = new System.Windows.Forms.Padding(0);
             this.textBox34.Multiline = true;
             this.textBox34.Name = "textBox34";
             this.textBox34.Size = new System.Drawing.Size(22, 20);
             this.textBox34.TabIndex = 444;
             // 
-            // textBox35
-            // 
-            this.textBox35.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox35.Enabled = false;
-            this.textBox35.Location = new System.Drawing.Point(574, 434);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(22, 20);
-            this.textBox35.TabIndex = 443;
-            // 
             // textBox36
             // 
             this.textBox36.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox36.Enabled = false;
-            this.textBox36.Location = new System.Drawing.Point(574, 414);
+            this.textBox36.Location = new System.Drawing.Point(616, 414);
             this.textBox36.Margin = new System.Windows.Forms.Padding(0);
             this.textBox36.Multiline = true;
             this.textBox36.Name = "textBox36";
@@ -3436,7 +3152,7 @@
             this.textBox33.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox33.Enabled = false;
-            this.textBox33.Location = new System.Drawing.Point(574, 454);
+            this.textBox33.Location = new System.Drawing.Point(616, 434);
             this.textBox33.Margin = new System.Windows.Forms.Padding(0);
             this.textBox33.Multiline = true;
             this.textBox33.Name = "textBox33";
@@ -3448,7 +3164,7 @@
             this.textBox26.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox26.Enabled = false;
-            this.textBox26.Location = new System.Drawing.Point(552, 354);
+            this.textBox26.Location = new System.Drawing.Point(594, 354);
             this.textBox26.Margin = new System.Windows.Forms.Padding(0);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
@@ -3460,7 +3176,7 @@
             this.textBox31.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox31.Enabled = false;
-            this.textBox31.Location = new System.Drawing.Point(552, 454);
+            this.textBox31.Location = new System.Drawing.Point(594, 434);
             this.textBox31.Margin = new System.Windows.Forms.Padding(0);
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
@@ -3472,7 +3188,7 @@
             this.textBox32.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox32.Enabled = false;
-            this.textBox32.Location = new System.Drawing.Point(574, 354);
+            this.textBox32.Location = new System.Drawing.Point(616, 354);
             this.textBox32.Margin = new System.Windows.Forms.Padding(0);
             this.textBox32.Multiline = true;
             this.textBox32.Name = "textBox32";
@@ -3484,7 +3200,7 @@
             this.textBox25.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox25.Enabled = false;
-            this.textBox25.Location = new System.Drawing.Point(464, 394);
+            this.textBox25.Location = new System.Drawing.Point(506, 394);
             this.textBox25.Margin = new System.Windows.Forms.Padding(0);
             this.textBox25.Multiline = true;
             this.textBox25.Name = "textBox25";
@@ -3496,7 +3212,7 @@
             this.textBox27.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox27.Enabled = false;
-            this.textBox27.Location = new System.Drawing.Point(464, 354);
+            this.textBox27.Location = new System.Drawing.Point(506, 354);
             this.textBox27.Margin = new System.Windows.Forms.Padding(0);
             this.textBox27.Multiline = true;
             this.textBox27.Name = "textBox27";
@@ -3508,7 +3224,7 @@
             this.textBox28.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox28.Enabled = false;
-            this.textBox28.Location = new System.Drawing.Point(508, 354);
+            this.textBox28.Location = new System.Drawing.Point(550, 354);
             this.textBox28.Margin = new System.Windows.Forms.Padding(0);
             this.textBox28.Multiline = true;
             this.textBox28.Name = "textBox28";
@@ -3520,7 +3236,7 @@
             this.textBox29.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox29.Enabled = false;
-            this.textBox29.Location = new System.Drawing.Point(486, 354);
+            this.textBox29.Location = new System.Drawing.Point(528, 354);
             this.textBox29.Margin = new System.Windows.Forms.Padding(0);
             this.textBox29.Multiline = true;
             this.textBox29.Name = "textBox29";
@@ -3532,31 +3248,19 @@
             this.textBox30.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox30.Enabled = false;
-            this.textBox30.Location = new System.Drawing.Point(530, 354);
+            this.textBox30.Location = new System.Drawing.Point(572, 354);
             this.textBox30.Margin = new System.Windows.Forms.Padding(0);
             this.textBox30.Multiline = true;
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(22, 20);
             this.textBox30.TabIndex = 433;
             // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox19.Enabled = false;
-            this.textBox19.Location = new System.Drawing.Point(464, 434);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(22, 20);
-            this.textBox19.TabIndex = 432;
-            // 
             // textBox20
             // 
             this.textBox20.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox20.Enabled = false;
-            this.textBox20.Location = new System.Drawing.Point(464, 414);
+            this.textBox20.Location = new System.Drawing.Point(506, 414);
             this.textBox20.Margin = new System.Windows.Forms.Padding(0);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
@@ -3568,7 +3272,7 @@
             this.textBox21.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox21.Enabled = false;
-            this.textBox21.Location = new System.Drawing.Point(464, 454);
+            this.textBox21.Location = new System.Drawing.Point(506, 434);
             this.textBox21.Margin = new System.Windows.Forms.Padding(0);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
@@ -3580,7 +3284,7 @@
             this.textBox22.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox22.Enabled = false;
-            this.textBox22.Location = new System.Drawing.Point(508, 454);
+            this.textBox22.Location = new System.Drawing.Point(550, 434);
             this.textBox22.Margin = new System.Windows.Forms.Padding(0);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
@@ -3592,7 +3296,7 @@
             this.textBox23.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox23.Enabled = false;
-            this.textBox23.Location = new System.Drawing.Point(486, 454);
+            this.textBox23.Location = new System.Drawing.Point(528, 434);
             this.textBox23.Margin = new System.Windows.Forms.Padding(0);
             this.textBox23.Multiline = true;
             this.textBox23.Name = "textBox23";
@@ -3604,7 +3308,7 @@
             this.textBox24.BackColor = System.Drawing.Color.DarkOrchid;
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox24.Enabled = false;
-            this.textBox24.Location = new System.Drawing.Point(530, 454);
+            this.textBox24.Location = new System.Drawing.Point(572, 434);
             this.textBox24.Margin = new System.Windows.Forms.Padding(0);
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
@@ -4379,117 +4083,126 @@
             this.textBox10.Size = new System.Drawing.Size(22, 20);
             this.textBox10.TabIndex = 514;
             // 
-            // textBox15
+            // LBL_punteggio
             // 
-            this.textBox15.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Enabled = false;
-            this.textBox15.Location = new System.Drawing.Point(332, 96);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(22, 20);
-            this.textBox15.TabIndex = 525;
+            this.LBL_punteggio.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LBL_punteggio.ForeColor = System.Drawing.Color.White;
+            this.LBL_punteggio.Location = new System.Drawing.Point(506, 176);
+            this.LBL_punteggio.Name = "LBL_punteggio";
+            this.LBL_punteggio.Size = new System.Drawing.Size(110, 20);
+            this.LBL_punteggio.TabIndex = 412;
+            this.LBL_punteggio.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // textBox16
+            // Z2
             // 
-            this.textBox16.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Enabled = false;
-            this.textBox16.Location = new System.Drawing.Point(332, 76);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(22, 20);
-            this.textBox16.TabIndex = 524;
+            this.Z2.BackColor = System.Drawing.Color.Black;
+            this.Z2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z2.Enabled = false;
+            this.Z2.Location = new System.Drawing.Point(550, 414);
+            this.Z2.Margin = new System.Windows.Forms.Padding(0);
+            this.Z2.Multiline = true;
+            this.Z2.Name = "Z2";
+            this.Z2.Size = new System.Drawing.Size(22, 20);
+            this.Z2.TabIndex = 531;
             // 
-            // textBox11
+            // Z1
             // 
-            this.textBox11.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(310, 56);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(22, 20);
-            this.textBox11.TabIndex = 529;
+            this.Z1.BackColor = System.Drawing.Color.Black;
+            this.Z1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z1.Enabled = false;
+            this.Z1.Location = new System.Drawing.Point(528, 414);
+            this.Z1.Margin = new System.Windows.Forms.Padding(0);
+            this.Z1.Multiline = true;
+            this.Z1.Name = "Z1";
+            this.Z1.Size = new System.Drawing.Size(22, 20);
+            this.Z1.TabIndex = 530;
             // 
-            // textBox12
+            // Z4
             // 
-            this.textBox12.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(288, 56);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(22, 20);
-            this.textBox12.TabIndex = 528;
+            this.Z4.BackColor = System.Drawing.Color.Black;
+            this.Z4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z4.Enabled = false;
+            this.Z4.Location = new System.Drawing.Point(594, 414);
+            this.Z4.Margin = new System.Windows.Forms.Padding(0);
+            this.Z4.Multiline = true;
+            this.Z4.Name = "Z4";
+            this.Z4.Size = new System.Drawing.Size(22, 20);
+            this.Z4.TabIndex = 529;
             // 
-            // textBox13
+            // Z3
             // 
-            this.textBox13.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(266, 56);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(22, 20);
-            this.textBox13.TabIndex = 527;
+            this.Z3.BackColor = System.Drawing.Color.Black;
+            this.Z3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Z3.Enabled = false;
+            this.Z3.Location = new System.Drawing.Point(572, 414);
+            this.Z3.Margin = new System.Windows.Forms.Padding(0);
+            this.Z3.Multiline = true;
+            this.Z3.Name = "Z3";
+            this.Z3.Size = new System.Drawing.Size(22, 20);
+            this.Z3.TabIndex = 528;
             // 
-            // textBox14
+            // X2
             // 
-            this.textBox14.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Enabled = false;
-            this.textBox14.Location = new System.Drawing.Point(244, 56);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(22, 20);
-            this.textBox14.TabIndex = 526;
+            this.X2.BackColor = System.Drawing.Color.Black;
+            this.X2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X2.Enabled = false;
+            this.X2.Location = new System.Drawing.Point(550, 394);
+            this.X2.Margin = new System.Windows.Forms.Padding(0);
+            this.X2.Multiline = true;
+            this.X2.Name = "X2";
+            this.X2.Size = new System.Drawing.Size(22, 20);
+            this.X2.TabIndex = 527;
             // 
-            // textBox17
+            // X1
             // 
-            this.textBox17.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Enabled = false;
-            this.textBox17.Location = new System.Drawing.Point(222, 96);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(22, 20);
-            this.textBox17.TabIndex = 531;
+            this.X1.BackColor = System.Drawing.Color.Black;
+            this.X1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X1.Enabled = false;
+            this.X1.Location = new System.Drawing.Point(528, 394);
+            this.X1.Margin = new System.Windows.Forms.Padding(0);
+            this.X1.Multiline = true;
+            this.X1.Name = "X1";
+            this.X1.Size = new System.Drawing.Size(22, 20);
+            this.X1.TabIndex = 526;
             // 
-            // textBox18
+            // X4
             // 
-            this.textBox18.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Enabled = false;
-            this.textBox18.Location = new System.Drawing.Point(222, 76);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(22, 20);
-            this.textBox18.TabIndex = 530;
+            this.X4.BackColor = System.Drawing.Color.Black;
+            this.X4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X4.Enabled = false;
+            this.X4.Location = new System.Drawing.Point(594, 394);
+            this.X4.Margin = new System.Windows.Forms.Padding(0);
+            this.X4.Multiline = true;
+            this.X4.Name = "X4";
+            this.X4.Size = new System.Drawing.Size(22, 20);
+            this.X4.TabIndex = 525;
+            // 
+            // X3
+            // 
+            this.X3.BackColor = System.Drawing.Color.Black;
+            this.X3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.X3.Enabled = false;
+            this.X3.Location = new System.Drawing.Point(572, 394);
+            this.X3.Margin = new System.Windows.Forms.Padding(0);
+            this.X3.Multiline = true;
+            this.X3.Name = "X3";
+            this.X3.Size = new System.Drawing.Size(22, 20);
+            this.X3.TabIndex = 524;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProgettoFineAnno.Properties.Resources.maometto;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 668);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.Z2);
+            this.Controls.Add(this.Z1);
+            this.Controls.Add(this.Z4);
+            this.Controls.Add(this.Z3);
+            this.Controls.Add(this.X2);
+            this.Controls.Add(this.X1);
+            this.Controls.Add(this.X4);
+            this.Controls.Add(this.X3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox3);
@@ -4557,20 +4270,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox50);
             this.Controls.Add(this.textBox49);
-            this.Controls.Add(this.PS10);
-            this.Controls.Add(this.PS9);
-            this.Controls.Add(this.PS12);
-            this.Controls.Add(this.PS11);
-            this.Controls.Add(this.PS6);
-            this.Controls.Add(this.PS5);
-            this.Controls.Add(this.PS8);
-            this.Controls.Add(this.PS7);
-            this.Controls.Add(this.PS2);
-            this.Controls.Add(this.PS1);
-            this.Controls.Add(this.PS4);
-            this.Controls.Add(this.PS3);
             this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
             this.Controls.Add(this.textBox36);
             this.Controls.Add(this.textBox33);
             this.Controls.Add(this.textBox26);
@@ -4581,7 +4281,6 @@
             this.Controls.Add(this.textBox28);
             this.Controls.Add(this.textBox29);
             this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.textBox22);
@@ -4616,14 +4315,6 @@
             this.Controls.Add(this.textBox68);
             this.Controls.Add(this.textBox69);
             this.Controls.Add(this.textBox70);
-            this.Controls.Add(this.Z2);
-            this.Controls.Add(this.Z1);
-            this.Controls.Add(this.Z4);
-            this.Controls.Add(this.Z3);
-            this.Controls.Add(this.X2);
-            this.Controls.Add(this.X1);
-            this.Controls.Add(this.X4);
-            this.Controls.Add(this.X3);
             this.Controls.Add(this.B20);
             this.Controls.Add(this.A20);
             this.Controls.Add(this.H20);
@@ -5034,14 +4725,6 @@
         private System.Windows.Forms.TextBox I20;
         private System.Windows.Forms.TextBox D20;
         private System.Windows.Forms.TextBox C20;
-        private System.Windows.Forms.TextBox X2;
-        private System.Windows.Forms.TextBox X1;
-        private System.Windows.Forms.TextBox X4;
-        private System.Windows.Forms.TextBox X3;
-        private System.Windows.Forms.TextBox Z2;
-        private System.Windows.Forms.TextBox Z1;
-        private System.Windows.Forms.TextBox Z4;
-        private System.Windows.Forms.TextBox Z3;
         private System.Windows.Forms.TextBox textBox54;
         private System.Windows.Forms.TextBox textBox52;
         private System.Windows.Forms.TextBox textBox51;
@@ -5056,7 +4739,6 @@
         private System.Windows.Forms.TextBox textBox45;
         private System.Windows.Forms.TextBox textBox40;
         private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.Label LBL_punteggio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.TextBox textBox53;
@@ -5074,20 +4756,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox50;
         private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox PS10;
-        private System.Windows.Forms.TextBox PS9;
-        private System.Windows.Forms.TextBox PS12;
-        private System.Windows.Forms.TextBox PS11;
-        private System.Windows.Forms.TextBox PS6;
-        private System.Windows.Forms.TextBox PS5;
-        private System.Windows.Forms.TextBox PS8;
-        private System.Windows.Forms.TextBox PS7;
-        private System.Windows.Forms.TextBox PS2;
-        private System.Windows.Forms.TextBox PS1;
-        private System.Windows.Forms.TextBox PS4;
-        private System.Windows.Forms.TextBox PS3;
         private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
         private System.Windows.Forms.TextBox textBox36;
         private System.Windows.Forms.TextBox textBox33;
         private System.Windows.Forms.TextBox textBox26;
@@ -5098,7 +4767,6 @@
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox textBox22;
@@ -5168,15 +4836,16 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Timer timer_screenupdate;
+        private System.Windows.Forms.Label LBL_punteggio;
+        private System.Windows.Forms.TextBox Z2;
+        private System.Windows.Forms.TextBox Z1;
+        private System.Windows.Forms.TextBox Z4;
+        private System.Windows.Forms.TextBox Z3;
+        private System.Windows.Forms.TextBox X2;
+        private System.Windows.Forms.TextBox X1;
+        private System.Windows.Forms.TextBox X4;
+        private System.Windows.Forms.TextBox X3;
     }
 }
 
