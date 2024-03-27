@@ -118,40 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="galassia3-min-min_11zon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3-min-min_11zon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3-min" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3-min.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maometto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maometto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3redux3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3redux3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3redux2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3redux2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3redux104" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3redux104.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3-min-min" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3-min-min.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="galassia3redux" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\galassia3redux.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="galassia3redux1041" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galassia3redux1041.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
