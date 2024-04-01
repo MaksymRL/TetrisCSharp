@@ -29,6 +29,7 @@ namespace ProgettoFineAnno
             InitializeComponent();
             timer_screenupdate.Interval = 1000;
             timer_screenupdate.Tick += Timer_Tick;
+            this.KeyDown += Form1_KeyDown;
             timer_screenupdate.Start();
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
@@ -41,17 +42,37 @@ namespace ProgettoFineAnno
 
             #region PezzoScendi
 
+            int[] stop = { 19, 39, 59, 79, 99, 119, 139, 159, 179, 199 };
+            bool contienevalori = stop.Any(value => PosPezzo.Contains(value));
+
+
             if (conta == 1)
             {
-                Lib.Scendi(eleMatrice, PosPezzo, Pezzo);
+
+                bool stopPezzo = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo);
+                if (contienevalori == false && stopPezzo == false)
+                {
+
+                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo);
+
+
+                    
+                }
+                else
+                {
+                    conta = 0;
+                }
             }
+
+
+
 
             if (conta == 0)
             {
                 Pezzo = Lib.GeneraPezzo(eleMatrice, PosPezzo);
                 conta++;
             }
-            #endregion PezzoRandom
+            #endregion PezzoScendi
 
         }
 
@@ -118,6 +139,38 @@ namespace ProgettoFineAnno
 
             
 
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (conta == 1)
+            {
+                if (e.KeyCode == Keys.Left && PosPezzo[0] - 19 > 0)
+                {
+                    bool QualcosaSinistra = Lib.QualcosaSinistra(eleMatrice, PosPezzo, Pezzo);
+                    if (QualcosaSinistra == false)
+                    {
+                        Lib.MuoviASinistra(eleMatrice, PosPezzo, Pezzo);
+                    }
+                }
+                else if (e.KeyCode == Keys.Right && PosPezzo[3] + 19 < 199)
+                {
+                    bool QualcosaDestra = Lib.QualcosaDestra(eleMatrice, PosPezzo, Pezzo);
+                    if (QualcosaDestra == false)
+                    {
+                        Lib.MuoviADestra(eleMatrice, PosPezzo, Pezzo);
+                    }
+
+                }
+                else if (e.KeyCode == Keys.Up)
+                {
+
+                }
+                else if (e.KeyCode == Keys.Down)
+                {
+                    timer_screenupdate.Interval = 300;
+                }
+            }
         }
     }
 }
