@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,11 +34,11 @@ namespace TetrisFunzioni
 
     internal class Lib
     {
-        public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni)
+        public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni, ref int Rotazione)
         {
             Random random = new Random();
-            int randomNumero = random.Next(6);
-            //int randomNumero = 0;
+            //int randomNumero = random.Next(6);
+            int randomNumero = 0;
             int[] posizioni = { 60, 61, 80, 81, 100, 101, 120, 121 };
             switch (randomNumero)
             {
@@ -54,6 +55,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[2];
                     elePosizioni[2] = posizioni[4];
                     elePosizioni[3] = posizioni[6];
+                    Rotazione = 0;
                     return (int)Pezzi.IBlock;
                 case 1:
                     ele[80].Casella.BackColor = Color.Blue;
@@ -68,6 +70,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[3];
                     elePosizioni[2] = posizioni[5];
                     elePosizioni[3] = posizioni[7];
+                    Rotazione = 0;
                     return (int)Pezzi.JBlock;
                 case 2:
                     ele[81].Casella.BackColor = Color.Gold;
@@ -82,6 +85,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[5];
                     elePosizioni[2] = posizioni[6];
                     elePosizioni[3] = posizioni[7];
+                    Rotazione = 0;
                     return (int)Pezzi.LBlock;
                 case 3:
                     ele[80].Casella.BackColor = Color.Yellow;
@@ -96,6 +100,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[3];
                     elePosizioni[2] = posizioni[4];
                     elePosizioni[3] = posizioni[5];
+                    Rotazione = 0;
                     return (int)Pezzi.OBlock;
                 case 4:
                     ele[81].Casella.BackColor = Color.LightGreen;
@@ -110,6 +115,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[4];
                     elePosizioni[2] = posizioni[5];
                     elePosizioni[3] = posizioni[6];
+                    Rotazione = 0;
                     return (int)Pezzi.SBlock;
                 case 5:
                     ele[81].Casella.BackColor = Color.Purple;
@@ -124,6 +130,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[4];
                     elePosizioni[2] = posizioni[5];
                     elePosizioni[3] = posizioni[7];
+                    Rotazione = 0;
                     return (int)Pezzi.TBlock;
                 case 6:
                     ele[80].Casella.BackColor = Color.Red;
@@ -138,6 +145,7 @@ namespace TetrisFunzioni
                     elePosizioni[1] = posizioni[4];
                     elePosizioni[2] = posizioni[5];
                     elePosizioni[3] = posizioni[7];
+                    Rotazione = 0;
                     return (int)Pezzi.ZBlock;
             }
             return -1;
@@ -557,11 +565,19 @@ namespace TetrisFunzioni
                 {
                     case 0:
                         if (x != 1 && x != 2 && x != 3)
+                        {
                             ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + 20;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + 20;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + 20;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
                         break;
                     case 1:
                         if (x != 2 && x != 3)
@@ -663,6 +679,169 @@ namespace TetrisFunzioni
                 }
 
             }
+        }
+
+        public static int RotazioneIBlock(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        {
+            int PosPezzoQuale = 58;
+            switch (Rotazione)
+            {
+                case 0:
+                    for (int x = 0; x < 4; x++)
+                    {
+
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+
+                        PosPezzoQuale = PosPezzoQuale - 19;
+                    }
+                    return 90;
+                case 90:
+                    return 180;
+                case 180:
+                    return 270;
+                case 270:
+                    return 0;
+            }
+            return -1;
+        }
+        public static int RotazioneJBlock(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        {
+            int PosPezzoQuale = 58;
+            switch (Rotazione)
+            {
+                case 0:
+                    for (int x = 0; x < 4; x++)
+                    {
+
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+
+                        PosPezzoQuale = PosPezzoQuale - 19;
+                    }
+                    return 90;
+                case 90:
+                    return 180;
+                case 180:
+                    return 270;
+                case 270:
+                    return 0;
+            }
+            return -1;
+        }
+        public static int RotazioneLBlock(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        {
+            int PosPezzoQuale = 58;
+            switch (Rotazione)
+            {
+                case 0:
+                    for (int x = 0; x < 4; x++)
+                    {
+
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+
+                        PosPezzoQuale = PosPezzoQuale - 19;
+                    }
+                    return 90;
+                case 90:
+                    return 180;
+                case 180:
+                    return 270;
+                case 270:
+                    return 0;
+            }
+            return -1;
+        }
+        public static int RotazioneSBlock(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        {
+            int PosPezzoQuale = 58;
+            switch (Rotazione)
+            {
+                case 0:
+                    for (int x = 0; x < 4; x++)
+                    {
+
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+
+                        PosPezzoQuale = PosPezzoQuale - 19;
+                    }
+                    return 90;
+                case 90:
+                    return 180;
+                case 180:
+                    return 270;
+                case 270:
+                    return 0;
+            }
+            return -1;
+        }
+        public static int RotazioneTBlock(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        {
+            int PosPezzoQuale = 58;
+            switch (Rotazione)
+            {
+                case 0:
+                    for (int x = 0; x < 4; x++)
+                    {
+
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+
+                        PosPezzoQuale = PosPezzoQuale - 19;
+                    }
+                    return 90;
+                case 90:
+                    return 180;
+                case 180:
+                    return 270;
+                case 270:
+                    return 0;
+            }
+            return -1;
+        }
+        public static int RotazioneZBlock(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        {
+            int PosPezzoQuale = 58;
+            switch (Rotazione)
+            {
+                case 0:
+                    for (int x = 0; x < 4; x++)
+                    {
+
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+
+                        PosPezzoQuale = PosPezzoQuale - 19;
+                    }
+                    return 90;
+                case 90:
+                    return 180;
+                case 180:
+                    return 270;
+                case 270:
+                    return 0;
+            }
+            return -1;
         }
     }
 }

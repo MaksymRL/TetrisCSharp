@@ -23,7 +23,7 @@ namespace ProgettoFineAnno
         private int conta = 0;
         private int[] PosPezzo = new int[4];
         private int Pezzo;
-
+        private int RotazionePezzo;
         public Form1()
         {
             InitializeComponent();
@@ -69,7 +69,7 @@ namespace ProgettoFineAnno
 
             if (conta == 0)
             {
-                Pezzo = Lib.GeneraPezzo(eleMatrice, PosPezzo);
+                Pezzo = Lib.GeneraPezzo(eleMatrice, PosPezzo,ref RotazionePezzo);
                 conta++;
             }
             #endregion PezzoScendi
@@ -164,12 +164,35 @@ namespace ProgettoFineAnno
                 }
                 else if (e.KeyCode == Keys.Up)
                 {
+                    switch (Pezzo)
+                    {
+                        case 0:
+                            RotazionePezzo = Lib.RotazioneIBlock(eleMatrice,PosPezzo,Pezzo,RotazionePezzo);
+                        return;
+                        case 1:
+                            RotazionePezzo = Lib.RotazioneJBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                        return;
+                        case 2:
+                            RotazionePezzo = Lib.RotazioneLBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                        return;
+                        case 4:
+                            RotazionePezzo = Lib.RotazioneSBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                        return;
+                        case 5:
+                            RotazionePezzo = Lib.RotazioneTBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                        return;
+                        case 6:
+                            RotazionePezzo = Lib.RotazioneZBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                        return;
+                    }
 
+                   
                 }
                 else if (e.KeyCode == Keys.Down)
                 {
                     timer_screenupdate.Interval = 300;
                 }
+                
             }
         }
     }
