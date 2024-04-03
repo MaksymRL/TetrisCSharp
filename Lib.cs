@@ -1,7 +1,10 @@
-﻿using System;
+﻿using ProgettoFineAnno;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -664,5 +667,10 @@ namespace TetrisFunzioni
 
             }
         }
+        
+       
+
+
+
     }
 }

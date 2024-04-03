@@ -27,6 +27,7 @@ namespace ProgettoFineAnno
         public Form1()
         {
             InitializeComponent();
+            
             timer_screenupdate.Interval = 1000;
             timer_screenupdate.Tick += Timer_Tick;
             this.KeyDown += Form1_KeyDown;
@@ -171,6 +172,41 @@ namespace ProgettoFineAnno
                     timer_screenupdate.Interval = 300;
                 }
             }
+        }
+
+        private void textBox67_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox216_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox200_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox215_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox217_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox272_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox169_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
