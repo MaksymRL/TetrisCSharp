@@ -105,5 +105,11 @@
   <ItemGroup>
     <None Include="Resources\galassia3redux.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titolo_tetris.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

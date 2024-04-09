@@ -37,8 +37,8 @@ namespace TetrisFunzioni
         public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni, ref int Rotazione)
         {
             Random random = new Random();
-            //int randomNumero = random.Next(6);
-            int randomNumero = 0;
+            int randomNumero = random.Next(6);
+            //int randomNumero = 0;
             int[] posizioni = { 60, 61, 80, 81, 100, 101, 120, 121 };
             switch (randomNumero)
             {
@@ -689,12 +689,18 @@ namespace TetrisFunzioni
                 case 0:
                     for (int x = 0; x < 4; x++)
                     {
+                        if (x != 3)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
 
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
 
                         PosPezzoQuale = PosPezzoQuale - 19;
                     }

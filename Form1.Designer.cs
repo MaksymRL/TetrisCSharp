@@ -499,6 +499,7 @@
             // H4
             // 
             this.H4.BackColor = System.Drawing.Color.Black;
+            this.H4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.H4.Enabled = false;
             this.H4.Location = new System.Drawing.Point(439, 196);
             this.H4.Margin = new System.Windows.Forms.Padding(0);
@@ -510,6 +511,7 @@
             // G4
             // 
             this.G4.BackColor = System.Drawing.Color.Black;
+            this.G4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.G4.Enabled = false;
             this.G4.Location = new System.Drawing.Point(417, 196);
             this.G4.Margin = new System.Windows.Forms.Padding(0);
@@ -521,6 +523,7 @@
             // F4
             // 
             this.F4.BackColor = System.Drawing.Color.Black;
+            this.F4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.F4.Enabled = false;
             this.F4.Location = new System.Drawing.Point(395, 196);
             this.F4.Margin = new System.Windows.Forms.Padding(0);
@@ -532,6 +535,7 @@
             // E4
             // 
             this.E4.BackColor = System.Drawing.Color.Black;
+            this.E4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.E4.Enabled = false;
             this.E4.Location = new System.Drawing.Point(373, 196);
             this.E4.Margin = new System.Windows.Forms.Padding(0);
