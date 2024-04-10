@@ -231,5 +231,15 @@ namespace ProgettoFineAnno
         {
 
         }
+
+        private void textBox316_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox326_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
