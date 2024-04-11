@@ -6405,7 +6405,7 @@
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(171, 175);
+            this.label6.Location = new System.Drawing.Point(191, 175);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(22, 20);
             this.label6.TabIndex = 696;
@@ -6418,7 +6418,7 @@
             this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(193, 174);
+            this.label7.Location = new System.Drawing.Point(171, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 20);
             this.label7.TabIndex = 697;
@@ -6457,12 +6457,13 @@
             this.label10.BackColor = System.Drawing.Color.Black;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(193, 232);
+            this.label10.Location = new System.Drawing.Point(171, 232);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(22, 20);
             this.label10.TabIndex = 709;
             this.label10.Text = "0";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -6470,7 +6471,7 @@
             this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(171, 232);
+            this.label11.Location = new System.Drawing.Point(193, 232);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(22, 20);
             this.label11.TabIndex = 708;
@@ -6753,12 +6754,13 @@
             this.label13.BackColor = System.Drawing.Color.Black;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(193, 292);
+            this.label13.Location = new System.Drawing.Point(171, 292);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(22, 20);
             this.label13.TabIndex = 727;
             this.label13.Text = "0";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -6766,7 +6768,7 @@
             this.label14.BackColor = System.Drawing.Color.Black;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(171, 292);
+            this.label14.Location = new System.Drawing.Point(191, 292);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(22, 20);
             this.label14.TabIndex = 726;
@@ -6983,7 +6985,7 @@
             this.label16.BackColor = System.Drawing.Color.Black;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(193, 352);
+            this.label16.Location = new System.Drawing.Point(171, 352);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(22, 20);
             this.label16.TabIndex = 745;
@@ -6996,7 +6998,7 @@
             this.label17.BackColor = System.Drawing.Color.Black;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(171, 352);
+            this.label17.Location = new System.Drawing.Point(191, 352);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(22, 20);
             this.label17.TabIndex = 744;
@@ -7395,12 +7397,13 @@
             this.label18.BackColor = System.Drawing.Color.Black;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(213, 411);
+            this.label18.Location = new System.Drawing.Point(171, 411);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(22, 20);
             this.label18.TabIndex = 778;
             this.label18.Text = "0";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label19
             // 
@@ -7408,7 +7411,7 @@
             this.label19.BackColor = System.Drawing.Color.Black;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(187, 411);
+            this.label19.Location = new System.Drawing.Point(191, 411);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(26, 20);
             this.label19.TabIndex = 779;
@@ -7421,7 +7424,7 @@
             this.label20.BackColor = System.Drawing.Color.Black;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(171, 411);
+            this.label20.Location = new System.Drawing.Point(213, 411);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(22, 20);
             this.label20.TabIndex = 780;
@@ -7587,7 +7590,7 @@
             this.label22.BackColor = System.Drawing.Color.Black;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(193, 450);
+            this.label22.Location = new System.Drawing.Point(171, 450);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(22, 20);
             this.label22.TabIndex = 793;
@@ -7600,7 +7603,7 @@
             this.label23.BackColor = System.Drawing.Color.Black;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(171, 450);
+            this.label23.Location = new System.Drawing.Point(193, 450);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(22, 20);
             this.label23.TabIndex = 792;
@@ -8108,7 +8111,7 @@
             this.label25.BackColor = System.Drawing.Color.Black;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(171, 513);
+            this.label25.Location = new System.Drawing.Point(149, 513);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(22, 20);
             this.label25.TabIndex = 833;
@@ -8121,12 +8124,13 @@
             this.label26.BackColor = System.Drawing.Color.Black;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(149, 513);
+            this.label26.Location = new System.Drawing.Point(171, 513);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(22, 20);
             this.label26.TabIndex = 832;
             this.label26.Text = "0";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // textBox345
             // 
