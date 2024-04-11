@@ -476,12 +476,12 @@
             this.textBox165 = new System.Windows.Forms.TextBox();
             this.textBox166 = new System.Windows.Forms.TextBox();
             this.textBox167 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.Centinaia_T = new System.Windows.Forms.Label();
+            this.Decine_T = new System.Windows.Forms.Label();
+            this.unita_T = new System.Windows.Forms.Label();
+            this.Centinaia_J = new System.Windows.Forms.Label();
+            this.Decine_J = new System.Windows.Forms.Label();
+            this.Unita_J = new System.Windows.Forms.Label();
             this.textBox168 = new System.Windows.Forms.TextBox();
             this.textBox169 = new System.Windows.Forms.TextBox();
             this.textBox170 = new System.Windows.Forms.TextBox();
@@ -502,9 +502,9 @@
             this.textBox222 = new System.Windows.Forms.TextBox();
             this.textBox223 = new System.Windows.Forms.TextBox();
             this.textBox224 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.Centinaia_L = new System.Windows.Forms.Label();
+            this.Decine_L = new System.Windows.Forms.Label();
+            this.Unita_L = new System.Windows.Forms.Label();
             this.textBox265 = new System.Windows.Forms.TextBox();
             this.textBox266 = new System.Windows.Forms.TextBox();
             this.textBox267 = new System.Windows.Forms.TextBox();
@@ -520,9 +520,9 @@
             this.textBox277 = new System.Windows.Forms.TextBox();
             this.textBox278 = new System.Windows.Forms.TextBox();
             this.textBox279 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.Centinaia_Z = new System.Windows.Forms.Label();
+            this.Decine_Z = new System.Windows.Forms.Label();
+            this.Unita_Z = new System.Windows.Forms.Label();
             this.textBox280 = new System.Windows.Forms.TextBox();
             this.textBox281 = new System.Windows.Forms.TextBox();
             this.textBox282 = new System.Windows.Forms.TextBox();
@@ -553,9 +553,9 @@
             this.textBox307 = new System.Windows.Forms.TextBox();
             this.textBox308 = new System.Windows.Forms.TextBox();
             this.textBox309 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.Centinaia_I = new System.Windows.Forms.Label();
+            this.Decine_I = new System.Windows.Forms.Label();
+            this.Unita_I = new System.Windows.Forms.Label();
             this.textBox181 = new System.Windows.Forms.TextBox();
             this.textBox310 = new System.Windows.Forms.TextBox();
             this.textBox311 = new System.Windows.Forms.TextBox();
@@ -567,9 +567,9 @@
             this.textBox317 = new System.Windows.Forms.TextBox();
             this.textBox318 = new System.Windows.Forms.TextBox();
             this.textBox319 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.Centinaia_S = new System.Windows.Forms.Label();
+            this.Decine_S = new System.Windows.Forms.Label();
+            this.Unita_S = new System.Windows.Forms.Label();
             this.textBox320 = new System.Windows.Forms.TextBox();
             this.textBox321 = new System.Windows.Forms.TextBox();
             this.textBox322 = new System.Windows.Forms.TextBox();
@@ -607,9 +607,9 @@
             this.textBox342 = new System.Windows.Forms.TextBox();
             this.textBox343 = new System.Windows.Forms.TextBox();
             this.textBox344 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.Centinaia_O = new System.Windows.Forms.Label();
+            this.Decine_O = new System.Windows.Forms.Label();
+            this.Unita_O = new System.Windows.Forms.Label();
             this.textBox345 = new System.Windows.Forms.TextBox();
             this.textBox346 = new System.Windows.Forms.TextBox();
             this.textBox347 = new System.Windows.Forms.TextBox();
@@ -6400,84 +6400,84 @@
             this.textBox167.Size = new System.Drawing.Size(22, 20);
             this.textBox167.TabIndex = 695;
             // 
-            // label6
+            // Centinaia_T
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(191, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(22, 20);
-            this.label6.TabIndex = 696;
-            this.label6.Text = "0";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_T.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_T.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_T.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_T.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_T.Location = new System.Drawing.Point(149, 175);
+            this.Centinaia_T.Name = "Centinaia_T";
+            this.Centinaia_T.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_T.TabIndex = 696;
+            this.Centinaia_T.Text = "0";
+            this.Centinaia_T.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // Decine_T
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(171, 175);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 20);
-            this.label7.TabIndex = 697;
-            this.label7.Text = "0";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_T.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_T.BackColor = System.Drawing.Color.Black;
+            this.Decine_T.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_T.ForeColor = System.Drawing.Color.White;
+            this.Decine_T.Location = new System.Drawing.Point(169, 175);
+            this.Decine_T.Name = "Decine_T";
+            this.Decine_T.Size = new System.Drawing.Size(27, 20);
+            this.Decine_T.TabIndex = 697;
+            this.Decine_T.Text = "0";
+            this.Decine_T.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // unita_T
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.BackColor = System.Drawing.Color.Black;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(149, 175);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 20);
-            this.label8.TabIndex = 698;
-            this.label8.Text = "0";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.unita_T.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.unita_T.BackColor = System.Drawing.Color.Black;
+            this.unita_T.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.unita_T.ForeColor = System.Drawing.Color.White;
+            this.unita_T.Location = new System.Drawing.Point(191, 175);
+            this.unita_T.Name = "unita_T";
+            this.unita_T.Size = new System.Drawing.Size(22, 20);
+            this.unita_T.TabIndex = 698;
+            this.unita_T.Text = "0";
+            this.unita_T.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // Centinaia_J
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label9.BackColor = System.Drawing.Color.Black;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(149, 232);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(22, 20);
-            this.label9.TabIndex = 710;
-            this.label9.Text = "0";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_J.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_J.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_J.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_J.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_J.Location = new System.Drawing.Point(149, 232);
+            this.Centinaia_J.Name = "Centinaia_J";
+            this.Centinaia_J.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_J.TabIndex = 710;
+            this.Centinaia_J.Text = "0";
+            this.Centinaia_J.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // Decine_J
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(171, 232);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(22, 20);
-            this.label10.TabIndex = 709;
-            this.label10.Text = "0";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.Decine_J.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_J.BackColor = System.Drawing.Color.Black;
+            this.Decine_J.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_J.ForeColor = System.Drawing.Color.White;
+            this.Decine_J.Location = new System.Drawing.Point(171, 232);
+            this.Decine_J.Name = "Decine_J";
+            this.Decine_J.Size = new System.Drawing.Size(22, 20);
+            this.Decine_J.TabIndex = 709;
+            this.Decine_J.Text = "0";
+            this.Decine_J.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_J.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label11
+            // Unita_J
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(193, 232);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(22, 20);
-            this.label11.TabIndex = 708;
-            this.label11.Text = "0";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Unita_J.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Unita_J.BackColor = System.Drawing.Color.Black;
+            this.Unita_J.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Unita_J.ForeColor = System.Drawing.Color.White;
+            this.Unita_J.Location = new System.Drawing.Point(193, 232);
+            this.Unita_J.Name = "Unita_J";
+            this.Unita_J.Size = new System.Drawing.Size(22, 20);
+            this.Unita_J.TabIndex = 708;
+            this.Unita_J.Text = "0";
+            this.Unita_J.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox168
             // 
@@ -6736,45 +6736,45 @@
             this.textBox224.Size = new System.Drawing.Size(22, 20);
             this.textBox224.TabIndex = 729;
             // 
-            // label12
+            // Centinaia_L
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label12.BackColor = System.Drawing.Color.Black;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(149, 292);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(22, 20);
-            this.label12.TabIndex = 728;
-            this.label12.Text = "0";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_L.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_L.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_L.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_L.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_L.Location = new System.Drawing.Point(149, 292);
+            this.Centinaia_L.Name = "Centinaia_L";
+            this.Centinaia_L.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_L.TabIndex = 728;
+            this.Centinaia_L.Text = "0";
+            this.Centinaia_L.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
+            // Decine_L
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label13.BackColor = System.Drawing.Color.Black;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(171, 292);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(22, 20);
-            this.label13.TabIndex = 727;
-            this.label13.Text = "0";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.Decine_L.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_L.BackColor = System.Drawing.Color.Black;
+            this.Decine_L.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_L.ForeColor = System.Drawing.Color.White;
+            this.Decine_L.Location = new System.Drawing.Point(171, 292);
+            this.Decine_L.Name = "Decine_L";
+            this.Decine_L.Size = new System.Drawing.Size(22, 20);
+            this.Decine_L.TabIndex = 727;
+            this.Decine_L.Text = "0";
+            this.Decine_L.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_L.Click += new System.EventHandler(this.label13_Click);
             // 
-            // label14
+            // Unita_L
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label14.BackColor = System.Drawing.Color.Black;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(191, 292);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(22, 20);
-            this.label14.TabIndex = 726;
-            this.label14.Text = "0";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Unita_L.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Unita_L.BackColor = System.Drawing.Color.Black;
+            this.Unita_L.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Unita_L.ForeColor = System.Drawing.Color.White;
+            this.Unita_L.Location = new System.Drawing.Point(191, 292);
+            this.Unita_L.Name = "Unita_L";
+            this.Unita_L.Size = new System.Drawing.Size(22, 20);
+            this.Unita_L.TabIndex = 726;
+            this.Unita_L.Text = "0";
+            this.Unita_L.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox265
             // 
@@ -6967,44 +6967,45 @@
             this.textBox279.Size = new System.Drawing.Size(22, 20);
             this.textBox279.TabIndex = 747;
             // 
-            // label15
+            // Centinaia_Z
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label15.BackColor = System.Drawing.Color.Black;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(149, 352);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(22, 20);
-            this.label15.TabIndex = 746;
-            this.label15.Text = "0";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_Z.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_Z.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_Z.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_Z.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_Z.Location = new System.Drawing.Point(149, 352);
+            this.Centinaia_Z.Name = "Centinaia_Z";
+            this.Centinaia_Z.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_Z.TabIndex = 746;
+            this.Centinaia_Z.Text = "0";
+            this.Centinaia_Z.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_Z.Click += new System.EventHandler(this.label15_Click);
             // 
-            // label16
+            // Decine_Z
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label16.BackColor = System.Drawing.Color.Black;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(171, 352);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(22, 20);
-            this.label16.TabIndex = 745;
-            this.label16.Text = "0";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_Z.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_Z.BackColor = System.Drawing.Color.Black;
+            this.Decine_Z.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_Z.ForeColor = System.Drawing.Color.White;
+            this.Decine_Z.Location = new System.Drawing.Point(171, 352);
+            this.Decine_Z.Name = "Decine_Z";
+            this.Decine_Z.Size = new System.Drawing.Size(22, 20);
+            this.Decine_Z.TabIndex = 745;
+            this.Decine_Z.Text = "0";
+            this.Decine_Z.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label17
+            // Unita_Z
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label17.BackColor = System.Drawing.Color.Black;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(191, 352);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(22, 20);
-            this.label17.TabIndex = 744;
-            this.label17.Text = "0";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Unita_Z.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Unita_Z.BackColor = System.Drawing.Color.Black;
+            this.Unita_Z.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Unita_Z.ForeColor = System.Drawing.Color.White;
+            this.Unita_Z.Location = new System.Drawing.Point(191, 352);
+            this.Unita_Z.Name = "Unita_Z";
+            this.Unita_Z.Size = new System.Drawing.Size(22, 20);
+            this.Unita_Z.TabIndex = 744;
+            this.Unita_Z.Text = "0";
+            this.Unita_Z.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox280
             // 
@@ -7392,45 +7393,45 @@
             this.textBox309.Size = new System.Drawing.Size(22, 20);
             this.textBox309.TabIndex = 777;
             // 
-            // label18
+            // Centinaia_I
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label18.BackColor = System.Drawing.Color.Black;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(171, 411);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(22, 20);
-            this.label18.TabIndex = 778;
-            this.label18.Text = "0";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.Centinaia_I.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_I.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_I.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_I.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_I.Location = new System.Drawing.Point(171, 411);
+            this.Centinaia_I.Name = "Centinaia_I";
+            this.Centinaia_I.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_I.TabIndex = 778;
+            this.Centinaia_I.Text = "0";
+            this.Centinaia_I.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_I.Click += new System.EventHandler(this.label18_Click);
             // 
-            // label19
+            // Decine_I
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label19.BackColor = System.Drawing.Color.Black;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(191, 411);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(26, 20);
-            this.label19.TabIndex = 779;
-            this.label19.Text = "0";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_I.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_I.BackColor = System.Drawing.Color.Black;
+            this.Decine_I.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_I.ForeColor = System.Drawing.Color.White;
+            this.Decine_I.Location = new System.Drawing.Point(191, 411);
+            this.Decine_I.Name = "Decine_I";
+            this.Decine_I.Size = new System.Drawing.Size(26, 20);
+            this.Decine_I.TabIndex = 779;
+            this.Decine_I.Text = "0";
+            this.Decine_I.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // Unita_I
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label20.BackColor = System.Drawing.Color.Black;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(213, 411);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(22, 20);
-            this.label20.TabIndex = 780;
-            this.label20.Text = "0";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Unita_I.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Unita_I.BackColor = System.Drawing.Color.Black;
+            this.Unita_I.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Unita_I.ForeColor = System.Drawing.Color.White;
+            this.Unita_I.Location = new System.Drawing.Point(213, 411);
+            this.Unita_I.Name = "Unita_I";
+            this.Unita_I.Size = new System.Drawing.Size(22, 20);
+            this.Unita_I.TabIndex = 780;
+            this.Unita_I.Text = "0";
+            this.Unita_I.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox181
             // 
@@ -7572,44 +7573,44 @@
             this.textBox319.Size = new System.Drawing.Size(22, 26);
             this.textBox319.TabIndex = 791;
             // 
-            // label21
+            // Centinaia_S
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label21.BackColor = System.Drawing.Color.Black;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(149, 450);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(22, 20);
-            this.label21.TabIndex = 794;
-            this.label21.Text = "0";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_S.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_S.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_S.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_S.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_S.Location = new System.Drawing.Point(149, 450);
+            this.Centinaia_S.Name = "Centinaia_S";
+            this.Centinaia_S.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_S.TabIndex = 794;
+            this.Centinaia_S.Text = "0";
+            this.Centinaia_S.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label22
+            // Decine_S
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label22.BackColor = System.Drawing.Color.Black;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(171, 450);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(22, 20);
-            this.label22.TabIndex = 793;
-            this.label22.Text = "0";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_S.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_S.BackColor = System.Drawing.Color.Black;
+            this.Decine_S.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_S.ForeColor = System.Drawing.Color.White;
+            this.Decine_S.Location = new System.Drawing.Point(171, 450);
+            this.Decine_S.Name = "Decine_S";
+            this.Decine_S.Size = new System.Drawing.Size(22, 20);
+            this.Decine_S.TabIndex = 793;
+            this.Decine_S.Text = "0";
+            this.Decine_S.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
+            // Unita_S
             // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label23.BackColor = System.Drawing.Color.Black;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(193, 450);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(22, 20);
-            this.label23.TabIndex = 792;
-            this.label23.Text = "0";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Unita_S.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Unita_S.BackColor = System.Drawing.Color.Black;
+            this.Unita_S.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Unita_S.ForeColor = System.Drawing.Color.White;
+            this.Unita_S.Location = new System.Drawing.Point(193, 450);
+            this.Unita_S.Name = "Unita_S";
+            this.Unita_S.Size = new System.Drawing.Size(22, 20);
+            this.Unita_S.TabIndex = 792;
+            this.Unita_S.Text = "0";
+            this.Unita_S.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox320
             // 
@@ -8093,45 +8094,45 @@
             this.textBox344.TabIndex = 831;
             this.textBox344.Text = "v";
             // 
-            // label24
+            // Centinaia_O
             // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label24.BackColor = System.Drawing.Color.Black;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(127, 513);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(22, 20);
-            this.label24.TabIndex = 834;
-            this.label24.Text = "0";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Centinaia_O.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Centinaia_O.BackColor = System.Drawing.Color.Black;
+            this.Centinaia_O.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Centinaia_O.ForeColor = System.Drawing.Color.White;
+            this.Centinaia_O.Location = new System.Drawing.Point(127, 513);
+            this.Centinaia_O.Name = "Centinaia_O";
+            this.Centinaia_O.Size = new System.Drawing.Size(22, 20);
+            this.Centinaia_O.TabIndex = 834;
+            this.Centinaia_O.Text = "0";
+            this.Centinaia_O.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label25
+            // Decine_O
             // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label25.BackColor = System.Drawing.Color.Black;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(149, 513);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(22, 20);
-            this.label25.TabIndex = 833;
-            this.label25.Text = "0";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Decine_O.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Decine_O.BackColor = System.Drawing.Color.Black;
+            this.Decine_O.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Decine_O.ForeColor = System.Drawing.Color.White;
+            this.Decine_O.Location = new System.Drawing.Point(149, 513);
+            this.Decine_O.Name = "Decine_O";
+            this.Decine_O.Size = new System.Drawing.Size(22, 20);
+            this.Decine_O.TabIndex = 833;
+            this.Decine_O.Text = "0";
+            this.Decine_O.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label26
+            // Unita_O
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label26.BackColor = System.Drawing.Color.Black;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(171, 513);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(22, 20);
-            this.label26.TabIndex = 832;
-            this.label26.Text = "0";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label26.Click += new System.EventHandler(this.label26_Click);
+            this.Unita_O.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Unita_O.BackColor = System.Drawing.Color.Black;
+            this.Unita_O.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Unita_O.ForeColor = System.Drawing.Color.White;
+            this.Unita_O.Location = new System.Drawing.Point(171, 513);
+            this.Unita_O.Name = "Unita_O";
+            this.Unita_O.Size = new System.Drawing.Size(22, 20);
+            this.Unita_O.TabIndex = 832;
+            this.Unita_O.Text = "0";
+            this.Unita_O.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Unita_O.Click += new System.EventHandler(this.label26_Click);
             // 
             // textBox345
             // 
@@ -8266,9 +8267,9 @@
             this.Controls.Add(this.textBox345);
             this.Controls.Add(this.textBox346);
             this.Controls.Add(this.textBox347);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.Centinaia_O);
+            this.Controls.Add(this.Decine_O);
+            this.Controls.Add(this.Unita_O);
             this.Controls.Add(this.textBox344);
             this.Controls.Add(this.textBox343);
             this.Controls.Add(this.textBox342);
@@ -8306,9 +8307,9 @@
             this.Controls.Add(this.textBox322);
             this.Controls.Add(this.textBox321);
             this.Controls.Add(this.textBox320);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.Centinaia_S);
+            this.Controls.Add(this.Decine_S);
+            this.Controls.Add(this.Unita_S);
             this.Controls.Add(this.textBox319);
             this.Controls.Add(this.textBox315);
             this.Controls.Add(this.textBox316);
@@ -8320,9 +8321,9 @@
             this.Controls.Add(this.textBox312);
             this.Controls.Add(this.textBox181);
             this.Controls.Add(this.textBox310);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.Unita_I);
+            this.Controls.Add(this.Decine_I);
+            this.Controls.Add(this.Centinaia_I);
             this.Controls.Add(this.textBox309);
             this.Controls.Add(this.textBox306);
             this.Controls.Add(this.textBox307);
@@ -8354,9 +8355,9 @@
             this.Controls.Add(this.textBox277);
             this.Controls.Add(this.textBox278);
             this.Controls.Add(this.textBox279);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.Centinaia_Z);
+            this.Controls.Add(this.Decine_Z);
+            this.Controls.Add(this.Unita_Z);
             this.Controls.Add(this.textBox280);
             this.Controls.Add(this.textBox281);
             this.Controls.Add(this.textBox282);
@@ -8372,9 +8373,9 @@
             this.Controls.Add(this.textBox222);
             this.Controls.Add(this.textBox223);
             this.Controls.Add(this.textBox224);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.Centinaia_L);
+            this.Controls.Add(this.Decine_L);
+            this.Controls.Add(this.Unita_L);
             this.Controls.Add(this.textBox265);
             this.Controls.Add(this.textBox266);
             this.Controls.Add(this.textBox267);
@@ -8390,16 +8391,16 @@
             this.Controls.Add(this.textBox174);
             this.Controls.Add(this.textBox173);
             this.Controls.Add(this.textBox171);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.Centinaia_J);
+            this.Controls.Add(this.Decine_J);
+            this.Controls.Add(this.Unita_J);
             this.Controls.Add(this.textBox168);
             this.Controls.Add(this.textBox169);
             this.Controls.Add(this.textBox170);
             this.Controls.Add(this.textBox172);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.unita_T);
+            this.Controls.Add(this.Decine_T);
+            this.Controls.Add(this.Centinaia_T);
             this.Controls.Add(this.textBox167);
             this.Controls.Add(this.textBox165);
             this.Controls.Add(this.textBox166);
@@ -9303,12 +9304,12 @@
         private System.Windows.Forms.TextBox textBox165;
         private System.Windows.Forms.TextBox textBox166;
         private System.Windows.Forms.TextBox textBox167;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label Centinaia_T;
+        private System.Windows.Forms.Label Decine_T;
+        private System.Windows.Forms.Label unita_T;
+        private System.Windows.Forms.Label Centinaia_J;
+        private System.Windows.Forms.Label Decine_J;
+        private System.Windows.Forms.Label Unita_J;
         private System.Windows.Forms.TextBox textBox168;
         private System.Windows.Forms.TextBox textBox169;
         private System.Windows.Forms.TextBox textBox170;
@@ -9329,9 +9330,9 @@
         private System.Windows.Forms.TextBox textBox222;
         private System.Windows.Forms.TextBox textBox223;
         private System.Windows.Forms.TextBox textBox224;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label Centinaia_L;
+        private System.Windows.Forms.Label Decine_L;
+        private System.Windows.Forms.Label Unita_L;
         private System.Windows.Forms.TextBox textBox265;
         private System.Windows.Forms.TextBox textBox266;
         private System.Windows.Forms.TextBox textBox267;
@@ -9347,9 +9348,9 @@
         private System.Windows.Forms.TextBox textBox277;
         private System.Windows.Forms.TextBox textBox278;
         private System.Windows.Forms.TextBox textBox279;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Centinaia_Z;
+        private System.Windows.Forms.Label Decine_Z;
+        private System.Windows.Forms.Label Unita_Z;
         private System.Windows.Forms.TextBox textBox280;
         private System.Windows.Forms.TextBox textBox281;
         private System.Windows.Forms.TextBox textBox282;
@@ -9380,9 +9381,9 @@
         private System.Windows.Forms.TextBox textBox307;
         private System.Windows.Forms.TextBox textBox308;
         private System.Windows.Forms.TextBox textBox309;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label Centinaia_I;
+        private System.Windows.Forms.Label Decine_I;
+        private System.Windows.Forms.Label Unita_I;
         private System.Windows.Forms.TextBox textBox181;
         private System.Windows.Forms.TextBox textBox310;
         private System.Windows.Forms.TextBox textBox311;
@@ -9394,9 +9395,9 @@
         private System.Windows.Forms.TextBox textBox317;
         private System.Windows.Forms.TextBox textBox318;
         private System.Windows.Forms.TextBox textBox319;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label Centinaia_S;
+        private System.Windows.Forms.Label Decine_S;
+        private System.Windows.Forms.Label Unita_S;
         private System.Windows.Forms.TextBox textBox320;
         private System.Windows.Forms.TextBox textBox321;
         private System.Windows.Forms.TextBox textBox322;
@@ -9434,9 +9435,9 @@
         private System.Windows.Forms.TextBox textBox342;
         private System.Windows.Forms.TextBox textBox343;
         private System.Windows.Forms.TextBox textBox344;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label Centinaia_O;
+        private System.Windows.Forms.Label Decine_O;
+        private System.Windows.Forms.Label Unita_O;
         private System.Windows.Forms.TextBox textBox345;
         private System.Windows.Forms.TextBox textBox346;
         private System.Windows.Forms.TextBox textBox347;
