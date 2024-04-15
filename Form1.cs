@@ -50,11 +50,11 @@ namespace ProgettoFineAnno
             if (conta == 1)
             {
 
-                bool stopPezzo = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo);
+                bool stopPezzo = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                 if (contienevalori == false && stopPezzo == false)
                 {
 
-                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo);
+                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
 
 
                     
@@ -148,44 +148,24 @@ namespace ProgettoFineAnno
             {
                 if (e.KeyCode == Keys.Left && PosPezzo[0] - 19 > 0)
                 {
-                    bool QualcosaSinistra = Lib.QualcosaSinistra(eleMatrice, PosPezzo, Pezzo);
+                    bool QualcosaSinistra = Lib.QualcosaSinistra(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                     if (QualcosaSinistra == false)
                     {
-                        Lib.MuoviASinistra(eleMatrice, PosPezzo, Pezzo);
+                        Lib.MuoviASinistra(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                     }
                 }
                 else if (e.KeyCode == Keys.Right && PosPezzo[3] + 19 < 199)
                 {
-                    bool QualcosaDestra = Lib.QualcosaDestra(eleMatrice, PosPezzo, Pezzo);
+                    bool QualcosaDestra = Lib.QualcosaDestra(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                     if (QualcosaDestra == false)
                     {
-                        Lib.MuoviADestra(eleMatrice, PosPezzo, Pezzo);
+                        Lib.MuoviADestra(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                     }
 
                 }
                 else if (e.KeyCode == Keys.Up)
                 {
-                    switch (Pezzo)
-                    {
-                        case 0:
-                            RotazionePezzo = Lib.RotazioneIBlock(eleMatrice,PosPezzo,Pezzo,RotazionePezzo);
-                        return;
-                        case 1:
-                            RotazionePezzo = Lib.RotazioneJBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-                        return;
-                        case 2:
-                            RotazionePezzo = Lib.RotazioneLBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-                        return;
-                        case 4:
-                            RotazionePezzo = Lib.RotazioneSBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-                        return;
-                        case 5:
-                            RotazionePezzo = Lib.RotazioneTBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-                        return;
-                        case 6:
-                            RotazionePezzo = Lib.RotazioneZBlock(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-                        return;
-                    }
+                    RotazionePezzo = Lib.Rotazione(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
 
                    
                 }
@@ -196,40 +176,6 @@ namespace ProgettoFineAnno
                 
             }
         }
-
-        private void textBox67_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox216_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox200_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox215_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox217_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox272_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox169_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
