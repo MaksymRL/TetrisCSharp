@@ -41,12 +41,12 @@ namespace TetrisFunzioni
         public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni, ref int Rotazione)
         {
             Random random = new Random();
-            //int randomNumero = random.Next(6);
-            int randomNumero = 0;
+            int randomNumero = random.Next(6);
+            //int randomNumero = 5;
             int[] posizioni = { 60, 61, 80, 81, 100, 101, 120, 121 };
             switch (randomNumero)
             {
-                case 0:
+                case (int)Pezzi.IBlock:
                     ele[60].Casella.BackColor = Color.LightBlue;
                     ele[60].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[80].Casella.BackColor = Color.LightBlue;
@@ -61,7 +61,7 @@ namespace TetrisFunzioni
                     elePosizioni[3] = posizioni[6];
                     Rotazione = 0;
                     return (int)Pezzi.IBlock;
-                case 1:
+                case (int)Pezzi.JBlock:
                     ele[80].Casella.BackColor = Color.Blue;
                     ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[81].Casella.BackColor = Color.Blue;
@@ -76,7 +76,7 @@ namespace TetrisFunzioni
                     elePosizioni[3] = posizioni[7];
                     Rotazione = 0;
                     return (int)Pezzi.JBlock;
-                case 2:
+                case (int)Pezzi.LBlock:
                     ele[81].Casella.BackColor = Color.Gold;
                     ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[101].Casella.BackColor = Color.Gold;
@@ -91,7 +91,7 @@ namespace TetrisFunzioni
                     elePosizioni[3] = posizioni[7];
                     Rotazione = 0;
                     return (int)Pezzi.LBlock;
-                case 3:
+                case (int)Pezzi.OBlock:
                     ele[80].Casella.BackColor = Color.Yellow;
                     ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[81].Casella.BackColor = Color.Yellow;
@@ -106,7 +106,7 @@ namespace TetrisFunzioni
                     elePosizioni[3] = posizioni[5];
                     Rotazione = 0;
                     return (int)Pezzi.OBlock;
-                case 4:
+                case (int)Pezzi.SBlock:
                     ele[81].Casella.BackColor = Color.LightGreen;
                     ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[100].Casella.BackColor = Color.LightGreen;
@@ -121,7 +121,7 @@ namespace TetrisFunzioni
                     elePosizioni[3] = posizioni[6];
                     Rotazione = 0;
                     return (int)Pezzi.SBlock;
-                case 5:
+                case (int)Pezzi.TBlock:
                     ele[81].Casella.BackColor = Color.Purple;
                     ele[81].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[100].Casella.BackColor = Color.Purple;
@@ -136,7 +136,7 @@ namespace TetrisFunzioni
                     elePosizioni[3] = posizioni[7];
                     Rotazione = 0;
                     return (int)Pezzi.TBlock;
-                case 6:
+                case (int)Pezzi.ZBlock:
                     ele[80].Casella.BackColor = Color.Red;
                     ele[80].Casella.BorderStyle = BorderStyle.Fixed3D;
                     ele[100].Casella.BackColor = Color.Red;
@@ -245,6 +245,54 @@ namespace TetrisFunzioni
                         ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
                     }
                     break;
+                case 90:
+                    if (x != 1 && x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 2 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
             }
         }
         public static void ScendiLBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
@@ -253,6 +301,54 @@ namespace TetrisFunzioni
             {
                 case 0:
                     if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 1 && x !=2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 2 && x != 3)
                     {
                         ele[elePosizioni[x]].Casella.BackColor = Color.Black;
                         ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
@@ -307,7 +403,22 @@ namespace TetrisFunzioni
                     }
                     break;
 
-
+                case 90:
+                    if (x != 1 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
 
             }
         }
@@ -331,6 +442,54 @@ namespace TetrisFunzioni
                         ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
                     }
                 break;
+                case 90:
+                    if (x != 1 && x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 2 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
             }
         }
         public static void ScendiZBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
@@ -353,10 +512,27 @@ namespace TetrisFunzioni
                         ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
                     }
                     break;
+                case 90:
+                    if (x != 1 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 1;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
             }
         }
         #endregion Scendi
 
+        //sistemo aggiungendo le rotazioni
         #region QualcosaSotto
         public static bool QualcosaSotto(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
@@ -495,6 +671,7 @@ namespace TetrisFunzioni
         }
         #endregion QualcosaSotto
 
+        //sistemo aggiungendo le rotazioni
         #region QualcosaSinistra
         public static bool QualcosaSinistra(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
@@ -625,6 +802,7 @@ namespace TetrisFunzioni
         }
         #endregion QualcosaSinistra
 
+        //sistemo aggiungendo le rotazioni
         #region QualcosaDestra
         public static bool QualcosaDestra(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
@@ -632,45 +810,27 @@ namespace TetrisFunzioni
             switch (Pezzo)
             {
 
-                case 0:
+                case (int)Pezzi.IBlock:
                     Something = Lib.QualcosaDestraIBlock(ele,elePosizioni,Rotazione);
                     return Something;
-                case 1:
-                    if (ele[elePosizioni[0] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
-                    {
-                        return true;
-                    }
-                    break;
-                case 2:
-                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
-                    {
-                        return true;
-                    }
-                    break;
-                case 3:
-                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
-                    {
-                        return true;
-                    }
-                    break;
-                case 4:
-                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
-                    {
-                        return true;
-                    }
-                    break;
-                case 5:
-                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
-                    {
-                        return true;
-                    }
-                    break;
-                case 6:
-                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
-                    {
-                        return true;
-                    }
-                    break;
+                case (int)Pezzi.JBlock:
+                    Something = Lib.QualcosaDestraJBlock(ele,elePosizioni,Rotazione);
+                    return Something;
+                case (int)Pezzi.LBlock:
+                    Something = Lib.QualcosaDestraLBlock(ele,elePosizioni,Rotazione);
+                    return Something;
+                case (int)Pezzi.OBlock:
+                    Something = Lib.QualcosaDestraOBlock(ele, elePosizioni);
+                    return Something;
+                case (int)Pezzi.SBlock:
+                    Something = Lib.QualcosaDestraSBlock(ele, elePosizioni, Rotazione);
+                    return Something;
+                case (int)Pezzi.TBlock:
+                    Something = Lib.QualcosaDestraTBlock(ele, elePosizioni, Rotazione);
+                    return Something;
+                case (int)Pezzi.ZBlock:
+                    Something = Lib.QualcosaDestraZBlock(ele, elePosizioni, Rotazione);
+                    return Something;
 
             }
 
@@ -703,7 +863,94 @@ namespace TetrisFunzioni
 
             return false;
         }
-        #endregion QualcosaDestra
+        public static bool QualcosaDestraJBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (ele[elePosizioni[0] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 90:
+                    break;
+            }
+
+            return false;
+        
+        }
+        public static bool QualcosaDestraLBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+            }
+
+            return false;
+
+        }
+        public static bool QualcosaDestraOBlock(Matrice[] ele, int[] elePosizioni)
+        {
+
+            if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+            {
+                return true;
+            }
+            return false;
+
+        }
+        public static bool QualcosaDestraSBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+            }
+
+            return false;
+
+        }
+        public static bool QualcosaDestraTBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+            }
+
+            return false;
+
+        }
+        public static bool QualcosaDestraZBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+            }
+
+            return false;
+
+        }
+        #endregion QualcosaDestra  
 
         #region MuoviASinistra
         public static void MuoviASinistra(Matrice[] ele, int[] elePosizioni, int Pezzo,int Rotazione)
@@ -716,100 +963,22 @@ namespace TetrisFunzioni
                         Lib.MuoviASinistraIBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 1:
-                        if (x != 1 && x != 2)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviASinistraJBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 2:
-                        if (x != 0 && x != 1)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviASinistraLBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 3:
-                        if (x != 0 && x != 1)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviASinistraOBlock(ele, elePosizioni, x);
                         break;
                     case 4:
-                        if (x != 0 && x != 1)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviASinistraSBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 5:
-                        if (x != 0 && x != 2)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviASinistraTBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 6:
-                        if (x != 0 && x != 2)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] - 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviASinistraZBlock(ele, elePosizioni, Rotazione, x);
                         break;
 
                 }
@@ -845,6 +1014,309 @@ namespace TetrisFunzioni
                     break;
             }
         }
+        public static void MuoviASinistraJBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 1 && x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 0)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 0 && x !=1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 0)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviASinistraLBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 0 && x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 0 && x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 0)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviASinistraOBlock(Matrice[] ele, int[] elePosizioni, int x)
+        {
+            if (x != 0 && x != 1)
+            {
+                ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                elePosizioni[x] = elePosizioni[x] - 20;
+                ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
+                ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+            }
+            else
+            {
+                elePosizioni[x] = elePosizioni[x] - 20;
+                ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
+                ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+        public static void MuoviASinistraSBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 0 && x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviASinistraTBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 0 && x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 0 && x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 0)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviASinistraZBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 0 && x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 0)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] - 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
         #endregion MuoviASinistra
 
         #region MuoviADestra
@@ -858,101 +1330,24 @@ namespace TetrisFunzioni
                         Lib.MuoviADestraIBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 1:
-                        if (x != 2 && x != 3)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviADestraJBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 2:
-                        if (x != 1 && x != 3)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviADestraLBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 3:
-                        if (x != 2 && x != 3)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviADestraOBlock(ele, elePosizioni, x);
                         break;
                     case 4:
-                        if (x != 2 && x != 3)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviADestraSBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 5:
-                        if (x != 2 && x != 3)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviADestraTBlock(ele, elePosizioni, Rotazione, x);
                         break;
                     case 6:
-                        if (x != 1 && x != 3)
-                        {
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
-                        else
-                        {
-                            elePosizioni[x] = elePosizioni[x] + 20;
-                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
-                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-                        }
+                        Lib.MuoviADestraZBlock(ele, elePosizioni, Rotazione, x);
                         break;
+                       
 
                 }
 
@@ -987,6 +1382,309 @@ namespace TetrisFunzioni
                     break;
             }
         }
+        public static void MuoviADestraJBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 2 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 1 && x!=2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviADestraLBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 1 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 2 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 1)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviADestraOBlock(Matrice[] ele, int[] elePosizioni, int x)
+        {
+            if (x != 2 && x != 3)
+            {
+                ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                elePosizioni[x] = elePosizioni[x] + 20;
+                ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
+                ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+            }
+            else
+            {
+                elePosizioni[x] = elePosizioni[x] + 20;
+                ele[elePosizioni[x]].Casella.BackColor = Color.Yellow;
+                ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+        public static void MuoviADestraSBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 2 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviADestraTBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 2 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 180:
+                    if (x != 1 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 270:
+                    if (x != 2)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
+        public static void MuoviADestraZBlock(Matrice[] ele, int[] elePosizioni, int Rotazione, int x)
+        {
+            switch (Rotazione)
+            {
+                case 0:
+                    if (x != 1 && x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+                case 90:
+                    if (x != 3)
+                    {
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        elePosizioni[x] = elePosizioni[x] + 20;
+                        ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    break;
+            }
+        }
         #endregion MuoviADestra
 
         #region Rotazione
@@ -1002,9 +1700,6 @@ namespace TetrisFunzioni
                     return Rotazione;
                 case 2:
                     Rotazione = RotazioneLBlock(ele, elePosizioni, Rotazione);
-                    return Rotazione;
-                case 3:
-                    Rotazione = RotazioneOBlock(ele, elePosizioni, Rotazione);
                     return Rotazione;
                 case 4:
                     Rotazione = RotazioneSBlock(ele, elePosizioni, Rotazione);
@@ -1062,162 +1757,388 @@ namespace TetrisFunzioni
         }
         public static int RotazioneJBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
         {
-            int PosPezzoQuale = 58;
+            int PosPezzoQuale;
+            int[] ValoriUtiliR0 = {20,20,1,-1};
+            int[] ValoriUtiliR90 = {-19,0,19,2};
+            int[] ValoriUtiliR180 = { 1, -1, -20, -20 };
             switch (Rotazione)
             {
                 case 0:
                     for (int x = 0; x < 4; x++)
                     {
-
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-
-                        PosPezzoQuale = PosPezzoQuale - 19;
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        
                     }
                     return 90;
                 case 90:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR90[x];
+                        if (x != 1)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 180;
                 case 180:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR180[x];
+                        if (x != 1)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 270;
                 case 270:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR0[x] + ValoriUtiliR90[x] + ValoriUtiliR180[x];
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Blue;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 0;
             }
             return -1;
         }
         public static int RotazioneLBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
         {
-            int PosPezzoQuale = 58;
+            int PosPezzoQuale;
+            int[] ValoriUtiliR0 = { 19, 0, -18, +1 };
+            int[] ValoriUtiliR90 = { -19, -19, -1, -1 };
+            int[] ValoriUtiliR180 = { -1, +18, 0, -19 };
             switch (Rotazione)
             {
                 case 0:
                     for (int x = 0; x < 4; x++)
                     {
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x != 1)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
 
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-
-                        PosPezzoQuale = PosPezzoQuale - 19;
                     }
                     return 90;
                 case 90:
-                    return 180;
-                case 180:
-                    return 270;
-                case 270:
-                    return 0;
-            }
-            return -1;
-        }
-        public static int RotazioneOBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
-        {
-            int PosPezzoQuale = 58;
-            switch (Rotazione)
-            {
-                case 0:
                     for (int x = 0; x < 4; x++)
                     {
+                        PosPezzoQuale = ValoriUtiliR90[x];
+                        if (x != 1)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
 
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-
-                        PosPezzoQuale = PosPezzoQuale - 19;
                     }
-                    return 90;
-                case 90:
                     return 180;
                 case 180:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR180[x];
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 270;
                 case 270:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR0[x] + ValoriUtiliR90[x] + ValoriUtiliR180[x];
+                        if (x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Gold;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 0;
             }
             return -1;
         }
         public static int RotazioneSBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
         {
-            int PosPezzoQuale = 58;
+            int PosPezzoQuale;
+            int[] ValoriUtiliR0 = { 18, 0, 19, 1 };
             switch (Rotazione)
             {
                 case 0:
                     for (int x = 0; x < 4; x++)
                     {
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x != 1 && x != 3)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
 
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-
-                        PosPezzoQuale = PosPezzoQuale - 19;
                     }
                     return 90;
                 case 90:
-                    return 180;
-                case 180:
-                    return 270;
-                case 270:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x != 1 && x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.LightGreen;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 0;
             }
             return -1;
         }
         public static int RotazioneTBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
         {
-            int PosPezzoQuale = 58;
+
+            int PosPezzoQuale;
+            int[] ValoriUtiliR0 = { 19, 1, 1, 0 };
+            int[] ValoriUtiliR90 = { -19, 0, 0, 0 };
+            int[] ValoriUtiliR180 = { 0, -1, -1, -19 };
             switch (Rotazione)
             {
                 case 0:
                     for (int x = 0; x < 4; x++)
                     {
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x == 0)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
 
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-
-                        PosPezzoQuale = PosPezzoQuale - 19;
                     }
                     return 90;
                 case 90:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR90[x];
+                        if (x == 0)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 180;
                 case 180:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR180[x];
+                        if (x == 3)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 270;
                 case 270:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR0[x] + ValoriUtiliR90[x] + ValoriUtiliR180[x];
+                        if (x == 3)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Purple;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 0;
             }
             return -1;
         }
         public static int RotazioneZBlock(Matrice[] ele, int[] elePosizioni, int Rotazione)
         {
-            int PosPezzoQuale = 58;
+            int PosPezzoQuale;
+            int[] ValoriUtiliR0 = { 20, 1, 18, -1 };
             switch (Rotazione)
             {
                 case 0:
                     for (int x = 0; x < 4; x++)
                     {
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x != 1 && x != 2)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
 
-                        ele[elePosizioni[x]].Casella.BackColor = Color.Black;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
-                        elePosizioni[x] = elePosizioni[x] + PosPezzoQuale;
-                        ele[elePosizioni[x]].Casella.BackColor = Color.LightBlue;
-                        ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
-
-                        PosPezzoQuale = PosPezzoQuale - 19;
                     }
                     return 90;
                 case 90:
-                    return 180;
-                case 180:
-                    return 270;
-                case 270:
+                    for (int x = 0; x < 4; x++)
+                    {
+                        PosPezzoQuale = ValoriUtiliR0[x];
+                        if (x != 0 && x != 1)
+                        {
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Black;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.None;
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+                        else
+                        {
+                            elePosizioni[x] = elePosizioni[x] - PosPezzoQuale;
+                            ele[elePosizioni[x]].Casella.BackColor = Color.Red;
+                            ele[elePosizioni[x]].Casella.BorderStyle = BorderStyle.Fixed3D;
+                        }
+
+                    }
                     return 0;
             }
             return -1;

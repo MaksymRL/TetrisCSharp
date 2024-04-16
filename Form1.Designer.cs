@@ -6463,7 +6463,6 @@
             this.Decine_J.TabIndex = 709;
             this.Decine_J.Text = "0";
             this.Decine_J.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Decine_J.Click += new System.EventHandler(this.label10_Click);
             // 
             // Unita_J
             // 
@@ -6755,7 +6754,6 @@
             this.Decine_L.TabIndex = 727;
             this.Decine_L.Text = "0";
             this.Decine_L.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Decine_L.Click += new System.EventHandler(this.label13_Click);
             // 
             // Unita_L
             // 
@@ -6973,7 +6971,6 @@
             this.Centinaia_Z.TabIndex = 746;
             this.Centinaia_Z.Text = "0";
             this.Centinaia_Z.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Centinaia_Z.Click += new System.EventHandler(this.label15_Click);
             // 
             // Decine_Z
             // 
@@ -7399,7 +7396,6 @@
             this.Centinaia_I.TabIndex = 778;
             this.Centinaia_I.Text = "0";
             this.Centinaia_I.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Centinaia_I.Click += new System.EventHandler(this.label18_Click);
             // 
             // Decine_I
             // 
@@ -7528,7 +7524,6 @@
             this.textBox316.Name = "textBox316";
             this.textBox316.Size = new System.Drawing.Size(22, 20);
             this.textBox316.TabIndex = 789;
-            this.textBox316.TextChanged += new System.EventHandler(this.textBox316_TextChanged);
             // 
             // textBox317
             // 
@@ -7852,7 +7847,6 @@
             this.textBox326.Name = "textBox326";
             this.textBox326.Size = new System.Drawing.Size(22, 20);
             this.textBox326.TabIndex = 814;
-            this.textBox326.TextChanged += new System.EventHandler(this.textBox326_TextChanged);
             // 
             // textBox327
             // 
@@ -8126,7 +8120,6 @@
             this.Unita_O.TabIndex = 832;
             this.Unita_O.Text = "0";
             this.Unita_O.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Unita_O.Click += new System.EventHandler(this.label26_Click);
             // 
             // textBox345
             // 
