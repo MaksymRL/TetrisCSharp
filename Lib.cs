@@ -42,7 +42,7 @@ namespace TetrisFunzioni
         {
             Random random = new Random();
             int randomNumero = random.Next(6);
-            //int randomNumero = 5;
+            //int randomNumero = 1;
             int[] posizioni = { 60, 61, 80, 81, 100, 101, 120, 121 };
             switch (randomNumero)
             {
@@ -532,7 +532,7 @@ namespace TetrisFunzioni
         }
         #endregion Scendi
 
-        //sistemo aggiungendo le rotazioni
+        
         #region QualcosaSotto
         public static bool QualcosaSotto(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
@@ -604,6 +604,24 @@ namespace TetrisFunzioni
                         return true;
                     }
                 break;
+                case 90:
+                    if (ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[1] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
             return false;
         }
@@ -617,6 +635,25 @@ namespace TetrisFunzioni
                         return true;
                     }
                 break;
+                case 90:
+                    if (ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[1] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                
             }
             return false;
         }
@@ -635,7 +672,13 @@ namespace TetrisFunzioni
             switch (Rotazione)
             {
                 case 0:
-                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black)
+                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 90:
+                    if (ele[elePosizioni[1] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
                     {
                         return true;
                     }
@@ -653,6 +696,24 @@ namespace TetrisFunzioni
                         return true;
                     }
                 break;
+                case 90:
+                    if (ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }   
+                    break;
+                case 180:
+                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 1].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[0] + 1].Casella.BackColor != Color.Black |  ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
             return false;
         }
@@ -666,12 +727,17 @@ namespace TetrisFunzioni
                         return true;
                     }
                 break;
+                case 90:
+                    if (ele[elePosizioni[1] + 1].Casella.BackColor != Color.Black |  ele[elePosizioni[3] + 1].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                break;
             }
             return false;
         }
         #endregion QualcosaSotto
 
-        //sistemo aggiungendo le rotazioni
         #region QualcosaSinistra
         public static bool QualcosaSinistra(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
@@ -737,6 +803,24 @@ namespace TetrisFunzioni
                         return true;
                     }
                 break;
+                case 90:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
             return false;
         }
@@ -749,7 +833,26 @@ namespace TetrisFunzioni
                     {
                         return true;
                     }
-                break;
+                    break;
+                case 90:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+
             }
             return false;
         }
@@ -771,6 +874,12 @@ namespace TetrisFunzioni
                         return true;
                     }
                     break;
+                case 90:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
             return false;
         }
@@ -783,7 +892,25 @@ namespace TetrisFunzioni
                     {
                         return true;
                     }
-                break;
+                    break;
+                case 90:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
             return false;
         }
@@ -796,13 +923,19 @@ namespace TetrisFunzioni
                     {
                         return true;
                     }
-                break;
+                    break;
+                case 90:
+                    if (ele[elePosizioni[0] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] - 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] - 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
             return false;
         }
         #endregion QualcosaSinistra
 
-        //sistemo aggiungendo le rotazioni
+       
         #region QualcosaDestra
         public static bool QualcosaDestra(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
@@ -874,6 +1007,22 @@ namespace TetrisFunzioni
                     }
                     break;
                 case 90:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
                     break;
             }
 
@@ -886,6 +1035,24 @@ namespace TetrisFunzioni
             {
                 case 0:
                     if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 90:
+                    if (ele[elePosizioni[0] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
                     {
                         return true;
                     }
@@ -915,6 +1082,12 @@ namespace TetrisFunzioni
                         return true;
                     }
                     break;
+                case 90:
+                    if (ele[elePosizioni[0] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
 
             return false;
@@ -930,6 +1103,24 @@ namespace TetrisFunzioni
                         return true;
                     }
                     break;
+                case 90:
+                    if (ele[elePosizioni[0] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 180:
+                    if (ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 270:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
             }
 
             return false;
@@ -941,6 +1132,12 @@ namespace TetrisFunzioni
             {
                 case 0:
                     if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
+                    {
+                        return true;
+                    }
+                    break;
+                case 90:
+                    if (ele[elePosizioni[1] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[2] + 20].Casella.BackColor != Color.Black | ele[elePosizioni[3] + 20].Casella.BackColor != Color.Black)
                     {
                         return true;
                     }
