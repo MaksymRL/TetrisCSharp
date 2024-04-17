@@ -5776,7 +5776,6 @@
             this.textBox143.Name = "textBox143";
             this.textBox143.Size = new System.Drawing.Size(22, 20);
             this.textBox143.TabIndex = 636;
-            this.textBox143.Text = "v";
             // 
             // textBox144
             // 
