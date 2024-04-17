@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TetrisFunzioni;
+using static System.Windows.Forms.AxHost;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProgettoFineAnno
@@ -144,6 +145,7 @@ namespace ProgettoFineAnno
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            bool pressione = false;
             if (conta == 1)
             {
                 if (e.KeyCode == Keys.Left && PosPezzo[0] - 19 > 0)
@@ -169,9 +171,10 @@ namespace ProgettoFineAnno
 
                    
                 }
-                else if (e.KeyCode == Keys.Down)
+                else if (e.KeyCode == Keys.Down )
                 {
-                    timer_screenupdate.Interval = 300;
+                    
+
                 }
                 
             }
