@@ -5880,7 +5880,6 @@
             this.textBox150.Name = "textBox150";
             this.textBox150.Size = new System.Drawing.Size(22, 22);
             this.textBox150.TabIndex = 640;
-            this.textBox150.Text = "v";
             // 
             // textBox151
             // 
@@ -7950,7 +7949,6 @@
             this.textBox334.Name = "textBox334";
             this.textBox334.Size = new System.Drawing.Size(22, 20);
             this.textBox334.TabIndex = 817;
-            this.textBox334.Text = "v";
             // 
             // textBox335
             // 
@@ -7977,7 +7975,6 @@
             this.textBox336.Name = "textBox336";
             this.textBox336.Size = new System.Drawing.Size(22, 20);
             this.textBox336.TabIndex = 815;
-            this.textBox336.Text = "v";
             // 
             // textBox337
             // 
@@ -8065,7 +8062,6 @@
             this.textBox343.Name = "textBox343";
             this.textBox343.Size = new System.Drawing.Size(22, 20);
             this.textBox343.TabIndex = 830;
-            this.textBox343.Text = "v";
             // 
             // textBox344
             // 
@@ -8079,7 +8075,6 @@
             this.textBox344.Name = "textBox344";
             this.textBox344.Size = new System.Drawing.Size(22, 22);
             this.textBox344.TabIndex = 831;
-            this.textBox344.Text = "v";
             // 
             // Centinaia_O
             // 
