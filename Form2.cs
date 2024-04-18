@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,37 @@ namespace ProgettoFineAnno
             this.FormBorderStyle = FormBorderStyle.None;
             this.TopMost = true;
         }
+
+        public struct giocatori
+        {
+            public string nome;
+            public int punteggio;
+
+        }
+        public giocatori[] Elegiocatori = new giocatori[69];
+        private int num = 0;
+        public static void SalvaFile(giocatori[] ele, int n)
+        {
+            StreamWriter mioFile;
+
+
+            mioFile = new StreamWriter("statistica");
+            int x = 0;
+            while (x < n)
+            {
+                giocatori tmpGiocatore = ele[x];
+                mioFile.WriteLine(tmpGiocatore.nome);
+                mioFile.WriteLine(tmpGiocatore.punteggio);
+
+                x++;
+            }
+
+            mioFile.Close();
+
+
+        }
+
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -37,8 +69,27 @@ namespace ProgettoFineAnno
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            giocatori nuovigiocatori = default;
+
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                MessageBox.Show("inserisci nickname");
+                return;
+
+            }
+            nuovigiocatori.nome = textBox1.Text;
+            nuovigiocatori.punteggio = 1;
+
+            Elegiocatori[num] = nuovigiocatori;
+            num++;
+            textBox1.Clear();
+
+
+            SalvaFile(Elegiocatori, num);
+
             Form1 form1 = new Form1();
             form1.Show();
+
         }
     }
 }
