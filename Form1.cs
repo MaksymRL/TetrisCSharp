@@ -15,9 +15,9 @@ namespace ProgettoFineAnno
 {
     public partial class Form1 : Form
     {
-        private Matrice[] eleMatrice = new Matrice[200];
+        private Matrice[] eleMatrice = new Matrice[230];
         private MatriceRandom[] eleMatriceRandom = new MatriceRandom[8];
-        private int num = 200;
+        private int num = 230;
         private string[] Colonna = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
         private string[] ColonnaRandom = { "X", "Z" };
         private int numRandom = 8;
@@ -25,6 +25,7 @@ namespace ProgettoFineAnno
         private int[] PosPezzo = new int[4];
         private int Pezzo;
         private int RotazionePezzo;
+
         public Form1()
         {
             InitializeComponent();
@@ -33,9 +34,9 @@ namespace ProgettoFineAnno
             timer_screenupdate.Tick += Timer_Tick;
             this.KeyDown += Form1_KeyDown;
             timer_screenupdate.Start();
-            this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.TopMost = true;
+            //this.WindowState = FormWindowState.Maximized;
+            //this.FormBorderStyle = FormBorderStyle.None;
+            //this.TopMost = true;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace ProgettoFineAnno
 
             #region PezzoScendi
 
-            int[] stop = { 19, 39, 59, 79, 99, 119, 139, 159, 179, 199 };
+            int[] stop = { 19, 42, 65, 88, 111, 134, 157, 180, 203, 226 };
             bool contienevalori = stop.Any(value => PosPezzo.Contains(value));
 
 
@@ -72,6 +73,7 @@ namespace ProgettoFineAnno
             if (conta == 0)
             {
                 Pezzo = Lib.GeneraPezzo(eleMatrice, PosPezzo,ref RotazionePezzo);
+                if (Pezzo == -1) MessageBox.Show("Sei stra gay");
                 conta++;
             }
             #endregion PezzoScendi
@@ -87,7 +89,7 @@ namespace ProgettoFineAnno
             int PosColonna = 0;
             while (x <= num - 1)
             {
-                if (riga <= 20)
+                if (riga <= 23)
                 {
                     nuovaCasella.Colonna = Colonna[PosColonna];
                     nuovaCasella.Riga = riga;
@@ -140,12 +142,12 @@ namespace ProgettoFineAnno
             #endregion Matrice Random
 
             
-
+           
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            bool pressione = false;
+            
             if (conta == 1)
             {
                 if (e.KeyCode == Keys.Left && PosPezzo[0] - 19 > 0)
@@ -156,7 +158,7 @@ namespace ProgettoFineAnno
                         Lib.MuoviASinistra(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                     }
                 }
-                else if (e.KeyCode == Keys.Right && PosPezzo[3] + 19 < 199)
+                else if (e.KeyCode == Keys.Right && PosPezzo[3] + 19 < 226)
                 {
                     bool QualcosaDestra = Lib.QualcosaDestra(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
                     if (QualcosaDestra == false)
@@ -173,8 +175,8 @@ namespace ProgettoFineAnno
                 }
                 else if (e.KeyCode == Keys.Down )
                 {
-                    
 
+                    timer_screenupdate.Interval = 100;
                 }
                 
             }

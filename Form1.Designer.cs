@@ -619,6 +619,36 @@
             this.textBox351 = new System.Windows.Forms.TextBox();
             this.textBox352 = new System.Windows.Forms.TextBox();
             this.textBox353 = new System.Windows.Forms.TextBox();
+            this.B23 = new System.Windows.Forms.TextBox();
+            this.A23 = new System.Windows.Forms.TextBox();
+            this.H23 = new System.Windows.Forms.TextBox();
+            this.G23 = new System.Windows.Forms.TextBox();
+            this.F23 = new System.Windows.Forms.TextBox();
+            this.E23 = new System.Windows.Forms.TextBox();
+            this.J23 = new System.Windows.Forms.TextBox();
+            this.I23 = new System.Windows.Forms.TextBox();
+            this.D23 = new System.Windows.Forms.TextBox();
+            this.C23 = new System.Windows.Forms.TextBox();
+            this.B22 = new System.Windows.Forms.TextBox();
+            this.A22 = new System.Windows.Forms.TextBox();
+            this.H22 = new System.Windows.Forms.TextBox();
+            this.G22 = new System.Windows.Forms.TextBox();
+            this.F22 = new System.Windows.Forms.TextBox();
+            this.E22 = new System.Windows.Forms.TextBox();
+            this.J22 = new System.Windows.Forms.TextBox();
+            this.I22 = new System.Windows.Forms.TextBox();
+            this.D22 = new System.Windows.Forms.TextBox();
+            this.C22 = new System.Windows.Forms.TextBox();
+            this.B21 = new System.Windows.Forms.TextBox();
+            this.A21 = new System.Windows.Forms.TextBox();
+            this.H21 = new System.Windows.Forms.TextBox();
+            this.G21 = new System.Windows.Forms.TextBox();
+            this.F21 = new System.Windows.Forms.TextBox();
+            this.E21 = new System.Windows.Forms.TextBox();
+            this.J21 = new System.Windows.Forms.TextBox();
+            this.I21 = new System.Windows.Forms.TextBox();
+            this.D21 = new System.Windows.Forms.TextBox();
+            this.C21 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // C3
@@ -8232,6 +8262,426 @@
             this.textBox353.Size = new System.Drawing.Size(22, 20);
             this.textBox353.TabIndex = 841;
             // 
+            // B23
+            // 
+            this.B23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.B23.BackColor = System.Drawing.Color.Black;
+            this.B23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.B23.Enabled = false;
+            this.B23.Location = new System.Drawing.Point(376, 97);
+            this.B23.Margin = new System.Windows.Forms.Padding(0);
+            this.B23.Multiline = true;
+            this.B23.Name = "B23";
+            this.B23.Size = new System.Drawing.Size(22, 20);
+            this.B23.TabIndex = 853;
+            this.B23.Visible = false;
+            // 
+            // A23
+            // 
+            this.A23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.A23.BackColor = System.Drawing.Color.Black;
+            this.A23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.A23.Enabled = false;
+            this.A23.Location = new System.Drawing.Point(354, 97);
+            this.A23.Margin = new System.Windows.Forms.Padding(0);
+            this.A23.Multiline = true;
+            this.A23.Name = "A23";
+            this.A23.Size = new System.Drawing.Size(22, 20);
+            this.A23.TabIndex = 852;
+            this.A23.Visible = false;
+            // 
+            // H23
+            // 
+            this.H23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.H23.BackColor = System.Drawing.Color.Black;
+            this.H23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.H23.Enabled = false;
+            this.H23.Location = new System.Drawing.Point(508, 97);
+            this.H23.Margin = new System.Windows.Forms.Padding(0);
+            this.H23.Multiline = true;
+            this.H23.Name = "H23";
+            this.H23.Size = new System.Drawing.Size(22, 20);
+            this.H23.TabIndex = 851;
+            this.H23.Visible = false;
+            // 
+            // G23
+            // 
+            this.G23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.G23.BackColor = System.Drawing.Color.Black;
+            this.G23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G23.Enabled = false;
+            this.G23.Location = new System.Drawing.Point(486, 97);
+            this.G23.Margin = new System.Windows.Forms.Padding(0);
+            this.G23.Multiline = true;
+            this.G23.Name = "G23";
+            this.G23.Size = new System.Drawing.Size(22, 20);
+            this.G23.TabIndex = 850;
+            this.G23.Visible = false;
+            // 
+            // F23
+            // 
+            this.F23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.F23.BackColor = System.Drawing.Color.Black;
+            this.F23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.F23.Enabled = false;
+            this.F23.Location = new System.Drawing.Point(464, 97);
+            this.F23.Margin = new System.Windows.Forms.Padding(0);
+            this.F23.Multiline = true;
+            this.F23.Name = "F23";
+            this.F23.Size = new System.Drawing.Size(22, 20);
+            this.F23.TabIndex = 849;
+            this.F23.Visible = false;
+            // 
+            // E23
+            // 
+            this.E23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.E23.BackColor = System.Drawing.Color.Black;
+            this.E23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.E23.Enabled = false;
+            this.E23.Location = new System.Drawing.Point(442, 97);
+            this.E23.Margin = new System.Windows.Forms.Padding(0);
+            this.E23.Multiline = true;
+            this.E23.Name = "E23";
+            this.E23.Size = new System.Drawing.Size(22, 20);
+            this.E23.TabIndex = 848;
+            this.E23.Visible = false;
+            // 
+            // J23
+            // 
+            this.J23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.J23.BackColor = System.Drawing.Color.Black;
+            this.J23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.J23.Enabled = false;
+            this.J23.Location = new System.Drawing.Point(552, 97);
+            this.J23.Margin = new System.Windows.Forms.Padding(0);
+            this.J23.Multiline = true;
+            this.J23.Name = "J23";
+            this.J23.Size = new System.Drawing.Size(22, 20);
+            this.J23.TabIndex = 847;
+            this.J23.Visible = false;
+            // 
+            // I23
+            // 
+            this.I23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.I23.BackColor = System.Drawing.Color.Black;
+            this.I23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.I23.Enabled = false;
+            this.I23.Location = new System.Drawing.Point(530, 97);
+            this.I23.Margin = new System.Windows.Forms.Padding(0);
+            this.I23.Multiline = true;
+            this.I23.Name = "I23";
+            this.I23.Size = new System.Drawing.Size(22, 20);
+            this.I23.TabIndex = 846;
+            this.I23.Visible = false;
+            // 
+            // D23
+            // 
+            this.D23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.D23.BackColor = System.Drawing.Color.Black;
+            this.D23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D23.Enabled = false;
+            this.D23.Location = new System.Drawing.Point(420, 97);
+            this.D23.Margin = new System.Windows.Forms.Padding(0);
+            this.D23.Multiline = true;
+            this.D23.Name = "D23";
+            this.D23.Size = new System.Drawing.Size(22, 20);
+            this.D23.TabIndex = 845;
+            this.D23.Visible = false;
+            // 
+            // C23
+            // 
+            this.C23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.C23.BackColor = System.Drawing.Color.Black;
+            this.C23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.C23.Enabled = false;
+            this.C23.Location = new System.Drawing.Point(398, 97);
+            this.C23.Margin = new System.Windows.Forms.Padding(0);
+            this.C23.Multiline = true;
+            this.C23.Name = "C23";
+            this.C23.Size = new System.Drawing.Size(22, 20);
+            this.C23.TabIndex = 844;
+            this.C23.Visible = false;
+            // 
+            // B22
+            // 
+            this.B22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.B22.BackColor = System.Drawing.Color.Black;
+            this.B22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.B22.Enabled = false;
+            this.B22.Location = new System.Drawing.Point(376, 77);
+            this.B22.Margin = new System.Windows.Forms.Padding(0);
+            this.B22.Multiline = true;
+            this.B22.Name = "B22";
+            this.B22.Size = new System.Drawing.Size(22, 20);
+            this.B22.TabIndex = 863;
+            this.B22.Visible = false;
+            // 
+            // A22
+            // 
+            this.A22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.A22.BackColor = System.Drawing.Color.Black;
+            this.A22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.A22.Enabled = false;
+            this.A22.Location = new System.Drawing.Point(354, 77);
+            this.A22.Margin = new System.Windows.Forms.Padding(0);
+            this.A22.Multiline = true;
+            this.A22.Name = "A22";
+            this.A22.Size = new System.Drawing.Size(22, 20);
+            this.A22.TabIndex = 862;
+            this.A22.Visible = false;
+            // 
+            // H22
+            // 
+            this.H22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.H22.BackColor = System.Drawing.Color.Black;
+            this.H22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.H22.Enabled = false;
+            this.H22.Location = new System.Drawing.Point(508, 77);
+            this.H22.Margin = new System.Windows.Forms.Padding(0);
+            this.H22.Multiline = true;
+            this.H22.Name = "H22";
+            this.H22.Size = new System.Drawing.Size(22, 20);
+            this.H22.TabIndex = 861;
+            this.H22.Visible = false;
+            // 
+            // G22
+            // 
+            this.G22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.G22.BackColor = System.Drawing.Color.Black;
+            this.G22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G22.Enabled = false;
+            this.G22.Location = new System.Drawing.Point(486, 77);
+            this.G22.Margin = new System.Windows.Forms.Padding(0);
+            this.G22.Multiline = true;
+            this.G22.Name = "G22";
+            this.G22.Size = new System.Drawing.Size(22, 20);
+            this.G22.TabIndex = 860;
+            this.G22.Visible = false;
+            // 
+            // F22
+            // 
+            this.F22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.F22.BackColor = System.Drawing.Color.Black;
+            this.F22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.F22.Enabled = false;
+            this.F22.Location = new System.Drawing.Point(464, 77);
+            this.F22.Margin = new System.Windows.Forms.Padding(0);
+            this.F22.Multiline = true;
+            this.F22.Name = "F22";
+            this.F22.Size = new System.Drawing.Size(22, 20);
+            this.F22.TabIndex = 859;
+            this.F22.Visible = false;
+            // 
+            // E22
+            // 
+            this.E22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.E22.BackColor = System.Drawing.Color.Black;
+            this.E22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.E22.Enabled = false;
+            this.E22.Location = new System.Drawing.Point(442, 77);
+            this.E22.Margin = new System.Windows.Forms.Padding(0);
+            this.E22.Multiline = true;
+            this.E22.Name = "E22";
+            this.E22.Size = new System.Drawing.Size(22, 20);
+            this.E22.TabIndex = 858;
+            this.E22.Visible = false;
+            // 
+            // J22
+            // 
+            this.J22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.J22.BackColor = System.Drawing.Color.Black;
+            this.J22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.J22.Enabled = false;
+            this.J22.Location = new System.Drawing.Point(552, 77);
+            this.J22.Margin = new System.Windows.Forms.Padding(0);
+            this.J22.Multiline = true;
+            this.J22.Name = "J22";
+            this.J22.Size = new System.Drawing.Size(22, 20);
+            this.J22.TabIndex = 857;
+            this.J22.Visible = false;
+            // 
+            // I22
+            // 
+            this.I22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.I22.BackColor = System.Drawing.Color.Black;
+            this.I22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.I22.Enabled = false;
+            this.I22.Location = new System.Drawing.Point(530, 77);
+            this.I22.Margin = new System.Windows.Forms.Padding(0);
+            this.I22.Multiline = true;
+            this.I22.Name = "I22";
+            this.I22.Size = new System.Drawing.Size(22, 20);
+            this.I22.TabIndex = 856;
+            this.I22.Visible = false;
+            // 
+            // D22
+            // 
+            this.D22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.D22.BackColor = System.Drawing.Color.Black;
+            this.D22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D22.Enabled = false;
+            this.D22.Location = new System.Drawing.Point(420, 77);
+            this.D22.Margin = new System.Windows.Forms.Padding(0);
+            this.D22.Multiline = true;
+            this.D22.Name = "D22";
+            this.D22.Size = new System.Drawing.Size(22, 20);
+            this.D22.TabIndex = 855;
+            this.D22.Visible = false;
+            // 
+            // C22
+            // 
+            this.C22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.C22.BackColor = System.Drawing.Color.Black;
+            this.C22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.C22.Enabled = false;
+            this.C22.Location = new System.Drawing.Point(398, 77);
+            this.C22.Margin = new System.Windows.Forms.Padding(0);
+            this.C22.Multiline = true;
+            this.C22.Name = "C22";
+            this.C22.Size = new System.Drawing.Size(22, 20);
+            this.C22.TabIndex = 854;
+            this.C22.Visible = false;
+            // 
+            // B21
+            // 
+            this.B21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.B21.BackColor = System.Drawing.Color.Black;
+            this.B21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.B21.Enabled = false;
+            this.B21.Location = new System.Drawing.Point(376, 57);
+            this.B21.Margin = new System.Windows.Forms.Padding(0);
+            this.B21.Multiline = true;
+            this.B21.Name = "B21";
+            this.B21.Size = new System.Drawing.Size(22, 20);
+            this.B21.TabIndex = 873;
+            this.B21.Visible = false;
+            // 
+            // A21
+            // 
+            this.A21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.A21.BackColor = System.Drawing.Color.Black;
+            this.A21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.A21.Enabled = false;
+            this.A21.Location = new System.Drawing.Point(354, 57);
+            this.A21.Margin = new System.Windows.Forms.Padding(0);
+            this.A21.Multiline = true;
+            this.A21.Name = "A21";
+            this.A21.Size = new System.Drawing.Size(22, 20);
+            this.A21.TabIndex = 872;
+            this.A21.Visible = false;
+            // 
+            // H21
+            // 
+            this.H21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.H21.BackColor = System.Drawing.Color.Black;
+            this.H21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.H21.Enabled = false;
+            this.H21.Location = new System.Drawing.Point(508, 57);
+            this.H21.Margin = new System.Windows.Forms.Padding(0);
+            this.H21.Multiline = true;
+            this.H21.Name = "H21";
+            this.H21.Size = new System.Drawing.Size(22, 20);
+            this.H21.TabIndex = 871;
+            this.H21.Visible = false;
+            // 
+            // G21
+            // 
+            this.G21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.G21.BackColor = System.Drawing.Color.Black;
+            this.G21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.G21.Enabled = false;
+            this.G21.Location = new System.Drawing.Point(486, 57);
+            this.G21.Margin = new System.Windows.Forms.Padding(0);
+            this.G21.Multiline = true;
+            this.G21.Name = "G21";
+            this.G21.Size = new System.Drawing.Size(22, 20);
+            this.G21.TabIndex = 870;
+            this.G21.Visible = false;
+            // 
+            // F21
+            // 
+            this.F21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.F21.BackColor = System.Drawing.Color.Black;
+            this.F21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.F21.Enabled = false;
+            this.F21.Location = new System.Drawing.Point(464, 57);
+            this.F21.Margin = new System.Windows.Forms.Padding(0);
+            this.F21.Multiline = true;
+            this.F21.Name = "F21";
+            this.F21.Size = new System.Drawing.Size(22, 20);
+            this.F21.TabIndex = 869;
+            this.F21.Visible = false;
+            // 
+            // E21
+            // 
+            this.E21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.E21.BackColor = System.Drawing.Color.Black;
+            this.E21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.E21.Enabled = false;
+            this.E21.Location = new System.Drawing.Point(442, 57);
+            this.E21.Margin = new System.Windows.Forms.Padding(0);
+            this.E21.Multiline = true;
+            this.E21.Name = "E21";
+            this.E21.Size = new System.Drawing.Size(22, 20);
+            this.E21.TabIndex = 868;
+            this.E21.Visible = false;
+            // 
+            // J21
+            // 
+            this.J21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.J21.BackColor = System.Drawing.Color.Black;
+            this.J21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.J21.Enabled = false;
+            this.J21.Location = new System.Drawing.Point(552, 57);
+            this.J21.Margin = new System.Windows.Forms.Padding(0);
+            this.J21.Multiline = true;
+            this.J21.Name = "J21";
+            this.J21.Size = new System.Drawing.Size(22, 20);
+            this.J21.TabIndex = 867;
+            this.J21.Visible = false;
+            // 
+            // I21
+            // 
+            this.I21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.I21.BackColor = System.Drawing.Color.Black;
+            this.I21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.I21.Enabled = false;
+            this.I21.Location = new System.Drawing.Point(530, 57);
+            this.I21.Margin = new System.Windows.Forms.Padding(0);
+            this.I21.Multiline = true;
+            this.I21.Name = "I21";
+            this.I21.Size = new System.Drawing.Size(22, 20);
+            this.I21.TabIndex = 866;
+            this.I21.Visible = false;
+            // 
+            // D21
+            // 
+            this.D21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.D21.BackColor = System.Drawing.Color.Black;
+            this.D21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D21.Enabled = false;
+            this.D21.Location = new System.Drawing.Point(420, 57);
+            this.D21.Margin = new System.Windows.Forms.Padding(0);
+            this.D21.Multiline = true;
+            this.D21.Name = "D21";
+            this.D21.Size = new System.Drawing.Size(22, 20);
+            this.D21.TabIndex = 865;
+            this.D21.Visible = false;
+            // 
+            // C21
+            // 
+            this.C21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.C21.BackColor = System.Drawing.Color.Black;
+            this.C21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.C21.Enabled = false;
+            this.C21.Location = new System.Drawing.Point(398, 57);
+            this.C21.Margin = new System.Windows.Forms.Padding(0);
+            this.C21.Multiline = true;
+            this.C21.Name = "C21";
+            this.C21.Size = new System.Drawing.Size(22, 20);
+            this.C21.TabIndex = 864;
+            this.C21.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8239,6 +8689,36 @@
             this.BackgroundImage = global::ProgettoFineAnno.Properties.Resources.galassia3redux;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 668);
+            this.Controls.Add(this.B21);
+            this.Controls.Add(this.A21);
+            this.Controls.Add(this.H21);
+            this.Controls.Add(this.G21);
+            this.Controls.Add(this.F21);
+            this.Controls.Add(this.E21);
+            this.Controls.Add(this.J21);
+            this.Controls.Add(this.I21);
+            this.Controls.Add(this.D21);
+            this.Controls.Add(this.C21);
+            this.Controls.Add(this.B22);
+            this.Controls.Add(this.A22);
+            this.Controls.Add(this.H22);
+            this.Controls.Add(this.G22);
+            this.Controls.Add(this.F22);
+            this.Controls.Add(this.E22);
+            this.Controls.Add(this.J22);
+            this.Controls.Add(this.I22);
+            this.Controls.Add(this.D22);
+            this.Controls.Add(this.C22);
+            this.Controls.Add(this.B23);
+            this.Controls.Add(this.A23);
+            this.Controls.Add(this.H23);
+            this.Controls.Add(this.G23);
+            this.Controls.Add(this.F23);
+            this.Controls.Add(this.E23);
+            this.Controls.Add(this.J23);
+            this.Controls.Add(this.I23);
+            this.Controls.Add(this.D23);
+            this.Controls.Add(this.C23);
             this.Controls.Add(this.textBox351);
             this.Controls.Add(this.textBox352);
             this.Controls.Add(this.textBox353);
@@ -9428,6 +9908,36 @@
         private System.Windows.Forms.TextBox textBox351;
         private System.Windows.Forms.TextBox textBox352;
         private System.Windows.Forms.TextBox textBox353;
+        private System.Windows.Forms.TextBox B23;
+        private System.Windows.Forms.TextBox A23;
+        private System.Windows.Forms.TextBox H23;
+        private System.Windows.Forms.TextBox G23;
+        private System.Windows.Forms.TextBox F23;
+        private System.Windows.Forms.TextBox E23;
+        private System.Windows.Forms.TextBox J23;
+        private System.Windows.Forms.TextBox I23;
+        private System.Windows.Forms.TextBox D23;
+        private System.Windows.Forms.TextBox C23;
+        private System.Windows.Forms.TextBox B22;
+        private System.Windows.Forms.TextBox A22;
+        private System.Windows.Forms.TextBox H22;
+        private System.Windows.Forms.TextBox G22;
+        private System.Windows.Forms.TextBox F22;
+        private System.Windows.Forms.TextBox E22;
+        private System.Windows.Forms.TextBox J22;
+        private System.Windows.Forms.TextBox I22;
+        private System.Windows.Forms.TextBox D22;
+        private System.Windows.Forms.TextBox C22;
+        private System.Windows.Forms.TextBox B21;
+        private System.Windows.Forms.TextBox A21;
+        private System.Windows.Forms.TextBox H21;
+        private System.Windows.Forms.TextBox G21;
+        private System.Windows.Forms.TextBox F21;
+        private System.Windows.Forms.TextBox E21;
+        private System.Windows.Forms.TextBox J21;
+        private System.Windows.Forms.TextBox I21;
+        private System.Windows.Forms.TextBox D21;
+        private System.Windows.Forms.TextBox C21;
     }
 }
 
