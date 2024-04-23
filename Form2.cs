@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace ProgettoFineAnno
 {
     public partial class Form2 : Form
@@ -63,10 +65,7 @@ namespace ProgettoFineAnno
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
         private void button1_Click(object sender, EventArgs e)
         {
             giocatori nuovigiocatori = default;
@@ -86,10 +85,17 @@ namespace ProgettoFineAnno
 
 
             SalvaFile(Elegiocatori, num);
+            ListViewItem item = new ListViewItem(nuovigiocatori.nome);
+            item.SubItems.Add(nuovigiocatori.punteggio.ToString());
+            listView1.Items.Add(item);
 
             Form1 form1 = new Form1();
             form1.Show();
 
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
