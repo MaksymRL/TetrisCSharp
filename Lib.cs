@@ -17,17 +17,13 @@ namespace TetrisFunzioni
         public string Colonna;
         public int Riga;
         public TextBox Casella;
-        public Color ColoreSfondo;
-        public BorderStyle TipoBordi;
     }
 
-    public struct MatriceRandom
+    public struct MatriceNextPiece
     {
         public string Colonna;
         public int Riga;
         public TextBox Casella;
-        public Color ColoreSfondo;
-        public BorderStyle TipoBordi;
     }
 
     public enum Pezzi
@@ -39,10 +35,12 @@ namespace TetrisFunzioni
     {
 
         #region Genera
-        public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni, ref int Rotazione)
+        public static int GeneraPezzo(Matrice[] ele, int[] elePosizioni, ref int Rotazione, int PezzoSuccessivo)
         {
-            Random random = new Random();
-            int randomNumero = random.Next(6);
+            int randomNumero = -1;
+            if (PezzoSuccessivo == -1) randomNumero = RandomNum(randomNumero);
+            else randomNumero = PezzoSuccessivo;
+            
             //int randomNumero = 0;
             int[] posizioni = { 69, 70, 92, 93, 115, 116, 138, 139 };
             bool Lose;
@@ -175,6 +173,95 @@ namespace TetrisFunzioni
                     return (int)Pezzi.ZBlock;
             }
             return -1;
+        }
+        public static int RandomNum(int num)
+        {
+            Random random = new Random();
+            return num = random.Next(6);
+        }
+        public static int PezzoSuccessivo(MatriceNextPiece[] ele)
+        {
+            for(int x = 0; x < ele.Length; x++)
+            {
+                ele[x].Casella.BackColor = Color.Black;
+                ele[x].Casella.BorderStyle = BorderStyle.None;
+            }
+            int Pezzo = 0;
+            Pezzo = RandomNum(Pezzo);
+            switch (Pezzo)
+            {
+                case (int)Pezzi.IBlock:
+                    ele[4].Casella.BackColor = Color.LightBlue;
+                    ele[4].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[5].Casella.BackColor = Color.LightBlue;
+                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.LightBlue;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[7].Casella.BackColor = Color.LightBlue;
+                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+                case (int)Pezzi.JBlock:
+                    ele[1].Casella.BackColor = Color.Blue;
+                    ele[1].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[5].Casella.BackColor = Color.Blue;
+                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.Blue;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[7].Casella.BackColor = Color.Blue;
+                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+                case (int)Pezzi.LBlock:
+                    ele[3].Casella.BackColor = Color.Gold;
+                    ele[3].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[5].Casella.BackColor = Color.Gold;
+                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.Gold;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[7].Casella.BackColor = Color.Gold;
+                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+                case (int)Pezzi.OBlock:
+                    ele[1].Casella.BackColor = Color.Yellow;
+                    ele[1].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[2].Casella.BackColor = Color.Yellow;
+                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[5].Casella.BackColor = Color.Yellow;
+                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.Yellow;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+                case (int)Pezzi.SBlock:
+                    ele[2].Casella.BackColor = Color.LightGreen;
+                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[3].Casella.BackColor = Color.LightGreen;
+                    ele[3].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[5].Casella.BackColor = Color.LightGreen;
+                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.LightGreen;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+                case (int)Pezzi.TBlock:
+                    ele[2].Casella.BackColor = Color.Purple;
+                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[5].Casella.BackColor = Color.Purple;
+                    ele[5].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.Purple;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[7].Casella.BackColor = Color.Purple;
+                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+                case (int)Pezzi.ZBlock:
+                    ele[1].Casella.BackColor = Color.Red;
+                    ele[1].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[2].Casella.BackColor = Color.Red;
+                    ele[2].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[6].Casella.BackColor = Color.Red;
+                    ele[6].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    ele[7].Casella.BackColor = Color.Red;
+                    ele[7].Casella.BorderStyle = BorderStyle.Fixed3D;
+                    break;
+            }
+            return Pezzo;
         }
         #endregion Genera
 
@@ -2703,5 +2790,116 @@ namespace TetrisFunzioni
             return false;
         }
         #endregion Lose
+
+        #region Punteggio
+        public static int CalcoloPunteggio(Matrice[] ele, ref int PunteggioAttuale, int Livello, ref int SommaLine)
+        {
+            int[] ArrPosizioniCanc = new int[4];
+            int Righe = QuanteRighe(ele, ref SommaLine,ArrPosizioniCanc);
+            
+            switch (Righe)
+            {
+                case 0:
+                    return PunteggioAttuale;
+                case 1:
+                    PunteggioAttuale = PunteggioAttuale + 40 * (Livello + 1);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[0]);
+                    return PunteggioAttuale;
+                case 2:
+                    PunteggioAttuale = PunteggioAttuale + 100 * (Livello + 1);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[0]);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[1]);
+                    return PunteggioAttuale;
+                case 3:
+                    PunteggioAttuale = PunteggioAttuale + 300 * (Livello + 1);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[0]);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[1]);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[2]);
+                    return PunteggioAttuale;
+                case 4:
+                    PunteggioAttuale = PunteggioAttuale + 1200 * (Livello + 1);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[0]);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[1]);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[2]);
+                    Lib.CancelloRiga(ele, ArrPosizioniCanc[3]);
+                    return PunteggioAttuale;
+            }
+            return 0;
+        }
+
+        public static void CancelloRiga(Matrice[] ele, int x)
+        {
+            int temp = x;
+            for(int y = 0; y < 10; y++)
+            {
+                for (int z = 0; z <= 20; z++)
+                {
+                    if (x != 0 && x % 23 != 0)
+                    {
+                        ele[x].Casella.BackColor = ele[x - 1].Casella.BackColor;
+                        ele[x].Casella.BorderStyle = ele[x - 1].Casella.BorderStyle;
+                        x--;
+                    }
+                }
+                x = temp + 23;
+                temp = x;
+            }
+        }
+
+        public static int QuanteRighe(Matrice[] ele, ref int SommaLine, int[] ArrPosizioneCanc)
+        {
+            int PosizioneCanc = 0;
+            int Righe = 0;
+            
+            for (int Posizione = 0; Posizione < 20; Posizione++)
+            {
+                if (ele[Posizione + 0].Casella.BackColor != Color.Black && ele[Posizione + 23].Casella.BackColor != Color.Black && ele[Posizione + 46].Casella.BackColor != Color.Black && ele[Posizione + 69].Casella.BackColor != Color.Black && ele[Posizione + 92].Casella.BackColor != Color.Black && ele[Posizione + 115].Casella.BackColor != Color.Black && ele[Posizione + 138].Casella.BackColor != Color.Black && ele[Posizione + 161].Casella.BackColor != Color.Black && ele[Posizione + 184].Casella.BackColor != Color.Black && ele[Posizione + 207].Casella.BackColor != Color.Black)
+                {
+                    Righe = Righe + 1;
+                    SommaLine = SommaLine + 1;
+                    ArrPosizioneCanc[PosizioneCanc] = Posizione;
+                    PosizioneCanc++;
+                }
+            }
+            return Righe;
+        }
+        #endregion Punteggio
+
+        #region Statistica
+        public static int Livello(int SommaLine)
+        {
+            int Livello = SommaLine / 10;
+            return Livello;
+        }
+        public static void Statitistiche(ref int StatisticaT, ref int StatisticaJ, ref int StatisticaL, ref int StatisticaZ, ref int StatisticaI, ref int StatisticaS, ref int StatisticaO, int Pezzo)
+        {
+           
+            switch (Pezzo)
+            {
+                case (int)Pezzi.IBlock:
+                    StatisticaI = StatisticaI + 1;
+                    break;
+                case (int)Pezzi.JBlock:
+                    StatisticaJ = StatisticaJ + 1;
+                    break;
+                case (int)Pezzi.LBlock:
+                    StatisticaL = StatisticaL + 1;
+                    break;
+                case (int)Pezzi.OBlock:
+                    StatisticaO = StatisticaO + 1;
+                    break;
+                case (int)Pezzi.SBlock:
+                    StatisticaS = StatisticaS + 1;
+                    break;
+                case (int)Pezzi.TBlock:
+                    StatisticaT = StatisticaT + 1;
+                    break;
+                case (int)Pezzi.ZBlock:
+                    StatisticaZ = StatisticaZ + 1;
+                    break;
+            }
+            
+        }
+        #endregion Statistica
     }
 }
