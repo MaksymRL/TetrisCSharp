@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 
@@ -100,6 +101,11 @@ namespace ProgettoFineAnno
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
