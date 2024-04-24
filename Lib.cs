@@ -177,7 +177,7 @@ namespace TetrisFunzioni
         public static int RandomNum(int num)
         {
             Random random = new Random();
-            return num = random.Next(6);
+            return num = random.Next(7);
         }
         public static int PezzoSuccessivo(MatriceNextPiece[] ele)
         {

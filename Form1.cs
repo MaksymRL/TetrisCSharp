@@ -37,6 +37,7 @@ namespace ProgettoFineAnno
         private int Lines = 0;
         private int PezzoSuccessivo = -1;
         private int[] ArrPosizioniCanc = new int[4]; 
+        private int keyPress = default;
         public Form1()
         {
             InitializeComponent();
@@ -208,27 +209,7 @@ namespace ProgettoFineAnno
                 else
                 {
                     Punteggio = Lib.CalcoloPunteggio(eleMatrice, ref Punteggio, Livello, ref Lines);
-                    switch (Punteggio)
-                    {
-                        case int n when n < 10:
-                            LBL_punteggio.Text = $"00000{Punteggio}";
-                            break;
-                        case int n when n < 100:
-                            LBL_punteggio.Text = $"0000{Punteggio}";
-                            break;
-                        case int n when n < 1000:
-                            LBL_punteggio.Text = $"000{Punteggio}";
-                            break;
-                        case int n when n < 10000:
-                            LBL_punteggio.Text = $"00{Punteggio}";
-                            break;
-                        case int n when n < 100000:
-                            LBL_punteggio.Text = $"0{Punteggio}";
-                            break;
-                        default:
-                            LBL_punteggio.Text = $"{Punteggio}";
-                            break;
-                    }
+                   
                     txt_linee.Text = $"LINES-{Lines}";  
                     LBL_livello.Text = Lib.Livello(Lines).ToString();
                 }
@@ -237,8 +218,34 @@ namespace ProgettoFineAnno
             }
             #endregion PezzoScendi
 
-           
-
+            bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+            
+            if(QualcosaSotto == true | contienevalori == true)
+            {
+                Punteggio += keyPress;
+                keyPress = 0;
+            }
+            switch (Punteggio)
+            {
+                case int n when n < 10:
+                    LBL_punteggio.Text = $"00000{Punteggio}";
+                    break;
+                case int n when n < 100:
+                    LBL_punteggio.Text = $"0000{Punteggio}";
+                    break;
+                case int n when n < 1000:
+                    LBL_punteggio.Text = $"000{Punteggio}";
+                    break;
+                case int n when n < 10000:
+                    LBL_punteggio.Text = $"00{Punteggio}";
+                    break;
+                case int n when n < 100000:
+                    LBL_punteggio.Text = $"0{Punteggio}";
+                    break;
+                default:
+                    LBL_punteggio.Text = $"{Punteggio}";
+                    break;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -304,6 +311,7 @@ namespace ProgettoFineAnno
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
             int Righe = Lib.QuanteRighe(eleMatrice, ref Lines, ArrPosizioniCanc);
             if (conta == 1 && Righe == 0)
             {
@@ -334,6 +342,9 @@ namespace ProgettoFineAnno
                 {
 
                     timer_screenupdate.Interval = 1000 / 64;
+                    
+                    
+                    keyPress += 1;
                 }
                 
             }
@@ -341,6 +352,10 @@ namespace ProgettoFineAnno
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             int Righe = Lib.QuanteRighe(eleMatrice, ref Lines, ArrPosizioniCanc);
+            bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+            keyPress = 0;
+            
+
             if (e.KeyCode == Keys.Down)
             {
                 
