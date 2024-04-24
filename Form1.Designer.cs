@@ -343,15 +343,9 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.textBox51 = new System.Windows.Forms.TextBox();
             this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.textBox67 = new System.Windows.Forms.TextBox();
             this.textBox72 = new System.Windows.Forms.TextBox();
             this.textBox73 = new System.Windows.Forms.TextBox();
             this.textBox74 = new System.Windows.Forms.TextBox();
@@ -627,7 +621,6 @@
             this.I21 = new System.Windows.Forms.TextBox();
             this.D21 = new System.Windows.Forms.TextBox();
             this.C21 = new System.Windows.Forms.TextBox();
-            this.LBL_livello = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox362 = new System.Windows.Forms.TextBox();
             this.textBox363 = new System.Windows.Forms.TextBox();
@@ -680,6 +673,13 @@
             this.textBox404 = new System.Windows.Forms.TextBox();
             this.textBox405 = new System.Windows.Forms.TextBox();
             this.txt_linee = new System.Windows.Forms.Label();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBox112 = new System.Windows.Forms.TextBox();
+            this.textBox113 = new System.Windows.Forms.TextBox();
+            this.textBox114 = new System.Windows.Forms.TextBox();
+            this.textBox115 = new System.Windows.Forms.TextBox();
+            this.LBL_livello = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // C3
@@ -3285,7 +3285,7 @@
             // textBox41
             // 
             this.textBox41.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox41.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox41.BackColor = System.Drawing.Color.Navy;
             this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox41.Enabled = false;
             this.textBox41.Location = new System.Drawing.Point(660, 157);
@@ -3294,11 +3294,12 @@
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(22, 20);
             this.textBox41.TabIndex = 419;
+            this.textBox41.TextChanged += new System.EventHandler(this.textBox41_TextChanged);
             // 
             // textBox42
             // 
             this.textBox42.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox42.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox42.BackColor = System.Drawing.Color.Navy;
             this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox42.Enabled = false;
             this.textBox42.Location = new System.Drawing.Point(660, 177);
@@ -3307,11 +3308,12 @@
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(22, 20);
             this.textBox42.TabIndex = 418;
+            this.textBox42.TextChanged += new System.EventHandler(this.textBox42_TextChanged);
             // 
             // textBox43
             // 
             this.textBox43.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox43.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox43.BackColor = System.Drawing.Color.Navy;
             this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox43.Enabled = false;
             this.textBox43.Location = new System.Drawing.Point(660, 137);
@@ -3320,11 +3322,12 @@
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(22, 20);
             this.textBox43.TabIndex = 417;
+            this.textBox43.TextChanged += new System.EventHandler(this.textBox43_TextChanged);
             // 
             // textBox44
             // 
             this.textBox44.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox44.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox44.BackColor = System.Drawing.Color.Navy;
             this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox44.Enabled = false;
             this.textBox44.Location = new System.Drawing.Point(660, 197);
@@ -3333,11 +3336,12 @@
             this.textBox44.Name = "textBox44";
             this.textBox44.Size = new System.Drawing.Size(22, 20);
             this.textBox44.TabIndex = 416;
+            this.textBox44.TextChanged += new System.EventHandler(this.textBox44_TextChanged);
             // 
             // textBox45
             // 
             this.textBox45.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox45.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox45.BackColor = System.Drawing.Color.Navy;
             this.textBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox45.Enabled = false;
             this.textBox45.Location = new System.Drawing.Point(660, 256);
@@ -3346,11 +3350,12 @@
             this.textBox45.Name = "textBox45";
             this.textBox45.Size = new System.Drawing.Size(22, 20);
             this.textBox45.TabIndex = 415;
+            this.textBox45.TextChanged += new System.EventHandler(this.textBox45_TextChanged);
             // 
             // textBox40
             // 
             this.textBox40.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox40.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox40.BackColor = System.Drawing.Color.Navy;
             this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox40.Enabled = false;
             this.textBox40.Location = new System.Drawing.Point(682, 256);
@@ -3359,11 +3364,12 @@
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(22, 20);
             this.textBox40.TabIndex = 414;
+            this.textBox40.TextChanged += new System.EventHandler(this.textBox40_TextChanged);
             // 
             // textBox39
             // 
             this.textBox39.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox39.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox39.BackColor = System.Drawing.Color.Navy;
             this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox39.Enabled = false;
             this.textBox39.Location = new System.Drawing.Point(682, 137);
@@ -3372,6 +3378,7 @@
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(22, 20);
             this.textBox39.TabIndex = 413;
+            this.textBox39.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
             // 
             // label2
             // 
@@ -3389,7 +3396,7 @@
             // textBox38
             // 
             this.textBox38.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox38.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox38.BackColor = System.Drawing.Color.Navy;
             this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox38.Enabled = false;
             this.textBox38.Location = new System.Drawing.Point(792, 157);
@@ -3398,11 +3405,12 @@
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(22, 20);
             this.textBox38.TabIndex = 410;
+            this.textBox38.TextChanged += new System.EventHandler(this.textBox38_TextChanged);
             // 
             // textBox53
             // 
             this.textBox53.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox53.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox53.BackColor = System.Drawing.Color.Navy;
             this.textBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox53.Enabled = false;
             this.textBox53.Location = new System.Drawing.Point(792, 177);
@@ -3411,11 +3419,12 @@
             this.textBox53.Name = "textBox53";
             this.textBox53.Size = new System.Drawing.Size(22, 20);
             this.textBox53.TabIndex = 409;
+            this.textBox53.TextChanged += new System.EventHandler(this.textBox53_TextChanged);
             // 
             // textBox55
             // 
             this.textBox55.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox55.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox55.BackColor = System.Drawing.Color.Navy;
             this.textBox55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox55.Enabled = false;
             this.textBox55.Location = new System.Drawing.Point(792, 197);
@@ -3424,11 +3433,12 @@
             this.textBox55.Name = "textBox55";
             this.textBox55.Size = new System.Drawing.Size(22, 20);
             this.textBox55.TabIndex = 408;
+            this.textBox55.TextChanged += new System.EventHandler(this.textBox55_TextChanged);
             // 
             // textBox56
             // 
             this.textBox56.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox56.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox56.BackColor = System.Drawing.Color.Navy;
             this.textBox56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox56.Enabled = false;
             this.textBox56.Location = new System.Drawing.Point(792, 256);
@@ -3437,11 +3447,12 @@
             this.textBox56.Name = "textBox56";
             this.textBox56.Size = new System.Drawing.Size(22, 20);
             this.textBox56.TabIndex = 407;
+            this.textBox56.TextChanged += new System.EventHandler(this.textBox56_TextChanged);
             // 
             // textBox57
             // 
             this.textBox57.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox57.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox57.BackColor = System.Drawing.Color.Navy;
             this.textBox57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox57.Enabled = false;
             this.textBox57.Location = new System.Drawing.Point(770, 137);
@@ -3450,11 +3461,12 @@
             this.textBox57.Name = "textBox57";
             this.textBox57.Size = new System.Drawing.Size(22, 20);
             this.textBox57.TabIndex = 406;
+            this.textBox57.TextChanged += new System.EventHandler(this.textBox57_TextChanged);
             // 
             // textBox58
             // 
             this.textBox58.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox58.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox58.BackColor = System.Drawing.Color.Navy;
             this.textBox58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox58.Enabled = false;
             this.textBox58.Location = new System.Drawing.Point(770, 256);
@@ -3463,11 +3475,12 @@
             this.textBox58.Name = "textBox58";
             this.textBox58.Size = new System.Drawing.Size(22, 20);
             this.textBox58.TabIndex = 405;
+            this.textBox58.TextChanged += new System.EventHandler(this.textBox58_TextChanged);
             // 
             // textBox59
             // 
             this.textBox59.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox59.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox59.BackColor = System.Drawing.Color.Navy;
             this.textBox59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox59.Enabled = false;
             this.textBox59.Location = new System.Drawing.Point(792, 137);
@@ -3476,11 +3489,12 @@
             this.textBox59.Name = "textBox59";
             this.textBox59.Size = new System.Drawing.Size(22, 20);
             this.textBox59.TabIndex = 404;
+            this.textBox59.TextChanged += new System.EventHandler(this.textBox59_TextChanged);
             // 
             // textBox62
             // 
             this.textBox62.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox62.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox62.BackColor = System.Drawing.Color.Navy;
             this.textBox62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox62.Enabled = false;
             this.textBox62.Location = new System.Drawing.Point(726, 137);
@@ -3489,11 +3503,12 @@
             this.textBox62.Name = "textBox62";
             this.textBox62.Size = new System.Drawing.Size(22, 20);
             this.textBox62.TabIndex = 403;
+            this.textBox62.TextChanged += new System.EventHandler(this.textBox62_TextChanged);
             // 
             // textBox63
             // 
             this.textBox63.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox63.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox63.BackColor = System.Drawing.Color.Navy;
             this.textBox63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox63.Enabled = false;
             this.textBox63.Location = new System.Drawing.Point(704, 137);
@@ -3502,11 +3517,12 @@
             this.textBox63.Name = "textBox63";
             this.textBox63.Size = new System.Drawing.Size(22, 20);
             this.textBox63.TabIndex = 402;
+            this.textBox63.TextChanged += new System.EventHandler(this.textBox63_TextChanged);
             // 
             // textBox64
             // 
             this.textBox64.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox64.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox64.BackColor = System.Drawing.Color.Navy;
             this.textBox64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox64.Enabled = false;
             this.textBox64.Location = new System.Drawing.Point(748, 137);
@@ -3515,11 +3531,12 @@
             this.textBox64.Name = "textBox64";
             this.textBox64.Size = new System.Drawing.Size(22, 20);
             this.textBox64.TabIndex = 401;
+            this.textBox64.TextChanged += new System.EventHandler(this.textBox64_TextChanged);
             // 
             // textBox68
             // 
             this.textBox68.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox68.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox68.BackColor = System.Drawing.Color.Navy;
             this.textBox68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox68.Enabled = false;
             this.textBox68.Location = new System.Drawing.Point(726, 256);
@@ -3528,11 +3545,12 @@
             this.textBox68.Name = "textBox68";
             this.textBox68.Size = new System.Drawing.Size(22, 20);
             this.textBox68.TabIndex = 400;
+            this.textBox68.TextChanged += new System.EventHandler(this.textBox68_TextChanged);
             // 
             // textBox69
             // 
             this.textBox69.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox69.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox69.BackColor = System.Drawing.Color.Navy;
             this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox69.Enabled = false;
             this.textBox69.Location = new System.Drawing.Point(704, 256);
@@ -3541,11 +3559,12 @@
             this.textBox69.Name = "textBox69";
             this.textBox69.Size = new System.Drawing.Size(22, 20);
             this.textBox69.TabIndex = 399;
+            this.textBox69.TextChanged += new System.EventHandler(this.textBox69_TextChanged);
             // 
             // textBox70
             // 
             this.textBox70.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox70.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox70.BackColor = System.Drawing.Color.Navy;
             this.textBox70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox70.Enabled = false;
             this.textBox70.Location = new System.Drawing.Point(748, 256);
@@ -3554,6 +3573,7 @@
             this.textBox70.Name = "textBox70";
             this.textBox70.Size = new System.Drawing.Size(22, 20);
             this.textBox70.TabIndex = 398;
+            this.textBox70.TextChanged += new System.EventHandler(this.textBox70_TextChanged);
             // 
             // label1
             // 
@@ -3571,7 +3591,7 @@
             // textBox50
             // 
             this.textBox50.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox50.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox50.BackColor = System.Drawing.Color.Navy;
             this.textBox50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox50.Enabled = false;
             this.textBox50.Location = new System.Drawing.Point(649, 312);
@@ -3580,11 +3600,12 @@
             this.textBox50.Name = "textBox50";
             this.textBox50.Size = new System.Drawing.Size(22, 20);
             this.textBox50.TabIndex = 458;
+            this.textBox50.TextChanged += new System.EventHandler(this.textBox50_TextChanged);
             // 
             // textBox49
             // 
             this.textBox49.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox49.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox49.BackColor = System.Drawing.Color.Navy;
             this.textBox49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox49.Enabled = false;
             this.textBox49.Location = new System.Drawing.Point(803, 292);
@@ -3593,11 +3614,12 @@
             this.textBox49.Name = "textBox49";
             this.textBox49.Size = new System.Drawing.Size(22, 20);
             this.textBox49.TabIndex = 457;
+            this.textBox49.TextChanged += new System.EventHandler(this.textBox49_TextChanged);
             // 
             // textBox34
             // 
             this.textBox34.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox34.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox34.BackColor = System.Drawing.Color.Navy;
             this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox34.Enabled = false;
             this.textBox34.Location = new System.Drawing.Point(803, 312);
@@ -3606,11 +3628,12 @@
             this.textBox34.Name = "textBox34";
             this.textBox34.Size = new System.Drawing.Size(22, 20);
             this.textBox34.TabIndex = 444;
+            this.textBox34.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
             // 
             // textBox36
             // 
             this.textBox36.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox36.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox36.BackColor = System.Drawing.Color.Navy;
             this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox36.Enabled = false;
             this.textBox36.Location = new System.Drawing.Point(803, 332);
@@ -3619,11 +3642,12 @@
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(22, 20);
             this.textBox36.TabIndex = 442;
+            this.textBox36.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
             // 
             // textBox33
             // 
             this.textBox33.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox33.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox33.BackColor = System.Drawing.Color.Navy;
             this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox33.Enabled = false;
             this.textBox33.Location = new System.Drawing.Point(803, 352);
@@ -3632,11 +3656,12 @@
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(22, 20);
             this.textBox33.TabIndex = 441;
+            this.textBox33.TextChanged += new System.EventHandler(this.textBox33_TextChanged);
             // 
             // textBox26
             // 
             this.textBox26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox26.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox26.BackColor = System.Drawing.Color.Navy;
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox26.Enabled = false;
             this.textBox26.Location = new System.Drawing.Point(759, 292);
@@ -3645,11 +3670,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(22, 20);
             this.textBox26.TabIndex = 440;
+            this.textBox26.TextChanged += new System.EventHandler(this.textBox26_TextChanged);
             // 
             // textBox31
             // 
             this.textBox31.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox31.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox31.BackColor = System.Drawing.Color.Navy;
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox31.Enabled = false;
             this.textBox31.Location = new System.Drawing.Point(803, 391);
@@ -3658,11 +3684,12 @@
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(22, 20);
             this.textBox31.TabIndex = 439;
+            this.textBox31.TextChanged += new System.EventHandler(this.textBox31_TextChanged);
             // 
             // textBox32
             // 
             this.textBox32.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox32.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox32.BackColor = System.Drawing.Color.Navy;
             this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox32.Enabled = false;
             this.textBox32.Location = new System.Drawing.Point(781, 292);
@@ -3671,11 +3698,12 @@
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(22, 20);
             this.textBox32.TabIndex = 438;
+            this.textBox32.TextChanged += new System.EventHandler(this.textBox32_TextChanged);
             // 
             // textBox25
             // 
             this.textBox25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox25.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox25.BackColor = System.Drawing.Color.Navy;
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox25.Enabled = false;
             this.textBox25.Location = new System.Drawing.Point(649, 332);
@@ -3684,11 +3712,12 @@
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(22, 20);
             this.textBox25.TabIndex = 437;
+            this.textBox25.TextChanged += new System.EventHandler(this.textBox25_TextChanged);
             // 
             // textBox27
             // 
             this.textBox27.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox27.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox27.BackColor = System.Drawing.Color.Navy;
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox27.Enabled = false;
             this.textBox27.Location = new System.Drawing.Point(671, 292);
@@ -3697,11 +3726,12 @@
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(22, 20);
             this.textBox27.TabIndex = 436;
+            this.textBox27.TextChanged += new System.EventHandler(this.textBox27_TextChanged);
             // 
             // textBox28
             // 
             this.textBox28.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox28.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox28.BackColor = System.Drawing.Color.Navy;
             this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox28.Enabled = false;
             this.textBox28.Location = new System.Drawing.Point(715, 292);
@@ -3710,11 +3740,12 @@
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(22, 20);
             this.textBox28.TabIndex = 435;
+            this.textBox28.TextChanged += new System.EventHandler(this.textBox28_TextChanged);
             // 
             // textBox29
             // 
             this.textBox29.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox29.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox29.BackColor = System.Drawing.Color.Navy;
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox29.Enabled = false;
             this.textBox29.Location = new System.Drawing.Point(693, 292);
@@ -3723,11 +3754,12 @@
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(22, 20);
             this.textBox29.TabIndex = 434;
+            this.textBox29.TextChanged += new System.EventHandler(this.textBox29_TextChanged);
             // 
             // textBox30
             // 
             this.textBox30.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox30.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox30.BackColor = System.Drawing.Color.Navy;
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox30.Enabled = false;
             this.textBox30.Location = new System.Drawing.Point(737, 292);
@@ -3736,11 +3768,12 @@
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(22, 20);
             this.textBox30.TabIndex = 433;
+            this.textBox30.TextChanged += new System.EventHandler(this.textBox30_TextChanged);
             // 
             // textBox20
             // 
             this.textBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox20.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox20.BackColor = System.Drawing.Color.Navy;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox20.Enabled = false;
             this.textBox20.Location = new System.Drawing.Point(649, 352);
@@ -3749,11 +3782,12 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(22, 20);
             this.textBox20.TabIndex = 431;
+            this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
             // 
             // textBox21
             // 
             this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox21.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox21.BackColor = System.Drawing.Color.Navy;
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox21.Enabled = false;
             this.textBox21.Location = new System.Drawing.Point(649, 372);
@@ -3762,11 +3796,12 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(22, 20);
             this.textBox21.TabIndex = 430;
+            this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
             // 
             // textBox22
             // 
             this.textBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox22.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox22.BackColor = System.Drawing.Color.Navy;
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox22.Enabled = false;
             this.textBox22.Location = new System.Drawing.Point(759, 391);
@@ -3775,11 +3810,12 @@
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(22, 20);
             this.textBox22.TabIndex = 429;
+            this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
             // 
             // textBox23
             // 
             this.textBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox23.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox23.BackColor = System.Drawing.Color.Navy;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox23.Enabled = false;
             this.textBox23.Location = new System.Drawing.Point(737, 391);
@@ -3788,11 +3824,12 @@
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(22, 20);
             this.textBox23.TabIndex = 428;
+            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
             // 
             // textBox24
             // 
             this.textBox24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox24.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox24.BackColor = System.Drawing.Color.Navy;
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox24.Enabled = false;
             this.textBox24.Location = new System.Drawing.Point(781, 391);
@@ -3801,11 +3838,12 @@
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(22, 20);
             this.textBox24.TabIndex = 427;
+            this.textBox24.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
             // 
             // textBox246
             // 
             this.textBox246.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox246.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox246.BackColor = System.Drawing.Color.Navy;
             this.textBox246.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox246.Enabled = false;
             this.textBox246.Location = new System.Drawing.Point(574, 117);
@@ -3814,11 +3852,12 @@
             this.textBox246.Name = "textBox246";
             this.textBox246.Size = new System.Drawing.Size(22, 20);
             this.textBox246.TabIndex = 481;
+            this.textBox246.TextChanged += new System.EventHandler(this.textBox246_TextChanged);
             // 
             // textBox226
             // 
             this.textBox226.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox226.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox226.BackColor = System.Drawing.Color.Navy;
             this.textBox226.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox226.Enabled = false;
             this.textBox226.Location = new System.Drawing.Point(574, 516);
@@ -3827,11 +3866,12 @@
             this.textBox226.Name = "textBox226";
             this.textBox226.Size = new System.Drawing.Size(22, 20);
             this.textBox226.TabIndex = 479;
+            this.textBox226.TextChanged += new System.EventHandler(this.textBox226_TextChanged);
             // 
             // textBox227
             // 
             this.textBox227.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox227.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox227.BackColor = System.Drawing.Color.Navy;
             this.textBox227.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox227.Enabled = false;
             this.textBox227.Location = new System.Drawing.Point(574, 496);
@@ -3840,11 +3880,12 @@
             this.textBox227.Name = "textBox227";
             this.textBox227.Size = new System.Drawing.Size(22, 20);
             this.textBox227.TabIndex = 478;
+            this.textBox227.TextChanged += new System.EventHandler(this.textBox227_TextChanged);
             // 
             // textBox228
             // 
             this.textBox228.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox228.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox228.BackColor = System.Drawing.Color.Navy;
             this.textBox228.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox228.Enabled = false;
             this.textBox228.Location = new System.Drawing.Point(574, 476);
@@ -3853,11 +3894,12 @@
             this.textBox228.Name = "textBox228";
             this.textBox228.Size = new System.Drawing.Size(22, 20);
             this.textBox228.TabIndex = 477;
+            this.textBox228.TextChanged += new System.EventHandler(this.textBox228_TextChanged);
             // 
             // textBox229
             // 
             this.textBox229.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox229.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox229.BackColor = System.Drawing.Color.Navy;
             this.textBox229.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox229.Enabled = false;
             this.textBox229.Location = new System.Drawing.Point(574, 456);
@@ -3866,11 +3908,12 @@
             this.textBox229.Name = "textBox229";
             this.textBox229.Size = new System.Drawing.Size(22, 20);
             this.textBox229.TabIndex = 476;
+            this.textBox229.TextChanged += new System.EventHandler(this.textBox229_TextChanged);
             // 
             // textBox230
             // 
             this.textBox230.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox230.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox230.BackColor = System.Drawing.Color.Navy;
             this.textBox230.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox230.Enabled = false;
             this.textBox230.Location = new System.Drawing.Point(574, 396);
@@ -3879,11 +3922,12 @@
             this.textBox230.Name = "textBox230";
             this.textBox230.Size = new System.Drawing.Size(22, 20);
             this.textBox230.TabIndex = 475;
+            this.textBox230.TextChanged += new System.EventHandler(this.textBox230_TextChanged);
             // 
             // textBox231
             // 
             this.textBox231.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox231.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox231.BackColor = System.Drawing.Color.Navy;
             this.textBox231.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox231.Enabled = false;
             this.textBox231.Location = new System.Drawing.Point(574, 376);
@@ -3892,11 +3936,12 @@
             this.textBox231.Name = "textBox231";
             this.textBox231.Size = new System.Drawing.Size(22, 20);
             this.textBox231.TabIndex = 474;
+            this.textBox231.TextChanged += new System.EventHandler(this.textBox231_TextChanged);
             // 
             // textBox232
             // 
             this.textBox232.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox232.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox232.BackColor = System.Drawing.Color.Navy;
             this.textBox232.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox232.Enabled = false;
             this.textBox232.Location = new System.Drawing.Point(574, 436);
@@ -3905,11 +3950,12 @@
             this.textBox232.Name = "textBox232";
             this.textBox232.Size = new System.Drawing.Size(22, 20);
             this.textBox232.TabIndex = 473;
+            this.textBox232.TextChanged += new System.EventHandler(this.textBox232_TextChanged);
             // 
             // textBox233
             // 
             this.textBox233.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox233.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox233.BackColor = System.Drawing.Color.Navy;
             this.textBox233.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox233.Enabled = false;
             this.textBox233.Location = new System.Drawing.Point(574, 416);
@@ -3918,11 +3964,12 @@
             this.textBox233.Name = "textBox233";
             this.textBox233.Size = new System.Drawing.Size(22, 20);
             this.textBox233.TabIndex = 472;
+            this.textBox233.TextChanged += new System.EventHandler(this.textBox233_TextChanged);
             // 
             // textBox234
             // 
             this.textBox234.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox234.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox234.BackColor = System.Drawing.Color.Navy;
             this.textBox234.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox234.Enabled = false;
             this.textBox234.Location = new System.Drawing.Point(574, 316);
@@ -3931,11 +3978,12 @@
             this.textBox234.Name = "textBox234";
             this.textBox234.Size = new System.Drawing.Size(22, 20);
             this.textBox234.TabIndex = 471;
+            this.textBox234.TextChanged += new System.EventHandler(this.textBox234_TextChanged);
             // 
             // textBox235
             // 
             this.textBox235.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox235.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox235.BackColor = System.Drawing.Color.Navy;
             this.textBox235.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox235.Enabled = false;
             this.textBox235.Location = new System.Drawing.Point(574, 296);
@@ -3944,11 +3992,12 @@
             this.textBox235.Name = "textBox235";
             this.textBox235.Size = new System.Drawing.Size(22, 20);
             this.textBox235.TabIndex = 470;
+            this.textBox235.TextChanged += new System.EventHandler(this.textBox235_TextChanged);
             // 
             // textBox236
             // 
             this.textBox236.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox236.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox236.BackColor = System.Drawing.Color.Navy;
             this.textBox236.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox236.Enabled = false;
             this.textBox236.Location = new System.Drawing.Point(574, 356);
@@ -3957,11 +4006,12 @@
             this.textBox236.Name = "textBox236";
             this.textBox236.Size = new System.Drawing.Size(22, 20);
             this.textBox236.TabIndex = 469;
+            this.textBox236.TextChanged += new System.EventHandler(this.textBox236_TextChanged);
             // 
             // textBox237
             // 
             this.textBox237.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox237.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox237.BackColor = System.Drawing.Color.Navy;
             this.textBox237.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox237.Enabled = false;
             this.textBox237.Location = new System.Drawing.Point(574, 336);
@@ -3970,11 +4020,12 @@
             this.textBox237.Name = "textBox237";
             this.textBox237.Size = new System.Drawing.Size(22, 20);
             this.textBox237.TabIndex = 468;
+            this.textBox237.TextChanged += new System.EventHandler(this.textBox237_TextChanged);
             // 
             // textBox238
             // 
             this.textBox238.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox238.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox238.BackColor = System.Drawing.Color.Navy;
             this.textBox238.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox238.Enabled = false;
             this.textBox238.Location = new System.Drawing.Point(574, 236);
@@ -3983,11 +4034,12 @@
             this.textBox238.Name = "textBox238";
             this.textBox238.Size = new System.Drawing.Size(22, 20);
             this.textBox238.TabIndex = 467;
+            this.textBox238.TextChanged += new System.EventHandler(this.textBox238_TextChanged);
             // 
             // textBox239
             // 
             this.textBox239.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox239.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox239.BackColor = System.Drawing.Color.Navy;
             this.textBox239.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox239.Enabled = false;
             this.textBox239.Location = new System.Drawing.Point(574, 216);
@@ -3996,11 +4048,12 @@
             this.textBox239.Name = "textBox239";
             this.textBox239.Size = new System.Drawing.Size(22, 20);
             this.textBox239.TabIndex = 466;
+            this.textBox239.TextChanged += new System.EventHandler(this.textBox239_TextChanged);
             // 
             // textBox240
             // 
             this.textBox240.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox240.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox240.BackColor = System.Drawing.Color.Navy;
             this.textBox240.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox240.Enabled = false;
             this.textBox240.Location = new System.Drawing.Point(574, 276);
@@ -4009,11 +4062,12 @@
             this.textBox240.Name = "textBox240";
             this.textBox240.Size = new System.Drawing.Size(22, 20);
             this.textBox240.TabIndex = 465;
+            this.textBox240.TextChanged += new System.EventHandler(this.textBox240_TextChanged);
             // 
             // textBox241
             // 
             this.textBox241.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox241.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox241.BackColor = System.Drawing.Color.Navy;
             this.textBox241.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox241.Enabled = false;
             this.textBox241.Location = new System.Drawing.Point(574, 256);
@@ -4022,11 +4076,12 @@
             this.textBox241.Name = "textBox241";
             this.textBox241.Size = new System.Drawing.Size(22, 20);
             this.textBox241.TabIndex = 464;
+            this.textBox241.TextChanged += new System.EventHandler(this.textBox241_TextChanged);
             // 
             // textBox242
             // 
             this.textBox242.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox242.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox242.BackColor = System.Drawing.Color.Navy;
             this.textBox242.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox242.Enabled = false;
             this.textBox242.Location = new System.Drawing.Point(574, 157);
@@ -4035,11 +4090,12 @@
             this.textBox242.Name = "textBox242";
             this.textBox242.Size = new System.Drawing.Size(22, 20);
             this.textBox242.TabIndex = 463;
+            this.textBox242.TextChanged += new System.EventHandler(this.textBox242_TextChanged);
             // 
             // textBox243
             // 
             this.textBox243.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox243.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox243.BackColor = System.Drawing.Color.Navy;
             this.textBox243.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox243.Enabled = false;
             this.textBox243.Location = new System.Drawing.Point(574, 137);
@@ -4048,11 +4104,12 @@
             this.textBox243.Name = "textBox243";
             this.textBox243.Size = new System.Drawing.Size(22, 20);
             this.textBox243.TabIndex = 462;
+            this.textBox243.TextChanged += new System.EventHandler(this.textBox243_TextChanged);
             // 
             // textBox244
             // 
             this.textBox244.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox244.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox244.BackColor = System.Drawing.Color.Navy;
             this.textBox244.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox244.Enabled = false;
             this.textBox244.Location = new System.Drawing.Point(574, 197);
@@ -4061,11 +4118,12 @@
             this.textBox244.Name = "textBox244";
             this.textBox244.Size = new System.Drawing.Size(22, 20);
             this.textBox244.TabIndex = 461;
+            this.textBox244.TextChanged += new System.EventHandler(this.textBox244_TextChanged);
             // 
             // textBox245
             // 
             this.textBox245.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox245.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox245.BackColor = System.Drawing.Color.Navy;
             this.textBox245.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox245.Enabled = false;
             this.textBox245.Location = new System.Drawing.Point(574, 177);
@@ -4074,11 +4132,12 @@
             this.textBox245.Name = "textBox245";
             this.textBox245.Size = new System.Drawing.Size(22, 20);
             this.textBox245.TabIndex = 460;
+            this.textBox245.TextChanged += new System.EventHandler(this.textBox245_TextChanged);
             // 
             // textBox201
             // 
             this.textBox201.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox201.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox201.BackColor = System.Drawing.Color.Navy;
             this.textBox201.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox201.Enabled = false;
             this.textBox201.Location = new System.Drawing.Point(332, 117);
@@ -4087,11 +4146,12 @@
             this.textBox201.Name = "textBox201";
             this.textBox201.Size = new System.Drawing.Size(22, 20);
             this.textBox201.TabIndex = 513;
+            this.textBox201.TextChanged += new System.EventHandler(this.textBox201_TextChanged);
             // 
             // textBox203
             // 
             this.textBox203.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox203.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox203.BackColor = System.Drawing.Color.Navy;
             this.textBox203.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox203.Enabled = false;
             this.textBox203.Location = new System.Drawing.Point(332, 516);
@@ -4100,11 +4160,12 @@
             this.textBox203.Name = "textBox203";
             this.textBox203.Size = new System.Drawing.Size(22, 20);
             this.textBox203.TabIndex = 512;
+            this.textBox203.TextChanged += new System.EventHandler(this.textBox203_TextChanged);
             // 
             // textBox204
             // 
             this.textBox204.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox204.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox204.BackColor = System.Drawing.Color.Navy;
             this.textBox204.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox204.Enabled = false;
             this.textBox204.Location = new System.Drawing.Point(332, 496);
@@ -4113,11 +4174,12 @@
             this.textBox204.Name = "textBox204";
             this.textBox204.Size = new System.Drawing.Size(22, 20);
             this.textBox204.TabIndex = 511;
+            this.textBox204.TextChanged += new System.EventHandler(this.textBox204_TextChanged);
             // 
             // textBox247
             // 
             this.textBox247.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox247.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox247.BackColor = System.Drawing.Color.Navy;
             this.textBox247.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox247.Enabled = false;
             this.textBox247.Location = new System.Drawing.Point(332, 476);
@@ -4126,11 +4188,12 @@
             this.textBox247.Name = "textBox247";
             this.textBox247.Size = new System.Drawing.Size(22, 20);
             this.textBox247.TabIndex = 510;
+            this.textBox247.TextChanged += new System.EventHandler(this.textBox247_TextChanged);
             // 
             // textBox248
             // 
             this.textBox248.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox248.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox248.BackColor = System.Drawing.Color.Navy;
             this.textBox248.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox248.Enabled = false;
             this.textBox248.Location = new System.Drawing.Point(332, 456);
@@ -4139,11 +4202,12 @@
             this.textBox248.Name = "textBox248";
             this.textBox248.Size = new System.Drawing.Size(22, 20);
             this.textBox248.TabIndex = 509;
+            this.textBox248.TextChanged += new System.EventHandler(this.textBox248_TextChanged);
             // 
             // textBox249
             // 
             this.textBox249.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox249.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox249.BackColor = System.Drawing.Color.Navy;
             this.textBox249.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox249.Enabled = false;
             this.textBox249.Location = new System.Drawing.Point(332, 396);
@@ -4152,11 +4216,12 @@
             this.textBox249.Name = "textBox249";
             this.textBox249.Size = new System.Drawing.Size(22, 20);
             this.textBox249.TabIndex = 508;
+            this.textBox249.TextChanged += new System.EventHandler(this.textBox249_TextChanged);
             // 
             // textBox250
             // 
             this.textBox250.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox250.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox250.BackColor = System.Drawing.Color.Navy;
             this.textBox250.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox250.Enabled = false;
             this.textBox250.Location = new System.Drawing.Point(332, 376);
@@ -4165,11 +4230,12 @@
             this.textBox250.Name = "textBox250";
             this.textBox250.Size = new System.Drawing.Size(22, 20);
             this.textBox250.TabIndex = 507;
+            this.textBox250.TextChanged += new System.EventHandler(this.textBox250_TextChanged);
             // 
             // textBox251
             // 
             this.textBox251.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox251.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox251.BackColor = System.Drawing.Color.Navy;
             this.textBox251.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox251.Enabled = false;
             this.textBox251.Location = new System.Drawing.Point(332, 436);
@@ -4178,11 +4244,12 @@
             this.textBox251.Name = "textBox251";
             this.textBox251.Size = new System.Drawing.Size(22, 20);
             this.textBox251.TabIndex = 506;
+            this.textBox251.TextChanged += new System.EventHandler(this.textBox251_TextChanged);
             // 
             // textBox252
             // 
             this.textBox252.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox252.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox252.BackColor = System.Drawing.Color.Navy;
             this.textBox252.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox252.Enabled = false;
             this.textBox252.Location = new System.Drawing.Point(332, 416);
@@ -4191,11 +4258,12 @@
             this.textBox252.Name = "textBox252";
             this.textBox252.Size = new System.Drawing.Size(22, 20);
             this.textBox252.TabIndex = 505;
+            this.textBox252.TextChanged += new System.EventHandler(this.textBox252_TextChanged);
             // 
             // textBox253
             // 
             this.textBox253.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox253.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox253.BackColor = System.Drawing.Color.Navy;
             this.textBox253.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox253.Enabled = false;
             this.textBox253.Location = new System.Drawing.Point(332, 316);
@@ -4204,11 +4272,12 @@
             this.textBox253.Name = "textBox253";
             this.textBox253.Size = new System.Drawing.Size(22, 20);
             this.textBox253.TabIndex = 504;
+            this.textBox253.TextChanged += new System.EventHandler(this.textBox253_TextChanged);
             // 
             // textBox254
             // 
             this.textBox254.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox254.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox254.BackColor = System.Drawing.Color.Navy;
             this.textBox254.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox254.Enabled = false;
             this.textBox254.Location = new System.Drawing.Point(332, 296);
@@ -4217,11 +4286,12 @@
             this.textBox254.Name = "textBox254";
             this.textBox254.Size = new System.Drawing.Size(22, 20);
             this.textBox254.TabIndex = 503;
+            this.textBox254.TextChanged += new System.EventHandler(this.textBox254_TextChanged);
             // 
             // textBox255
             // 
             this.textBox255.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox255.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox255.BackColor = System.Drawing.Color.Navy;
             this.textBox255.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox255.Enabled = false;
             this.textBox255.Location = new System.Drawing.Point(332, 356);
@@ -4230,11 +4300,12 @@
             this.textBox255.Name = "textBox255";
             this.textBox255.Size = new System.Drawing.Size(22, 20);
             this.textBox255.TabIndex = 502;
+            this.textBox255.TextChanged += new System.EventHandler(this.textBox255_TextChanged);
             // 
             // textBox256
             // 
             this.textBox256.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox256.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox256.BackColor = System.Drawing.Color.Navy;
             this.textBox256.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox256.Enabled = false;
             this.textBox256.Location = new System.Drawing.Point(332, 336);
@@ -4243,11 +4314,12 @@
             this.textBox256.Name = "textBox256";
             this.textBox256.Size = new System.Drawing.Size(22, 20);
             this.textBox256.TabIndex = 501;
+            this.textBox256.TextChanged += new System.EventHandler(this.textBox256_TextChanged);
             // 
             // textBox257
             // 
             this.textBox257.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox257.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox257.BackColor = System.Drawing.Color.Navy;
             this.textBox257.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox257.Enabled = false;
             this.textBox257.Location = new System.Drawing.Point(332, 236);
@@ -4256,11 +4328,12 @@
             this.textBox257.Name = "textBox257";
             this.textBox257.Size = new System.Drawing.Size(22, 20);
             this.textBox257.TabIndex = 500;
+            this.textBox257.TextChanged += new System.EventHandler(this.textBox257_TextChanged);
             // 
             // textBox258
             // 
             this.textBox258.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox258.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox258.BackColor = System.Drawing.Color.Navy;
             this.textBox258.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox258.Enabled = false;
             this.textBox258.Location = new System.Drawing.Point(332, 216);
@@ -4269,11 +4342,12 @@
             this.textBox258.Name = "textBox258";
             this.textBox258.Size = new System.Drawing.Size(22, 20);
             this.textBox258.TabIndex = 499;
+            this.textBox258.TextChanged += new System.EventHandler(this.textBox258_TextChanged);
             // 
             // textBox259
             // 
             this.textBox259.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox259.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox259.BackColor = System.Drawing.Color.Navy;
             this.textBox259.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox259.Enabled = false;
             this.textBox259.Location = new System.Drawing.Point(332, 276);
@@ -4282,11 +4356,12 @@
             this.textBox259.Name = "textBox259";
             this.textBox259.Size = new System.Drawing.Size(22, 20);
             this.textBox259.TabIndex = 498;
+            this.textBox259.TextChanged += new System.EventHandler(this.textBox259_TextChanged);
             // 
             // textBox260
             // 
             this.textBox260.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox260.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox260.BackColor = System.Drawing.Color.Navy;
             this.textBox260.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox260.Enabled = false;
             this.textBox260.Location = new System.Drawing.Point(332, 256);
@@ -4295,11 +4370,12 @@
             this.textBox260.Name = "textBox260";
             this.textBox260.Size = new System.Drawing.Size(22, 20);
             this.textBox260.TabIndex = 497;
+            this.textBox260.TextChanged += new System.EventHandler(this.textBox260_TextChanged);
             // 
             // textBox261
             // 
             this.textBox261.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox261.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox261.BackColor = System.Drawing.Color.Navy;
             this.textBox261.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox261.Enabled = false;
             this.textBox261.Location = new System.Drawing.Point(332, 157);
@@ -4308,11 +4384,12 @@
             this.textBox261.Name = "textBox261";
             this.textBox261.Size = new System.Drawing.Size(22, 20);
             this.textBox261.TabIndex = 496;
+            this.textBox261.TextChanged += new System.EventHandler(this.textBox261_TextChanged);
             // 
             // textBox262
             // 
             this.textBox262.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox262.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox262.BackColor = System.Drawing.Color.Navy;
             this.textBox262.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox262.Enabled = false;
             this.textBox262.Location = new System.Drawing.Point(332, 137);
@@ -4321,11 +4398,12 @@
             this.textBox262.Name = "textBox262";
             this.textBox262.Size = new System.Drawing.Size(22, 20);
             this.textBox262.TabIndex = 495;
+            this.textBox262.TextChanged += new System.EventHandler(this.textBox262_TextChanged);
             // 
             // textBox263
             // 
             this.textBox263.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox263.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox263.BackColor = System.Drawing.Color.Navy;
             this.textBox263.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox263.Enabled = false;
             this.textBox263.Location = new System.Drawing.Point(332, 197);
@@ -4334,11 +4412,12 @@
             this.textBox263.Name = "textBox263";
             this.textBox263.Size = new System.Drawing.Size(22, 20);
             this.textBox263.TabIndex = 494;
+            this.textBox263.TextChanged += new System.EventHandler(this.textBox263_TextChanged);
             // 
             // textBox264
             // 
             this.textBox264.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox264.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox264.BackColor = System.Drawing.Color.Navy;
             this.textBox264.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox264.Enabled = false;
             this.textBox264.Location = new System.Drawing.Point(332, 177);
@@ -4347,11 +4426,12 @@
             this.textBox264.Name = "textBox264";
             this.textBox264.Size = new System.Drawing.Size(22, 20);
             this.textBox264.TabIndex = 493;
+            this.textBox264.TextChanged += new System.EventHandler(this.textBox264_TextChanged);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox1.BackColor = System.Drawing.Color.Navy;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(376, 117);
@@ -4360,11 +4440,12 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(22, 20);
             this.textBox1.TabIndex = 523;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox2.BackColor = System.Drawing.Color.Navy;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(354, 117);
@@ -4373,11 +4454,12 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(22, 20);
             this.textBox2.TabIndex = 522;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox3.BackColor = System.Drawing.Color.Navy;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(508, 117);
@@ -4386,11 +4468,12 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(22, 20);
             this.textBox3.TabIndex = 521;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox4.BackColor = System.Drawing.Color.Navy;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(486, 117);
@@ -4399,11 +4482,12 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(22, 20);
             this.textBox4.TabIndex = 520;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
             this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox5.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox5.BackColor = System.Drawing.Color.Navy;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(464, 117);
@@ -4412,11 +4496,12 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(22, 20);
             this.textBox5.TabIndex = 519;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
             this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox6.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox6.BackColor = System.Drawing.Color.Navy;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(442, 117);
@@ -4425,11 +4510,12 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(22, 20);
             this.textBox6.TabIndex = 518;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
             this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox7.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox7.BackColor = System.Drawing.Color.Navy;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(552, 117);
@@ -4438,11 +4524,12 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(22, 20);
             this.textBox7.TabIndex = 517;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
             // 
             this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox8.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox8.BackColor = System.Drawing.Color.Navy;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8.Enabled = false;
             this.textBox8.Location = new System.Drawing.Point(530, 117);
@@ -4451,11 +4538,12 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(22, 20);
             this.textBox8.TabIndex = 516;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textBox9
             // 
             this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox9.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox9.BackColor = System.Drawing.Color.Navy;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox9.Enabled = false;
             this.textBox9.Location = new System.Drawing.Point(420, 117);
@@ -4464,11 +4552,12 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(22, 20);
             this.textBox9.TabIndex = 515;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox10
             // 
             this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox10.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox10.BackColor = System.Drawing.Color.Navy;
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox10.Enabled = false;
             this.textBox10.Location = new System.Drawing.Point(398, 117);
@@ -4477,6 +4566,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(22, 20);
             this.textBox10.TabIndex = 514;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // LBL_punteggio
             // 
@@ -4674,7 +4764,7 @@
             // textBox16
             // 
             this.textBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox16.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox16.BackColor = System.Drawing.Color.Navy;
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox16.Enabled = false;
             this.textBox16.Location = new System.Drawing.Point(792, 217);
@@ -4683,11 +4773,12 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(22, 20);
             this.textBox16.TabIndex = 538;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // textBox17
             // 
             this.textBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox17.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox17.BackColor = System.Drawing.Color.Navy;
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox17.Enabled = false;
             this.textBox17.Location = new System.Drawing.Point(792, 237);
@@ -4696,11 +4787,12 @@
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(22, 20);
             this.textBox17.TabIndex = 539;
+            this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
             // 
             // textBox18
             // 
             this.textBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox18.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox18.BackColor = System.Drawing.Color.Navy;
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox18.Enabled = false;
             this.textBox18.Location = new System.Drawing.Point(660, 217);
@@ -4709,11 +4801,12 @@
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(22, 20);
             this.textBox18.TabIndex = 540;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
             // 
             // textBox19
             // 
             this.textBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox19.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox19.BackColor = System.Drawing.Color.Navy;
             this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox19.Enabled = false;
             this.textBox19.Location = new System.Drawing.Point(660, 237);
@@ -4722,6 +4815,7 @@
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(22, 20);
             this.textBox19.TabIndex = 541;
+            this.textBox19.TextChanged += new System.EventHandler(this.textBox19_TextChanged);
             // 
             // label4
             // 
@@ -4736,36 +4830,10 @@
             this.label4.Text = "PUNTEGGIO";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox35
-            // 
-            this.textBox35.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox35.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox35.Enabled = false;
-            this.textBox35.Location = new System.Drawing.Point(83, 115);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(22, 20);
-            this.textBox35.TabIndex = 554;
-            // 
-            // textBox47
-            // 
-            this.textBox47.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox47.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox47.Enabled = false;
-            this.textBox47.Location = new System.Drawing.Point(61, 115);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(22, 20);
-            this.textBox47.TabIndex = 553;
-            // 
             // textBox48
             // 
             this.textBox48.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox48.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox48.BackColor = System.Drawing.Color.Navy;
             this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox48.Enabled = false;
             this.textBox48.Location = new System.Drawing.Point(257, 115);
@@ -4774,11 +4842,12 @@
             this.textBox48.Name = "textBox48";
             this.textBox48.Size = new System.Drawing.Size(22, 20);
             this.textBox48.TabIndex = 552;
+            this.textBox48.TextChanged += new System.EventHandler(this.textBox48_TextChanged);
             // 
             // textBox51
             // 
             this.textBox51.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox51.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox51.BackColor = System.Drawing.Color.Navy;
             this.textBox51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox51.Enabled = false;
             this.textBox51.Location = new System.Drawing.Point(235, 115);
@@ -4787,11 +4856,12 @@
             this.textBox51.Name = "textBox51";
             this.textBox51.Size = new System.Drawing.Size(22, 20);
             this.textBox51.TabIndex = 551;
+            this.textBox51.TextChanged += new System.EventHandler(this.textBox51_TextChanged);
             // 
             // textBox52
             // 
             this.textBox52.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox52.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox52.BackColor = System.Drawing.Color.Navy;
             this.textBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox52.Enabled = false;
             this.textBox52.Location = new System.Drawing.Point(171, 115);
@@ -4800,63 +4870,12 @@
             this.textBox52.Name = "textBox52";
             this.textBox52.Size = new System.Drawing.Size(22, 20);
             this.textBox52.TabIndex = 550;
-            // 
-            // textBox54
-            // 
-            this.textBox54.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox54.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox54.Enabled = false;
-            this.textBox54.Location = new System.Drawing.Point(149, 115);
-            this.textBox54.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox54.Multiline = true;
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(22, 20);
-            this.textBox54.TabIndex = 549;
-            // 
-            // textBox65
-            // 
-            this.textBox65.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox65.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox65.Enabled = false;
-            this.textBox65.Location = new System.Drawing.Point(127, 115);
-            this.textBox65.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox65.Multiline = true;
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(22, 20);
-            this.textBox65.TabIndex = 546;
-            // 
-            // textBox66
-            // 
-            this.textBox66.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox66.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox66.Enabled = false;
-            this.textBox66.Location = new System.Drawing.Point(105, 115);
-            this.textBox66.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox66.Multiline = true;
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(22, 20);
-            this.textBox66.TabIndex = 545;
-            // 
-            // textBox67
-            // 
-            this.textBox67.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox67.BackColor = System.Drawing.Color.DarkOrchid;
-            this.textBox67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox67.Enabled = false;
-            this.textBox67.Location = new System.Drawing.Point(39, 115);
-            this.textBox67.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox67.Multiline = true;
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(22, 20);
-            this.textBox67.TabIndex = 544;
+            this.textBox52.TextChanged += new System.EventHandler(this.textBox52_TextChanged);
             // 
             // textBox72
             // 
             this.textBox72.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox72.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox72.BackColor = System.Drawing.Color.Navy;
             this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox72.Enabled = false;
             this.textBox72.Location = new System.Drawing.Point(39, 554);
@@ -4865,11 +4884,12 @@
             this.textBox72.Name = "textBox72";
             this.textBox72.Size = new System.Drawing.Size(22, 20);
             this.textBox72.TabIndex = 571;
+            this.textBox72.TextChanged += new System.EventHandler(this.textBox72_TextChanged);
             // 
             // textBox73
             // 
             this.textBox73.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox73.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox73.BackColor = System.Drawing.Color.Navy;
             this.textBox73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox73.Enabled = false;
             this.textBox73.Location = new System.Drawing.Point(39, 394);
@@ -4878,11 +4898,12 @@
             this.textBox73.Name = "textBox73";
             this.textBox73.Size = new System.Drawing.Size(22, 20);
             this.textBox73.TabIndex = 570;
+            this.textBox73.TextChanged += new System.EventHandler(this.textBox73_TextChanged);
             // 
             // textBox74
             // 
             this.textBox74.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox74.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox74.BackColor = System.Drawing.Color.Navy;
             this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox74.Enabled = false;
             this.textBox74.Location = new System.Drawing.Point(39, 374);
@@ -4891,11 +4912,12 @@
             this.textBox74.Name = "textBox74";
             this.textBox74.Size = new System.Drawing.Size(22, 20);
             this.textBox74.TabIndex = 569;
+            this.textBox74.TextChanged += new System.EventHandler(this.textBox74_TextChanged);
             // 
             // textBox75
             // 
             this.textBox75.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox75.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox75.BackColor = System.Drawing.Color.Navy;
             this.textBox75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox75.Enabled = false;
             this.textBox75.Location = new System.Drawing.Point(39, 474);
@@ -4904,11 +4926,12 @@
             this.textBox75.Name = "textBox75";
             this.textBox75.Size = new System.Drawing.Size(22, 20);
             this.textBox75.TabIndex = 568;
+            this.textBox75.TextChanged += new System.EventHandler(this.textBox75_TextChanged);
             // 
             // textBox76
             // 
             this.textBox76.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox76.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox76.BackColor = System.Drawing.Color.Navy;
             this.textBox76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox76.Enabled = false;
             this.textBox76.Location = new System.Drawing.Point(39, 414);
@@ -4917,11 +4940,12 @@
             this.textBox76.Name = "textBox76";
             this.textBox76.Size = new System.Drawing.Size(22, 20);
             this.textBox76.TabIndex = 567;
+            this.textBox76.TextChanged += new System.EventHandler(this.textBox76_TextChanged);
             // 
             // textBox77
             // 
             this.textBox77.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox77.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox77.BackColor = System.Drawing.Color.Navy;
             this.textBox77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox77.Enabled = false;
             this.textBox77.Location = new System.Drawing.Point(39, 314);
@@ -4930,11 +4954,12 @@
             this.textBox77.Name = "textBox77";
             this.textBox77.Size = new System.Drawing.Size(22, 20);
             this.textBox77.TabIndex = 566;
+            this.textBox77.TextChanged += new System.EventHandler(this.textBox77_TextChanged);
             // 
             // textBox78
             // 
             this.textBox78.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox78.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox78.BackColor = System.Drawing.Color.Navy;
             this.textBox78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox78.Enabled = false;
             this.textBox78.Location = new System.Drawing.Point(39, 294);
@@ -4943,11 +4968,12 @@
             this.textBox78.Name = "textBox78";
             this.textBox78.Size = new System.Drawing.Size(22, 20);
             this.textBox78.TabIndex = 565;
+            this.textBox78.TextChanged += new System.EventHandler(this.textBox78_TextChanged);
             // 
             // textBox79
             // 
             this.textBox79.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox79.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox79.BackColor = System.Drawing.Color.Navy;
             this.textBox79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox79.Enabled = false;
             this.textBox79.Location = new System.Drawing.Point(39, 354);
@@ -4956,11 +4982,12 @@
             this.textBox79.Name = "textBox79";
             this.textBox79.Size = new System.Drawing.Size(22, 20);
             this.textBox79.TabIndex = 564;
+            this.textBox79.TextChanged += new System.EventHandler(this.textBox79_TextChanged);
             // 
             // textBox80
             // 
             this.textBox80.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox80.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox80.BackColor = System.Drawing.Color.Navy;
             this.textBox80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox80.Enabled = false;
             this.textBox80.Location = new System.Drawing.Point(39, 334);
@@ -4969,11 +4996,12 @@
             this.textBox80.Name = "textBox80";
             this.textBox80.Size = new System.Drawing.Size(22, 20);
             this.textBox80.TabIndex = 563;
+            this.textBox80.TextChanged += new System.EventHandler(this.textBox80_TextChanged);
             // 
             // textBox81
             // 
             this.textBox81.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox81.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox81.BackColor = System.Drawing.Color.Navy;
             this.textBox81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox81.Enabled = false;
             this.textBox81.Location = new System.Drawing.Point(39, 234);
@@ -4982,24 +5010,26 @@
             this.textBox81.Name = "textBox81";
             this.textBox81.Size = new System.Drawing.Size(22, 20);
             this.textBox81.TabIndex = 562;
+            this.textBox81.TextChanged += new System.EventHandler(this.textBox81_TextChanged);
             // 
             // textBox82
             // 
             this.textBox82.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox82.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox82.BackColor = System.Drawing.Color.Navy;
             this.textBox82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox82.Enabled = false;
-            this.textBox82.Location = new System.Drawing.Point(39, 214);
+            this.textBox82.Location = new System.Drawing.Point(39, 213);
             this.textBox82.Margin = new System.Windows.Forms.Padding(0);
             this.textBox82.Multiline = true;
             this.textBox82.Name = "textBox82";
             this.textBox82.Size = new System.Drawing.Size(22, 20);
             this.textBox82.TabIndex = 561;
+            this.textBox82.TextChanged += new System.EventHandler(this.textBox82_TextChanged);
             // 
             // textBox83
             // 
             this.textBox83.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox83.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox83.BackColor = System.Drawing.Color.Navy;
             this.textBox83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox83.Enabled = false;
             this.textBox83.Location = new System.Drawing.Point(39, 274);
@@ -5008,11 +5038,12 @@
             this.textBox83.Name = "textBox83";
             this.textBox83.Size = new System.Drawing.Size(22, 20);
             this.textBox83.TabIndex = 560;
+            this.textBox83.TextChanged += new System.EventHandler(this.textBox83_TextChanged);
             // 
             // textBox84
             // 
             this.textBox84.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox84.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox84.BackColor = System.Drawing.Color.Navy;
             this.textBox84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox84.Enabled = false;
             this.textBox84.Location = new System.Drawing.Point(39, 254);
@@ -5021,11 +5052,12 @@
             this.textBox84.Name = "textBox84";
             this.textBox84.Size = new System.Drawing.Size(22, 20);
             this.textBox84.TabIndex = 559;
+            this.textBox84.TextChanged += new System.EventHandler(this.textBox84_TextChanged);
             // 
             // textBox85
             // 
             this.textBox85.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox85.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox85.BackColor = System.Drawing.Color.Navy;
             this.textBox85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox85.Enabled = false;
             this.textBox85.Location = new System.Drawing.Point(39, 155);
@@ -5034,11 +5066,12 @@
             this.textBox85.Name = "textBox85";
             this.textBox85.Size = new System.Drawing.Size(22, 20);
             this.textBox85.TabIndex = 558;
+            this.textBox85.TextChanged += new System.EventHandler(this.textBox85_TextChanged);
             // 
             // textBox86
             // 
             this.textBox86.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox86.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox86.BackColor = System.Drawing.Color.Navy;
             this.textBox86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox86.Enabled = false;
             this.textBox86.Location = new System.Drawing.Point(39, 135);
@@ -5047,11 +5080,12 @@
             this.textBox86.Name = "textBox86";
             this.textBox86.Size = new System.Drawing.Size(22, 20);
             this.textBox86.TabIndex = 557;
+            this.textBox86.TextChanged += new System.EventHandler(this.textBox86_TextChanged);
             // 
             // textBox87
             // 
             this.textBox87.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox87.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox87.BackColor = System.Drawing.Color.Navy;
             this.textBox87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox87.Enabled = false;
             this.textBox87.Location = new System.Drawing.Point(39, 195);
@@ -5060,11 +5094,12 @@
             this.textBox87.Name = "textBox87";
             this.textBox87.Size = new System.Drawing.Size(22, 20);
             this.textBox87.TabIndex = 556;
+            this.textBox87.TextChanged += new System.EventHandler(this.textBox87_TextChanged);
             // 
             // textBox88
             // 
             this.textBox88.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox88.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox88.BackColor = System.Drawing.Color.Navy;
             this.textBox88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox88.Enabled = false;
             this.textBox88.Location = new System.Drawing.Point(39, 175);
@@ -5073,11 +5108,12 @@
             this.textBox88.Name = "textBox88";
             this.textBox88.Size = new System.Drawing.Size(22, 20);
             this.textBox88.TabIndex = 555;
+            this.textBox88.TextChanged += new System.EventHandler(this.textBox88_TextChanged);
             // 
             // textBox92
             // 
             this.textBox92.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox92.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox92.BackColor = System.Drawing.Color.Navy;
             this.textBox92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox92.Enabled = false;
             this.textBox92.Location = new System.Drawing.Point(257, 554);
@@ -5086,11 +5122,12 @@
             this.textBox92.Name = "textBox92";
             this.textBox92.Size = new System.Drawing.Size(22, 20);
             this.textBox92.TabIndex = 591;
+            this.textBox92.TextChanged += new System.EventHandler(this.textBox92_TextChanged);
             // 
             // textBox93
             // 
             this.textBox93.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox93.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox93.BackColor = System.Drawing.Color.Navy;
             this.textBox93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox93.Enabled = false;
             this.textBox93.Location = new System.Drawing.Point(257, 394);
@@ -5099,11 +5136,12 @@
             this.textBox93.Name = "textBox93";
             this.textBox93.Size = new System.Drawing.Size(22, 20);
             this.textBox93.TabIndex = 590;
+            this.textBox93.TextChanged += new System.EventHandler(this.textBox93_TextChanged);
             // 
             // textBox94
             // 
             this.textBox94.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox94.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox94.BackColor = System.Drawing.Color.Navy;
             this.textBox94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox94.Enabled = false;
             this.textBox94.Location = new System.Drawing.Point(257, 374);
@@ -5112,11 +5150,12 @@
             this.textBox94.Name = "textBox94";
             this.textBox94.Size = new System.Drawing.Size(22, 20);
             this.textBox94.TabIndex = 589;
+            this.textBox94.TextChanged += new System.EventHandler(this.textBox94_TextChanged);
             // 
             // textBox95
             // 
             this.textBox95.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox95.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox95.BackColor = System.Drawing.Color.Navy;
             this.textBox95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox95.Enabled = false;
             this.textBox95.Location = new System.Drawing.Point(257, 474);
@@ -5125,11 +5164,12 @@
             this.textBox95.Name = "textBox95";
             this.textBox95.Size = new System.Drawing.Size(22, 20);
             this.textBox95.TabIndex = 588;
+            this.textBox95.TextChanged += new System.EventHandler(this.textBox95_TextChanged);
             // 
             // textBox96
             // 
             this.textBox96.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox96.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox96.BackColor = System.Drawing.Color.Navy;
             this.textBox96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox96.Enabled = false;
             this.textBox96.Location = new System.Drawing.Point(257, 414);
@@ -5138,11 +5178,12 @@
             this.textBox96.Name = "textBox96";
             this.textBox96.Size = new System.Drawing.Size(22, 20);
             this.textBox96.TabIndex = 587;
+            this.textBox96.TextChanged += new System.EventHandler(this.textBox96_TextChanged);
             // 
             // textBox97
             // 
             this.textBox97.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox97.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox97.BackColor = System.Drawing.Color.Navy;
             this.textBox97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox97.Enabled = false;
             this.textBox97.Location = new System.Drawing.Point(257, 314);
@@ -5151,11 +5192,12 @@
             this.textBox97.Name = "textBox97";
             this.textBox97.Size = new System.Drawing.Size(22, 20);
             this.textBox97.TabIndex = 586;
+            this.textBox97.TextChanged += new System.EventHandler(this.textBox97_TextChanged);
             // 
             // textBox98
             // 
             this.textBox98.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox98.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox98.BackColor = System.Drawing.Color.Navy;
             this.textBox98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox98.Enabled = false;
             this.textBox98.Location = new System.Drawing.Point(257, 294);
@@ -5164,11 +5206,12 @@
             this.textBox98.Name = "textBox98";
             this.textBox98.Size = new System.Drawing.Size(22, 20);
             this.textBox98.TabIndex = 585;
+            this.textBox98.TextChanged += new System.EventHandler(this.textBox98_TextChanged);
             // 
             // textBox99
             // 
             this.textBox99.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox99.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox99.BackColor = System.Drawing.Color.Navy;
             this.textBox99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox99.Enabled = false;
             this.textBox99.Location = new System.Drawing.Point(257, 354);
@@ -5177,11 +5220,12 @@
             this.textBox99.Name = "textBox99";
             this.textBox99.Size = new System.Drawing.Size(22, 20);
             this.textBox99.TabIndex = 584;
+            this.textBox99.TextChanged += new System.EventHandler(this.textBox99_TextChanged);
             // 
             // textBox100
             // 
             this.textBox100.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox100.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox100.BackColor = System.Drawing.Color.Navy;
             this.textBox100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox100.Enabled = false;
             this.textBox100.Location = new System.Drawing.Point(257, 334);
@@ -5190,11 +5234,12 @@
             this.textBox100.Name = "textBox100";
             this.textBox100.Size = new System.Drawing.Size(22, 20);
             this.textBox100.TabIndex = 583;
+            this.textBox100.TextChanged += new System.EventHandler(this.textBox100_TextChanged);
             // 
             // textBox101
             // 
             this.textBox101.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox101.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox101.BackColor = System.Drawing.Color.Navy;
             this.textBox101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox101.Enabled = false;
             this.textBox101.Location = new System.Drawing.Point(257, 234);
@@ -5203,11 +5248,12 @@
             this.textBox101.Name = "textBox101";
             this.textBox101.Size = new System.Drawing.Size(22, 20);
             this.textBox101.TabIndex = 582;
+            this.textBox101.TextChanged += new System.EventHandler(this.textBox101_TextChanged);
             // 
             // textBox102
             // 
             this.textBox102.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox102.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox102.BackColor = System.Drawing.Color.Navy;
             this.textBox102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox102.Enabled = false;
             this.textBox102.Location = new System.Drawing.Point(257, 214);
@@ -5216,11 +5262,12 @@
             this.textBox102.Name = "textBox102";
             this.textBox102.Size = new System.Drawing.Size(22, 20);
             this.textBox102.TabIndex = 581;
+            this.textBox102.TextChanged += new System.EventHandler(this.textBox102_TextChanged);
             // 
             // textBox103
             // 
             this.textBox103.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox103.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox103.BackColor = System.Drawing.Color.Navy;
             this.textBox103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox103.Enabled = false;
             this.textBox103.Location = new System.Drawing.Point(257, 274);
@@ -5229,11 +5276,12 @@
             this.textBox103.Name = "textBox103";
             this.textBox103.Size = new System.Drawing.Size(22, 20);
             this.textBox103.TabIndex = 580;
+            this.textBox103.TextChanged += new System.EventHandler(this.textBox103_TextChanged);
             // 
             // textBox104
             // 
             this.textBox104.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox104.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox104.BackColor = System.Drawing.Color.Navy;
             this.textBox104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox104.Enabled = false;
             this.textBox104.Location = new System.Drawing.Point(257, 254);
@@ -5242,11 +5290,12 @@
             this.textBox104.Name = "textBox104";
             this.textBox104.Size = new System.Drawing.Size(22, 20);
             this.textBox104.TabIndex = 579;
+            this.textBox104.TextChanged += new System.EventHandler(this.textBox104_TextChanged);
             // 
             // textBox105
             // 
             this.textBox105.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox105.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox105.BackColor = System.Drawing.Color.Navy;
             this.textBox105.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox105.Enabled = false;
             this.textBox105.Location = new System.Drawing.Point(257, 155);
@@ -5255,11 +5304,12 @@
             this.textBox105.Name = "textBox105";
             this.textBox105.Size = new System.Drawing.Size(22, 20);
             this.textBox105.TabIndex = 578;
+            this.textBox105.TextChanged += new System.EventHandler(this.textBox105_TextChanged);
             // 
             // textBox106
             // 
             this.textBox106.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox106.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox106.BackColor = System.Drawing.Color.Navy;
             this.textBox106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox106.Enabled = false;
             this.textBox106.Location = new System.Drawing.Point(257, 135);
@@ -5268,11 +5318,12 @@
             this.textBox106.Name = "textBox106";
             this.textBox106.Size = new System.Drawing.Size(22, 20);
             this.textBox106.TabIndex = 577;
+            this.textBox106.TextChanged += new System.EventHandler(this.textBox106_TextChanged);
             // 
             // textBox107
             // 
             this.textBox107.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox107.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox107.BackColor = System.Drawing.Color.Navy;
             this.textBox107.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox107.Enabled = false;
             this.textBox107.Location = new System.Drawing.Point(257, 195);
@@ -5281,11 +5332,12 @@
             this.textBox107.Name = "textBox107";
             this.textBox107.Size = new System.Drawing.Size(22, 20);
             this.textBox107.TabIndex = 576;
+            this.textBox107.TextChanged += new System.EventHandler(this.textBox107_TextChanged);
             // 
             // textBox108
             // 
             this.textBox108.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox108.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox108.BackColor = System.Drawing.Color.Navy;
             this.textBox108.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox108.Enabled = false;
             this.textBox108.Location = new System.Drawing.Point(257, 175);
@@ -5294,11 +5346,12 @@
             this.textBox108.Name = "textBox108";
             this.textBox108.Size = new System.Drawing.Size(22, 20);
             this.textBox108.TabIndex = 575;
+            this.textBox108.TextChanged += new System.EventHandler(this.textBox108_TextChanged);
             // 
             // textBox60
             // 
             this.textBox60.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox60.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox60.BackColor = System.Drawing.Color.Navy;
             this.textBox60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox60.Enabled = false;
             this.textBox60.Location = new System.Drawing.Point(83, 574);
@@ -5307,11 +5360,12 @@
             this.textBox60.Name = "textBox60";
             this.textBox60.Size = new System.Drawing.Size(22, 20);
             this.textBox60.TabIndex = 600;
+            this.textBox60.TextChanged += new System.EventHandler(this.textBox60_TextChanged);
             // 
             // textBox61
             // 
             this.textBox61.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox61.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox61.BackColor = System.Drawing.Color.Navy;
             this.textBox61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox61.Enabled = false;
             this.textBox61.Location = new System.Drawing.Point(61, 574);
@@ -5320,11 +5374,12 @@
             this.textBox61.Name = "textBox61";
             this.textBox61.Size = new System.Drawing.Size(22, 20);
             this.textBox61.TabIndex = 599;
+            this.textBox61.TextChanged += new System.EventHandler(this.textBox61_TextChanged);
             // 
             // textBox71
             // 
             this.textBox71.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox71.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox71.BackColor = System.Drawing.Color.Navy;
             this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox71.Enabled = false;
             this.textBox71.Location = new System.Drawing.Point(257, 574);
@@ -5333,11 +5388,12 @@
             this.textBox71.Name = "textBox71";
             this.textBox71.Size = new System.Drawing.Size(22, 20);
             this.textBox71.TabIndex = 598;
+            this.textBox71.TextChanged += new System.EventHandler(this.textBox71_TextChanged);
             // 
             // textBox89
             // 
             this.textBox89.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox89.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox89.BackColor = System.Drawing.Color.Navy;
             this.textBox89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox89.Enabled = false;
             this.textBox89.Location = new System.Drawing.Point(235, 574);
@@ -5346,11 +5402,12 @@
             this.textBox89.Name = "textBox89";
             this.textBox89.Size = new System.Drawing.Size(22, 20);
             this.textBox89.TabIndex = 597;
+            this.textBox89.TextChanged += new System.EventHandler(this.textBox89_TextChanged);
             // 
             // textBox90
             // 
             this.textBox90.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox90.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox90.BackColor = System.Drawing.Color.Navy;
             this.textBox90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox90.Enabled = false;
             this.textBox90.Location = new System.Drawing.Point(171, 574);
@@ -5359,11 +5416,12 @@
             this.textBox90.Name = "textBox90";
             this.textBox90.Size = new System.Drawing.Size(22, 20);
             this.textBox90.TabIndex = 596;
+            this.textBox90.TextChanged += new System.EventHandler(this.textBox90_TextChanged);
             // 
             // textBox91
             // 
             this.textBox91.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox91.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox91.BackColor = System.Drawing.Color.Navy;
             this.textBox91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox91.Enabled = false;
             this.textBox91.Location = new System.Drawing.Point(149, 574);
@@ -5372,11 +5430,12 @@
             this.textBox91.Name = "textBox91";
             this.textBox91.Size = new System.Drawing.Size(22, 20);
             this.textBox91.TabIndex = 595;
+            this.textBox91.TextChanged += new System.EventHandler(this.textBox91_TextChanged);
             // 
             // textBox109
             // 
             this.textBox109.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox109.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox109.BackColor = System.Drawing.Color.Navy;
             this.textBox109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox109.Enabled = false;
             this.textBox109.Location = new System.Drawing.Point(127, 574);
@@ -5385,11 +5444,12 @@
             this.textBox109.Name = "textBox109";
             this.textBox109.Size = new System.Drawing.Size(22, 20);
             this.textBox109.TabIndex = 594;
+            this.textBox109.TextChanged += new System.EventHandler(this.textBox109_TextChanged);
             // 
             // textBox110
             // 
             this.textBox110.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox110.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox110.BackColor = System.Drawing.Color.Navy;
             this.textBox110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox110.Enabled = false;
             this.textBox110.Location = new System.Drawing.Point(105, 574);
@@ -5398,11 +5458,12 @@
             this.textBox110.Name = "textBox110";
             this.textBox110.Size = new System.Drawing.Size(22, 20);
             this.textBox110.TabIndex = 593;
+            this.textBox110.TextChanged += new System.EventHandler(this.textBox110_TextChanged);
             // 
             // textBox111
             // 
             this.textBox111.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox111.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox111.BackColor = System.Drawing.Color.Navy;
             this.textBox111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox111.Enabled = false;
             this.textBox111.Location = new System.Drawing.Point(39, 574);
@@ -5411,6 +5472,7 @@
             this.textBox111.Name = "textBox111";
             this.textBox111.Size = new System.Drawing.Size(22, 20);
             this.textBox111.TabIndex = 592;
+            this.textBox111.TextChanged += new System.EventHandler(this.textBox111_TextChanged);
             // 
             // label5
             // 
@@ -6243,33 +6305,35 @@
             // textBox196
             // 
             this.textBox196.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox196.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox196.BackColor = System.Drawing.Color.Navy;
             this.textBox196.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox196.Enabled = false;
-            this.textBox196.Location = new System.Drawing.Point(213, 115);
+            this.textBox196.Location = new System.Drawing.Point(39, 115);
             this.textBox196.Margin = new System.Windows.Forms.Padding(0);
             this.textBox196.Multiline = true;
             this.textBox196.Name = "textBox196";
             this.textBox196.Size = new System.Drawing.Size(22, 20);
             this.textBox196.TabIndex = 687;
+            this.textBox196.TextChanged += new System.EventHandler(this.textBox196_TextChanged);
             // 
             // textBox197
             // 
             this.textBox197.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox197.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox197.BackColor = System.Drawing.Color.Navy;
             this.textBox197.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox197.Enabled = false;
-            this.textBox197.Location = new System.Drawing.Point(191, 115);
+            this.textBox197.Location = new System.Drawing.Point(83, 115);
             this.textBox197.Margin = new System.Windows.Forms.Padding(0);
             this.textBox197.Multiline = true;
             this.textBox197.Name = "textBox197";
             this.textBox197.Size = new System.Drawing.Size(22, 20);
             this.textBox197.TabIndex = 686;
+            this.textBox197.TextChanged += new System.EventHandler(this.textBox197_TextChanged);
             // 
             // textBox198
             // 
             this.textBox198.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox198.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox198.BackColor = System.Drawing.Color.Navy;
             this.textBox198.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox198.Enabled = false;
             this.textBox198.Location = new System.Drawing.Point(213, 574);
@@ -6278,11 +6342,12 @@
             this.textBox198.Name = "textBox198";
             this.textBox198.Size = new System.Drawing.Size(22, 20);
             this.textBox198.TabIndex = 689;
+            this.textBox198.TextChanged += new System.EventHandler(this.textBox198_TextChanged);
             // 
             // textBox199
             // 
             this.textBox199.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox199.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox199.BackColor = System.Drawing.Color.Navy;
             this.textBox199.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox199.Enabled = false;
             this.textBox199.Location = new System.Drawing.Point(191, 574);
@@ -6291,6 +6356,7 @@
             this.textBox199.Name = "textBox199";
             this.textBox199.Size = new System.Drawing.Size(22, 20);
             this.textBox199.TabIndex = 688;
+            this.textBox199.TextChanged += new System.EventHandler(this.textBox199_TextChanged);
             // 
             // textBox163
             // 
@@ -7063,7 +7129,7 @@
             // textBox296
             // 
             this.textBox296.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox296.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox296.BackColor = System.Drawing.Color.Navy;
             this.textBox296.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox296.Enabled = false;
             this.textBox296.Location = new System.Drawing.Point(257, 454);
@@ -7072,11 +7138,12 @@
             this.textBox296.Name = "textBox296";
             this.textBox296.Size = new System.Drawing.Size(22, 20);
             this.textBox296.TabIndex = 765;
+            this.textBox296.TextChanged += new System.EventHandler(this.textBox296_TextChanged);
             // 
             // textBox297
             // 
             this.textBox297.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox297.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox297.BackColor = System.Drawing.Color.Navy;
             this.textBox297.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox297.Enabled = false;
             this.textBox297.Location = new System.Drawing.Point(257, 434);
@@ -7085,11 +7152,12 @@
             this.textBox297.Name = "textBox297";
             this.textBox297.Size = new System.Drawing.Size(22, 20);
             this.textBox297.TabIndex = 764;
+            this.textBox297.TextChanged += new System.EventHandler(this.textBox297_TextChanged);
             // 
             // textBox298
             // 
             this.textBox298.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox298.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox298.BackColor = System.Drawing.Color.Navy;
             this.textBox298.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox298.Enabled = false;
             this.textBox298.Location = new System.Drawing.Point(39, 454);
@@ -7098,11 +7166,12 @@
             this.textBox298.Name = "textBox298";
             this.textBox298.Size = new System.Drawing.Size(22, 20);
             this.textBox298.TabIndex = 767;
+            this.textBox298.TextChanged += new System.EventHandler(this.textBox298_TextChanged);
             // 
             // textBox299
             // 
             this.textBox299.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox299.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox299.BackColor = System.Drawing.Color.Navy;
             this.textBox299.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox299.Enabled = false;
             this.textBox299.Location = new System.Drawing.Point(39, 434);
@@ -7111,6 +7180,7 @@
             this.textBox299.Name = "textBox299";
             this.textBox299.Size = new System.Drawing.Size(22, 20);
             this.textBox299.TabIndex = 766;
+            this.textBox299.TextChanged += new System.EventHandler(this.textBox299_TextChanged);
             // 
             // textBox300
             // 
@@ -7406,7 +7476,7 @@
             // textBox320
             // 
             this.textBox320.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox320.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox320.BackColor = System.Drawing.Color.Navy;
             this.textBox320.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox320.Enabled = false;
             this.textBox320.Location = new System.Drawing.Point(39, 494);
@@ -7415,11 +7485,12 @@
             this.textBox320.Name = "textBox320";
             this.textBox320.Size = new System.Drawing.Size(22, 20);
             this.textBox320.TabIndex = 795;
+            this.textBox320.TextChanged += new System.EventHandler(this.textBox320_TextChanged);
             // 
             // textBox321
             // 
             this.textBox321.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox321.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox321.BackColor = System.Drawing.Color.Navy;
             this.textBox321.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox321.Enabled = false;
             this.textBox321.Location = new System.Drawing.Point(39, 514);
@@ -7428,11 +7499,12 @@
             this.textBox321.Name = "textBox321";
             this.textBox321.Size = new System.Drawing.Size(22, 20);
             this.textBox321.TabIndex = 796;
+            this.textBox321.TextChanged += new System.EventHandler(this.textBox321_TextChanged);
             // 
             // textBox322
             // 
             this.textBox322.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox322.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox322.BackColor = System.Drawing.Color.Navy;
             this.textBox322.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox322.Enabled = false;
             this.textBox322.Location = new System.Drawing.Point(257, 494);
@@ -7441,11 +7513,12 @@
             this.textBox322.Name = "textBox322";
             this.textBox322.Size = new System.Drawing.Size(22, 20);
             this.textBox322.TabIndex = 797;
+            this.textBox322.TextChanged += new System.EventHandler(this.textBox322_TextChanged);
             // 
             // textBox323
             // 
             this.textBox323.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox323.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox323.BackColor = System.Drawing.Color.Navy;
             this.textBox323.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox323.Enabled = false;
             this.textBox323.Location = new System.Drawing.Point(257, 514);
@@ -7454,11 +7527,12 @@
             this.textBox323.Name = "textBox323";
             this.textBox323.Size = new System.Drawing.Size(22, 20);
             this.textBox323.TabIndex = 798;
+            this.textBox323.TextChanged += new System.EventHandler(this.textBox323_TextChanged);
             // 
             // textBox202
             // 
             this.textBox202.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox202.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox202.BackColor = System.Drawing.Color.Navy;
             this.textBox202.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox202.Enabled = false;
             this.textBox202.Location = new System.Drawing.Point(332, 536);
@@ -7467,11 +7541,12 @@
             this.textBox202.Name = "textBox202";
             this.textBox202.Size = new System.Drawing.Size(22, 20);
             this.textBox202.TabIndex = 810;
+            this.textBox202.TextChanged += new System.EventHandler(this.textBox202_TextChanged);
             // 
             // textBox205
             // 
             this.textBox205.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox205.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox205.BackColor = System.Drawing.Color.Navy;
             this.textBox205.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox205.Enabled = false;
             this.textBox205.Location = new System.Drawing.Point(376, 536);
@@ -7480,11 +7555,12 @@
             this.textBox205.Name = "textBox205";
             this.textBox205.Size = new System.Drawing.Size(22, 20);
             this.textBox205.TabIndex = 809;
+            this.textBox205.TextChanged += new System.EventHandler(this.textBox205_TextChanged);
             // 
             // textBox206
             // 
             this.textBox206.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox206.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox206.BackColor = System.Drawing.Color.Navy;
             this.textBox206.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox206.Enabled = false;
             this.textBox206.Location = new System.Drawing.Point(354, 536);
@@ -7493,11 +7569,12 @@
             this.textBox206.Name = "textBox206";
             this.textBox206.Size = new System.Drawing.Size(22, 20);
             this.textBox206.TabIndex = 808;
+            this.textBox206.TextChanged += new System.EventHandler(this.textBox206_TextChanged);
             // 
             // textBox207
             // 
             this.textBox207.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox207.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox207.BackColor = System.Drawing.Color.Navy;
             this.textBox207.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox207.Enabled = false;
             this.textBox207.Location = new System.Drawing.Point(508, 536);
@@ -7506,11 +7583,12 @@
             this.textBox207.Name = "textBox207";
             this.textBox207.Size = new System.Drawing.Size(22, 20);
             this.textBox207.TabIndex = 807;
+            this.textBox207.TextChanged += new System.EventHandler(this.textBox207_TextChanged);
             // 
             // textBox208
             // 
             this.textBox208.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox208.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox208.BackColor = System.Drawing.Color.Navy;
             this.textBox208.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox208.Enabled = false;
             this.textBox208.Location = new System.Drawing.Point(486, 536);
@@ -7519,11 +7597,12 @@
             this.textBox208.Name = "textBox208";
             this.textBox208.Size = new System.Drawing.Size(22, 20);
             this.textBox208.TabIndex = 806;
+            this.textBox208.TextChanged += new System.EventHandler(this.textBox208_TextChanged);
             // 
             // textBox209
             // 
             this.textBox209.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox209.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox209.BackColor = System.Drawing.Color.Navy;
             this.textBox209.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox209.Enabled = false;
             this.textBox209.Location = new System.Drawing.Point(464, 536);
@@ -7532,11 +7611,12 @@
             this.textBox209.Name = "textBox209";
             this.textBox209.Size = new System.Drawing.Size(22, 20);
             this.textBox209.TabIndex = 805;
+            this.textBox209.TextChanged += new System.EventHandler(this.textBox209_TextChanged);
             // 
             // textBox210
             // 
             this.textBox210.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox210.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox210.BackColor = System.Drawing.Color.Navy;
             this.textBox210.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox210.Enabled = false;
             this.textBox210.Location = new System.Drawing.Point(442, 536);
@@ -7545,11 +7625,12 @@
             this.textBox210.Name = "textBox210";
             this.textBox210.Size = new System.Drawing.Size(22, 20);
             this.textBox210.TabIndex = 804;
+            this.textBox210.TextChanged += new System.EventHandler(this.textBox210_TextChanged);
             // 
             // textBox211
             // 
             this.textBox211.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox211.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox211.BackColor = System.Drawing.Color.Navy;
             this.textBox211.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox211.Enabled = false;
             this.textBox211.Location = new System.Drawing.Point(552, 536);
@@ -7558,11 +7639,12 @@
             this.textBox211.Name = "textBox211";
             this.textBox211.Size = new System.Drawing.Size(22, 20);
             this.textBox211.TabIndex = 803;
+            this.textBox211.TextChanged += new System.EventHandler(this.textBox211_TextChanged);
             // 
             // textBox212
             // 
             this.textBox212.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox212.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox212.BackColor = System.Drawing.Color.Navy;
             this.textBox212.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox212.Enabled = false;
             this.textBox212.Location = new System.Drawing.Point(530, 536);
@@ -7571,11 +7653,12 @@
             this.textBox212.Name = "textBox212";
             this.textBox212.Size = new System.Drawing.Size(22, 20);
             this.textBox212.TabIndex = 802;
+            this.textBox212.TextChanged += new System.EventHandler(this.textBox212_TextChanged);
             // 
             // textBox213
             // 
             this.textBox213.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox213.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox213.BackColor = System.Drawing.Color.Navy;
             this.textBox213.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox213.Enabled = false;
             this.textBox213.Location = new System.Drawing.Point(420, 536);
@@ -7584,11 +7667,12 @@
             this.textBox213.Name = "textBox213";
             this.textBox213.Size = new System.Drawing.Size(22, 20);
             this.textBox213.TabIndex = 801;
+            this.textBox213.TextChanged += new System.EventHandler(this.textBox213_TextChanged);
             // 
             // textBox214
             // 
             this.textBox214.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox214.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox214.BackColor = System.Drawing.Color.Navy;
             this.textBox214.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox214.Enabled = false;
             this.textBox214.Location = new System.Drawing.Point(398, 536);
@@ -7597,11 +7681,12 @@
             this.textBox214.Name = "textBox214";
             this.textBox214.Size = new System.Drawing.Size(22, 20);
             this.textBox214.TabIndex = 800;
+            this.textBox214.TextChanged += new System.EventHandler(this.textBox214_TextChanged);
             // 
             // textBox225
             // 
             this.textBox225.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox225.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox225.BackColor = System.Drawing.Color.Navy;
             this.textBox225.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox225.Enabled = false;
             this.textBox225.Location = new System.Drawing.Point(574, 536);
@@ -7610,6 +7695,7 @@
             this.textBox225.Name = "textBox225";
             this.textBox225.Size = new System.Drawing.Size(22, 20);
             this.textBox225.TabIndex = 799;
+            this.textBox225.TextChanged += new System.EventHandler(this.textBox225_TextChanged);
             // 
             // textBox324
             // 
@@ -7783,7 +7869,7 @@
             // textBox337
             // 
             this.textBox337.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox337.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox337.BackColor = System.Drawing.Color.Navy;
             this.textBox337.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox337.Enabled = false;
             this.textBox337.Location = new System.Drawing.Point(39, 534);
@@ -7792,11 +7878,12 @@
             this.textBox337.Name = "textBox337";
             this.textBox337.Size = new System.Drawing.Size(22, 20);
             this.textBox337.TabIndex = 824;
+            this.textBox337.TextChanged += new System.EventHandler(this.textBox337_TextChanged);
             // 
             // textBox338
             // 
             this.textBox338.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox338.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox338.BackColor = System.Drawing.Color.Navy;
             this.textBox338.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox338.Enabled = false;
             this.textBox338.Location = new System.Drawing.Point(257, 534);
@@ -7805,6 +7892,7 @@
             this.textBox338.Name = "textBox338";
             this.textBox338.Size = new System.Drawing.Size(22, 20);
             this.textBox338.TabIndex = 825;
+            this.textBox338.TextChanged += new System.EventHandler(this.textBox338_TextChanged);
             // 
             // textBox339
             // 
@@ -8430,23 +8518,6 @@
             this.C21.TabIndex = 864;
             this.C21.Visible = false;
             // 
-            // LBL_livello
-            // 
-            this.LBL_livello.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.LBL_livello.BackColor = System.Drawing.Color.Black;
-            this.LBL_livello.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LBL_livello.Enabled = false;
-            this.LBL_livello.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_livello.ForeColor = System.Drawing.SystemColors.Window;
-            this.LBL_livello.Location = new System.Drawing.Point(693, 469);
-            this.LBL_livello.Margin = new System.Windows.Forms.Padding(0);
-            this.LBL_livello.Multiline = true;
-            this.LBL_livello.Name = "LBL_livello";
-            this.LBL_livello.Size = new System.Drawing.Size(88, 40);
-            this.LBL_livello.TabIndex = 895;
-            this.LBL_livello.Text = "0";
-            this.LBL_livello.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -8463,7 +8534,7 @@
             // textBox362
             // 
             this.textBox362.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox362.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox362.BackColor = System.Drawing.Color.Navy;
             this.textBox362.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox362.Enabled = false;
             this.textBox362.Location = new System.Drawing.Point(671, 449);
@@ -8472,11 +8543,12 @@
             this.textBox362.Name = "textBox362";
             this.textBox362.Size = new System.Drawing.Size(22, 20);
             this.textBox362.TabIndex = 891;
+            this.textBox362.TextChanged += new System.EventHandler(this.textBox362_TextChanged);
             // 
             // textBox363
             // 
             this.textBox363.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox363.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox363.BackColor = System.Drawing.Color.Navy;
             this.textBox363.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox363.Enabled = false;
             this.textBox363.Location = new System.Drawing.Point(781, 449);
@@ -8485,11 +8557,12 @@
             this.textBox363.Name = "textBox363";
             this.textBox363.Size = new System.Drawing.Size(22, 20);
             this.textBox363.TabIndex = 890;
+            this.textBox363.TextChanged += new System.EventHandler(this.textBox363_TextChanged);
             // 
             // textBox364
             // 
             this.textBox364.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox364.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox364.BackColor = System.Drawing.Color.Navy;
             this.textBox364.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox364.Enabled = false;
             this.textBox364.Location = new System.Drawing.Point(781, 469);
@@ -8498,11 +8571,12 @@
             this.textBox364.Name = "textBox364";
             this.textBox364.Size = new System.Drawing.Size(22, 20);
             this.textBox364.TabIndex = 889;
+            this.textBox364.TextChanged += new System.EventHandler(this.textBox364_TextChanged);
             // 
             // textBox365
             // 
             this.textBox365.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox365.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox365.BackColor = System.Drawing.Color.Navy;
             this.textBox365.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox365.Enabled = false;
             this.textBox365.Location = new System.Drawing.Point(781, 489);
@@ -8511,11 +8585,12 @@
             this.textBox365.Name = "textBox365";
             this.textBox365.Size = new System.Drawing.Size(22, 20);
             this.textBox365.TabIndex = 888;
+            this.textBox365.TextChanged += new System.EventHandler(this.textBox365_TextChanged);
             // 
             // textBox366
             // 
             this.textBox366.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox366.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox366.BackColor = System.Drawing.Color.Navy;
             this.textBox366.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox366.Enabled = false;
             this.textBox366.Location = new System.Drawing.Point(781, 509);
@@ -8524,11 +8599,12 @@
             this.textBox366.Name = "textBox366";
             this.textBox366.Size = new System.Drawing.Size(22, 20);
             this.textBox366.TabIndex = 887;
+            this.textBox366.TextChanged += new System.EventHandler(this.textBox366_TextChanged);
             // 
             // textBox367
             // 
             this.textBox367.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox367.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox367.BackColor = System.Drawing.Color.Navy;
             this.textBox367.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox367.Enabled = false;
             this.textBox367.Location = new System.Drawing.Point(759, 429);
@@ -8537,11 +8613,12 @@
             this.textBox367.Name = "textBox367";
             this.textBox367.Size = new System.Drawing.Size(22, 20);
             this.textBox367.TabIndex = 886;
+            this.textBox367.TextChanged += new System.EventHandler(this.textBox367_TextChanged);
             // 
             // textBox368
             // 
             this.textBox368.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox368.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox368.BackColor = System.Drawing.Color.Navy;
             this.textBox368.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox368.Enabled = false;
             this.textBox368.Location = new System.Drawing.Point(759, 509);
@@ -8550,11 +8627,12 @@
             this.textBox368.Name = "textBox368";
             this.textBox368.Size = new System.Drawing.Size(22, 20);
             this.textBox368.TabIndex = 885;
+            this.textBox368.TextChanged += new System.EventHandler(this.textBox368_TextChanged);
             // 
             // textBox369
             // 
             this.textBox369.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox369.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox369.BackColor = System.Drawing.Color.Navy;
             this.textBox369.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox369.Enabled = false;
             this.textBox369.Location = new System.Drawing.Point(781, 429);
@@ -8563,11 +8641,12 @@
             this.textBox369.Name = "textBox369";
             this.textBox369.Size = new System.Drawing.Size(22, 20);
             this.textBox369.TabIndex = 884;
+            this.textBox369.TextChanged += new System.EventHandler(this.textBox369_TextChanged);
             // 
             // textBox370
             // 
             this.textBox370.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox370.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox370.BackColor = System.Drawing.Color.Navy;
             this.textBox370.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox370.Enabled = false;
             this.textBox370.Location = new System.Drawing.Point(671, 469);
@@ -8576,11 +8655,12 @@
             this.textBox370.Name = "textBox370";
             this.textBox370.Size = new System.Drawing.Size(22, 20);
             this.textBox370.TabIndex = 883;
+            this.textBox370.TextChanged += new System.EventHandler(this.textBox370_TextChanged);
             // 
             // textBox371
             // 
             this.textBox371.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox371.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox371.BackColor = System.Drawing.Color.Navy;
             this.textBox371.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox371.Enabled = false;
             this.textBox371.Location = new System.Drawing.Point(671, 429);
@@ -8589,11 +8669,12 @@
             this.textBox371.Name = "textBox371";
             this.textBox371.Size = new System.Drawing.Size(22, 20);
             this.textBox371.TabIndex = 882;
+            this.textBox371.TextChanged += new System.EventHandler(this.textBox371_TextChanged);
             // 
             // textBox372
             // 
             this.textBox372.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox372.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox372.BackColor = System.Drawing.Color.Navy;
             this.textBox372.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox372.Enabled = false;
             this.textBox372.Location = new System.Drawing.Point(715, 429);
@@ -8602,11 +8683,12 @@
             this.textBox372.Name = "textBox372";
             this.textBox372.Size = new System.Drawing.Size(22, 20);
             this.textBox372.TabIndex = 881;
+            this.textBox372.TextChanged += new System.EventHandler(this.textBox372_TextChanged);
             // 
             // textBox373
             // 
             this.textBox373.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox373.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox373.BackColor = System.Drawing.Color.Navy;
             this.textBox373.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox373.Enabled = false;
             this.textBox373.Location = new System.Drawing.Point(693, 429);
@@ -8615,11 +8697,12 @@
             this.textBox373.Name = "textBox373";
             this.textBox373.Size = new System.Drawing.Size(22, 20);
             this.textBox373.TabIndex = 880;
+            this.textBox373.TextChanged += new System.EventHandler(this.textBox373_TextChanged);
             // 
             // textBox374
             // 
             this.textBox374.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox374.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox374.BackColor = System.Drawing.Color.Navy;
             this.textBox374.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox374.Enabled = false;
             this.textBox374.Location = new System.Drawing.Point(737, 429);
@@ -8628,11 +8711,12 @@
             this.textBox374.Name = "textBox374";
             this.textBox374.Size = new System.Drawing.Size(22, 20);
             this.textBox374.TabIndex = 879;
+            this.textBox374.TextChanged += new System.EventHandler(this.textBox374_TextChanged);
             // 
             // textBox375
             // 
             this.textBox375.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox375.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox375.BackColor = System.Drawing.Color.Navy;
             this.textBox375.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox375.Enabled = false;
             this.textBox375.Location = new System.Drawing.Point(671, 489);
@@ -8641,11 +8725,12 @@
             this.textBox375.Name = "textBox375";
             this.textBox375.Size = new System.Drawing.Size(22, 20);
             this.textBox375.TabIndex = 878;
+            this.textBox375.TextChanged += new System.EventHandler(this.textBox375_TextChanged);
             // 
             // textBox376
             // 
             this.textBox376.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox376.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox376.BackColor = System.Drawing.Color.Navy;
             this.textBox376.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox376.Enabled = false;
             this.textBox376.Location = new System.Drawing.Point(671, 509);
@@ -8654,11 +8739,12 @@
             this.textBox376.Name = "textBox376";
             this.textBox376.Size = new System.Drawing.Size(22, 20);
             this.textBox376.TabIndex = 877;
+            this.textBox376.TextChanged += new System.EventHandler(this.textBox376_TextChanged);
             // 
             // textBox377
             // 
             this.textBox377.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox377.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox377.BackColor = System.Drawing.Color.Navy;
             this.textBox377.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox377.Enabled = false;
             this.textBox377.Location = new System.Drawing.Point(715, 509);
@@ -8667,11 +8753,12 @@
             this.textBox377.Name = "textBox377";
             this.textBox377.Size = new System.Drawing.Size(22, 20);
             this.textBox377.TabIndex = 876;
+            this.textBox377.TextChanged += new System.EventHandler(this.textBox377_TextChanged);
             // 
             // textBox378
             // 
             this.textBox378.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox378.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox378.BackColor = System.Drawing.Color.Navy;
             this.textBox378.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox378.Enabled = false;
             this.textBox378.Location = new System.Drawing.Point(693, 509);
@@ -8680,11 +8767,12 @@
             this.textBox378.Name = "textBox378";
             this.textBox378.Size = new System.Drawing.Size(22, 20);
             this.textBox378.TabIndex = 875;
+            this.textBox378.TextChanged += new System.EventHandler(this.textBox378_TextChanged);
             // 
             // textBox379
             // 
             this.textBox379.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox379.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox379.BackColor = System.Drawing.Color.Navy;
             this.textBox379.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox379.Enabled = false;
             this.textBox379.Location = new System.Drawing.Point(737, 509);
@@ -8693,11 +8781,12 @@
             this.textBox379.Name = "textBox379";
             this.textBox379.Size = new System.Drawing.Size(22, 20);
             this.textBox379.TabIndex = 874;
+            this.textBox379.TextChanged += new System.EventHandler(this.textBox379_TextChanged);
             // 
             // textBox354
             // 
             this.textBox354.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox354.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox354.BackColor = System.Drawing.Color.Navy;
             this.textBox354.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox354.Enabled = false;
             this.textBox354.Location = new System.Drawing.Point(803, 372);
@@ -8706,11 +8795,12 @@
             this.textBox354.Name = "textBox354";
             this.textBox354.Size = new System.Drawing.Size(22, 20);
             this.textBox354.TabIndex = 896;
+            this.textBox354.TextChanged += new System.EventHandler(this.textBox354_TextChanged);
             // 
             // textBox355
             // 
             this.textBox355.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox355.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox355.BackColor = System.Drawing.Color.Navy;
             this.textBox355.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox355.Enabled = false;
             this.textBox355.Location = new System.Drawing.Point(649, 292);
@@ -8719,11 +8809,12 @@
             this.textBox355.Name = "textBox355";
             this.textBox355.Size = new System.Drawing.Size(22, 20);
             this.textBox355.TabIndex = 897;
+            this.textBox355.TextChanged += new System.EventHandler(this.textBox355_TextChanged);
             // 
             // textBox356
             // 
             this.textBox356.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox356.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox356.BackColor = System.Drawing.Color.Navy;
             this.textBox356.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox356.Enabled = false;
             this.textBox356.Location = new System.Drawing.Point(715, 391);
@@ -8732,11 +8823,12 @@
             this.textBox356.Name = "textBox356";
             this.textBox356.Size = new System.Drawing.Size(22, 20);
             this.textBox356.TabIndex = 901;
+            this.textBox356.TextChanged += new System.EventHandler(this.textBox356_TextChanged);
             // 
             // textBox357
             // 
             this.textBox357.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox357.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox357.BackColor = System.Drawing.Color.Navy;
             this.textBox357.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox357.Enabled = false;
             this.textBox357.Location = new System.Drawing.Point(671, 391);
@@ -8745,24 +8837,26 @@
             this.textBox357.Name = "textBox357";
             this.textBox357.Size = new System.Drawing.Size(22, 20);
             this.textBox357.TabIndex = 900;
+            this.textBox357.TextChanged += new System.EventHandler(this.textBox357_TextChanged);
             // 
             // textBox358
             // 
             this.textBox358.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox358.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox358.BackColor = System.Drawing.Color.Navy;
             this.textBox358.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox358.Enabled = false;
-            this.textBox358.Location = new System.Drawing.Point(649, 392);
+            this.textBox358.Location = new System.Drawing.Point(649, 391);
             this.textBox358.Margin = new System.Windows.Forms.Padding(0);
             this.textBox358.Multiline = true;
             this.textBox358.Name = "textBox358";
             this.textBox358.Size = new System.Drawing.Size(22, 20);
             this.textBox358.TabIndex = 899;
+            this.textBox358.TextChanged += new System.EventHandler(this.textBox358_TextChanged);
             // 
             // textBox359
             // 
             this.textBox359.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox359.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox359.BackColor = System.Drawing.Color.Navy;
             this.textBox359.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox359.Enabled = false;
             this.textBox359.Location = new System.Drawing.Point(693, 391);
@@ -8771,6 +8865,7 @@
             this.textBox359.Name = "textBox359";
             this.textBox359.Size = new System.Drawing.Size(22, 20);
             this.textBox359.TabIndex = 898;
+            this.textBox359.TextChanged += new System.EventHandler(this.textBox359_TextChanged);
             // 
             // textBox360
             // 
@@ -8905,7 +9000,7 @@
             // textBox390
             // 
             this.textBox390.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox390.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox390.BackColor = System.Drawing.Color.Navy;
             this.textBox390.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox390.Enabled = false;
             this.textBox390.Location = new System.Drawing.Point(574, 97);
@@ -8914,11 +9009,12 @@
             this.textBox390.Name = "textBox390";
             this.textBox390.Size = new System.Drawing.Size(22, 20);
             this.textBox390.TabIndex = 915;
+            this.textBox390.TextChanged += new System.EventHandler(this.textBox390_TextChanged);
             // 
             // textBox391
             // 
             this.textBox391.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox391.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox391.BackColor = System.Drawing.Color.Navy;
             this.textBox391.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox391.Enabled = false;
             this.textBox391.Location = new System.Drawing.Point(574, 77);
@@ -8927,11 +9023,12 @@
             this.textBox391.Name = "textBox391";
             this.textBox391.Size = new System.Drawing.Size(22, 20);
             this.textBox391.TabIndex = 916;
+            this.textBox391.TextChanged += new System.EventHandler(this.textBox391_TextChanged);
             // 
             // textBox392
             // 
             this.textBox392.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox392.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox392.BackColor = System.Drawing.Color.Navy;
             this.textBox392.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox392.Enabled = false;
             this.textBox392.Location = new System.Drawing.Point(332, 77);
@@ -8940,11 +9037,12 @@
             this.textBox392.Name = "textBox392";
             this.textBox392.Size = new System.Drawing.Size(22, 20);
             this.textBox392.TabIndex = 918;
+            this.textBox392.TextChanged += new System.EventHandler(this.textBox392_TextChanged);
             // 
             // textBox393
             // 
             this.textBox393.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox393.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox393.BackColor = System.Drawing.Color.Navy;
             this.textBox393.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox393.Enabled = false;
             this.textBox393.Location = new System.Drawing.Point(332, 97);
@@ -8953,11 +9051,12 @@
             this.textBox393.Name = "textBox393";
             this.textBox393.Size = new System.Drawing.Size(22, 20);
             this.textBox393.TabIndex = 917;
+            this.textBox393.TextChanged += new System.EventHandler(this.textBox393_TextChanged);
             // 
             // textBox394
             // 
             this.textBox394.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox394.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox394.BackColor = System.Drawing.Color.Navy;
             this.textBox394.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox394.Enabled = false;
             this.textBox394.Location = new System.Drawing.Point(376, 57);
@@ -8966,11 +9065,12 @@
             this.textBox394.Name = "textBox394";
             this.textBox394.Size = new System.Drawing.Size(22, 20);
             this.textBox394.TabIndex = 930;
+            this.textBox394.TextChanged += new System.EventHandler(this.textBox394_TextChanged);
             // 
             // textBox395
             // 
             this.textBox395.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox395.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox395.BackColor = System.Drawing.Color.Navy;
             this.textBox395.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox395.Enabled = false;
             this.textBox395.Location = new System.Drawing.Point(354, 57);
@@ -8979,11 +9079,12 @@
             this.textBox395.Name = "textBox395";
             this.textBox395.Size = new System.Drawing.Size(22, 20);
             this.textBox395.TabIndex = 929;
+            this.textBox395.TextChanged += new System.EventHandler(this.textBox395_TextChanged);
             // 
             // textBox396
             // 
             this.textBox396.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox396.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox396.BackColor = System.Drawing.Color.Navy;
             this.textBox396.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox396.Enabled = false;
             this.textBox396.Location = new System.Drawing.Point(508, 57);
@@ -8992,11 +9093,12 @@
             this.textBox396.Name = "textBox396";
             this.textBox396.Size = new System.Drawing.Size(22, 20);
             this.textBox396.TabIndex = 928;
+            this.textBox396.TextChanged += new System.EventHandler(this.textBox396_TextChanged);
             // 
             // textBox397
             // 
             this.textBox397.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox397.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox397.BackColor = System.Drawing.Color.Navy;
             this.textBox397.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox397.Enabled = false;
             this.textBox397.Location = new System.Drawing.Point(486, 57);
@@ -9005,11 +9107,12 @@
             this.textBox397.Name = "textBox397";
             this.textBox397.Size = new System.Drawing.Size(22, 20);
             this.textBox397.TabIndex = 927;
+            this.textBox397.TextChanged += new System.EventHandler(this.textBox397_TextChanged);
             // 
             // textBox398
             // 
             this.textBox398.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox398.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox398.BackColor = System.Drawing.Color.Navy;
             this.textBox398.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox398.Enabled = false;
             this.textBox398.Location = new System.Drawing.Point(464, 57);
@@ -9018,11 +9121,12 @@
             this.textBox398.Name = "textBox398";
             this.textBox398.Size = new System.Drawing.Size(22, 20);
             this.textBox398.TabIndex = 926;
+            this.textBox398.TextChanged += new System.EventHandler(this.textBox398_TextChanged);
             // 
             // textBox399
             // 
             this.textBox399.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox399.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox399.BackColor = System.Drawing.Color.Navy;
             this.textBox399.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox399.Enabled = false;
             this.textBox399.Location = new System.Drawing.Point(442, 57);
@@ -9031,11 +9135,12 @@
             this.textBox399.Name = "textBox399";
             this.textBox399.Size = new System.Drawing.Size(22, 20);
             this.textBox399.TabIndex = 925;
+            this.textBox399.TextChanged += new System.EventHandler(this.textBox399_TextChanged);
             // 
             // textBox400
             // 
             this.textBox400.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox400.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox400.BackColor = System.Drawing.Color.Navy;
             this.textBox400.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox400.Enabled = false;
             this.textBox400.Location = new System.Drawing.Point(552, 57);
@@ -9044,11 +9149,12 @@
             this.textBox400.Name = "textBox400";
             this.textBox400.Size = new System.Drawing.Size(22, 20);
             this.textBox400.TabIndex = 924;
+            this.textBox400.TextChanged += new System.EventHandler(this.textBox400_TextChanged);
             // 
             // textBox401
             // 
             this.textBox401.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox401.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox401.BackColor = System.Drawing.Color.Navy;
             this.textBox401.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox401.Enabled = false;
             this.textBox401.Location = new System.Drawing.Point(530, 57);
@@ -9057,11 +9163,12 @@
             this.textBox401.Name = "textBox401";
             this.textBox401.Size = new System.Drawing.Size(22, 20);
             this.textBox401.TabIndex = 923;
+            this.textBox401.TextChanged += new System.EventHandler(this.textBox401_TextChanged);
             // 
             // textBox402
             // 
             this.textBox402.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox402.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox402.BackColor = System.Drawing.Color.Navy;
             this.textBox402.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox402.Enabled = false;
             this.textBox402.Location = new System.Drawing.Point(420, 57);
@@ -9070,11 +9177,12 @@
             this.textBox402.Name = "textBox402";
             this.textBox402.Size = new System.Drawing.Size(22, 20);
             this.textBox402.TabIndex = 922;
+            this.textBox402.TextChanged += new System.EventHandler(this.textBox402_TextChanged);
             // 
             // textBox403
             // 
             this.textBox403.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox403.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox403.BackColor = System.Drawing.Color.Navy;
             this.textBox403.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox403.Enabled = false;
             this.textBox403.Location = new System.Drawing.Point(398, 57);
@@ -9083,11 +9191,12 @@
             this.textBox403.Name = "textBox403";
             this.textBox403.Size = new System.Drawing.Size(22, 20);
             this.textBox403.TabIndex = 921;
+            this.textBox403.TextChanged += new System.EventHandler(this.textBox403_TextChanged);
             // 
             // textBox404
             // 
             this.textBox404.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox404.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox404.BackColor = System.Drawing.Color.Navy;
             this.textBox404.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox404.Enabled = false;
             this.textBox404.Location = new System.Drawing.Point(332, 57);
@@ -9096,11 +9205,12 @@
             this.textBox404.Name = "textBox404";
             this.textBox404.Size = new System.Drawing.Size(22, 20);
             this.textBox404.TabIndex = 920;
+            this.textBox404.TextChanged += new System.EventHandler(this.textBox404_TextChanged);
             // 
             // textBox405
             // 
             this.textBox405.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox405.BackColor = System.Drawing.Color.DarkOrchid;
+            this.textBox405.BackColor = System.Drawing.Color.Navy;
             this.textBox405.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox405.Enabled = false;
             this.textBox405.Location = new System.Drawing.Point(574, 57);
@@ -9109,6 +9219,7 @@
             this.textBox405.Name = "textBox405";
             this.textBox405.Size = new System.Drawing.Size(22, 20);
             this.textBox405.TabIndex = 919;
+            this.textBox405.TextChanged += new System.EventHandler(this.textBox405_TextChanged);
             // 
             // txt_linee
             // 
@@ -9123,13 +9234,118 @@
             this.txt_linee.Text = "LINES-0";
             this.txt_linee.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // textBox37
+            // 
+            this.textBox37.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox37.BackColor = System.Drawing.Color.Navy;
+            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox37.Enabled = false;
+            this.textBox37.Location = new System.Drawing.Point(61, 115);
+            this.textBox37.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox37.Multiline = true;
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(22, 20);
+            this.textBox37.TabIndex = 933;
+            this.textBox37.TextChanged += new System.EventHandler(this.textBox37_TextChanged);
+            // 
+            // textBox46
+            // 
+            this.textBox46.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox46.BackColor = System.Drawing.Color.Navy;
+            this.textBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox46.Enabled = false;
+            this.textBox46.Location = new System.Drawing.Point(105, 115);
+            this.textBox46.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox46.Multiline = true;
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(22, 20);
+            this.textBox46.TabIndex = 934;
+            this.textBox46.TextChanged += new System.EventHandler(this.textBox46_TextChanged);
+            // 
+            // textBox112
+            // 
+            this.textBox112.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox112.BackColor = System.Drawing.Color.Navy;
+            this.textBox112.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox112.Enabled = false;
+            this.textBox112.Location = new System.Drawing.Point(127, 115);
+            this.textBox112.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox112.Multiline = true;
+            this.textBox112.Name = "textBox112";
+            this.textBox112.Size = new System.Drawing.Size(22, 20);
+            this.textBox112.TabIndex = 935;
+            this.textBox112.TextChanged += new System.EventHandler(this.textBox112_TextChanged);
+            // 
+            // textBox113
+            // 
+            this.textBox113.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox113.BackColor = System.Drawing.Color.Navy;
+            this.textBox113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox113.Enabled = false;
+            this.textBox113.Location = new System.Drawing.Point(149, 115);
+            this.textBox113.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox113.Multiline = true;
+            this.textBox113.Name = "textBox113";
+            this.textBox113.Size = new System.Drawing.Size(22, 20);
+            this.textBox113.TabIndex = 936;
+            this.textBox113.TextChanged += new System.EventHandler(this.textBox113_TextChanged);
+            // 
+            // textBox114
+            // 
+            this.textBox114.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox114.BackColor = System.Drawing.Color.Navy;
+            this.textBox114.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox114.Enabled = false;
+            this.textBox114.Location = new System.Drawing.Point(213, 115);
+            this.textBox114.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox114.Multiline = true;
+            this.textBox114.Name = "textBox114";
+            this.textBox114.Size = new System.Drawing.Size(22, 20);
+            this.textBox114.TabIndex = 937;
+            this.textBox114.TextChanged += new System.EventHandler(this.textBox114_TextChanged);
+            // 
+            // textBox115
+            // 
+            this.textBox115.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox115.BackColor = System.Drawing.Color.Navy;
+            this.textBox115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox115.Enabled = false;
+            this.textBox115.Location = new System.Drawing.Point(191, 115);
+            this.textBox115.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox115.Multiline = true;
+            this.textBox115.Name = "textBox115";
+            this.textBox115.Size = new System.Drawing.Size(22, 20);
+            this.textBox115.TabIndex = 938;
+            this.textBox115.TextChanged += new System.EventHandler(this.textBox115_TextChanged);
+            // 
+            // LBL_livello
+            // 
+            this.LBL_livello.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LBL_livello.BackColor = System.Drawing.SystemColors.WindowText;
+            this.LBL_livello.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.LBL_livello.ForeColor = System.Drawing.SystemColors.Window;
+            this.LBL_livello.Location = new System.Drawing.Point(694, 468);
+            this.LBL_livello.Name = "LBL_livello";
+            this.LBL_livello.Size = new System.Drawing.Size(88, 40);
+            this.LBL_livello.TabIndex = 939;
+            this.LBL_livello.Text = "0";
+            this.LBL_livello.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProgettoFineAnno.Properties.Resources.galassia3redux;
+            this.BackColor = System.Drawing.Color.Navy;
+            this.BackgroundImage = global::ProgettoFineAnno.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 668);
+            this.Controls.Add(this.LBL_livello);
+            this.Controls.Add(this.textBox115);
+            this.Controls.Add(this.textBox114);
+            this.Controls.Add(this.textBox113);
+            this.Controls.Add(this.textBox112);
+            this.Controls.Add(this.textBox46);
+            this.Controls.Add(this.textBox37);
             this.Controls.Add(this.txt_linee);
             this.Controls.Add(this.textBox394);
             this.Controls.Add(this.textBox395);
@@ -9163,7 +9379,6 @@
             this.Controls.Add(this.textBox359);
             this.Controls.Add(this.textBox355);
             this.Controls.Add(this.textBox354);
-            this.Controls.Add(this.LBL_livello);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox362);
             this.Controls.Add(this.textBox363);
@@ -9458,15 +9673,9 @@
             this.Controls.Add(this.textBox86);
             this.Controls.Add(this.textBox87);
             this.Controls.Add(this.textBox88);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox47);
             this.Controls.Add(this.textBox48);
             this.Controls.Add(this.textBox51);
             this.Controls.Add(this.textBox52);
-            this.Controls.Add(this.textBox54);
-            this.Controls.Add(this.textBox65);
-            this.Controls.Add(this.textBox66);
-            this.Controls.Add(this.textBox67);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox18);
@@ -10104,15 +10313,9 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox47;
         private System.Windows.Forms.TextBox textBox48;
         private System.Windows.Forms.TextBox textBox51;
         private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox66;
-        private System.Windows.Forms.TextBox textBox67;
         private System.Windows.Forms.TextBox textBox72;
         private System.Windows.Forms.TextBox textBox73;
         private System.Windows.Forms.TextBox textBox74;
@@ -10388,7 +10591,6 @@
         private System.Windows.Forms.TextBox I21;
         private System.Windows.Forms.TextBox D21;
         private System.Windows.Forms.TextBox C21;
-        private System.Windows.Forms.TextBox LBL_livello;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox362;
         private System.Windows.Forms.TextBox textBox363;
@@ -10441,6 +10643,13 @@
         private System.Windows.Forms.TextBox textBox404;
         private System.Windows.Forms.TextBox textBox405;
         private System.Windows.Forms.Label txt_linee;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox textBox112;
+        private System.Windows.Forms.TextBox textBox113;
+        private System.Windows.Forms.TextBox textBox114;
+        private System.Windows.Forms.TextBox textBox115;
+        private System.Windows.Forms.Label LBL_livello;
     }
 }
 
