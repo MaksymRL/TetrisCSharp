@@ -99,23 +99,29 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.Navy;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Nome,
             this.Punteggio});
+            this.listView1.ForeColor = System.Drawing.Color.Yellow;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(28, 26);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(546, 334);
+            this.listView1.Size = new System.Drawing.Size(545, 334);
             this.listView1.TabIndex = 12;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // Nome
             // 
             this.Nome.Text = "Nome";
+            this.Nome.Width = 270;
             // 
             // Punteggio
             // 
             this.Punteggio.Text = "Punteggio";
+            this.Punteggio.Width = 286;
             // 
             // Form2
             // 

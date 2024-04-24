@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 
@@ -89,8 +90,12 @@ namespace ProgettoFineAnno
             item.SubItems.Add(nuovigiocatori.punteggio.ToString());
             listView1.Items.Add(item);
 
+
+            
             Form1 form1 = new Form1();
             form1.Show();
+            Form2 form2 = new Form2();
+            form2.Close();
 
         }
         private void button2_Click(object sender, EventArgs e)
@@ -98,6 +103,9 @@ namespace ProgettoFineAnno
             Application.Exit();
         }
 
-       
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
