@@ -89,8 +89,12 @@ namespace ProgettoFineAnno
             item.SubItems.Add(nuovigiocatori.punteggio.ToString());
             listView1.Items.Add(item);
 
+
+            
             Form1 form1 = new Form1();
             form1.Show();
+            Form2 form2 = new Form2();
+            form2.Close();
 
         }
         private void button2_Click(object sender, EventArgs e)

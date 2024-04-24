@@ -47,9 +47,9 @@ namespace ProgettoFineAnno
             this.KeyDown += Form1_KeyDown;
             this.KeyUp += Form1_KeyUp;
             timer_screenupdate.Start();
-            //this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
-            //this.TopMost = true;
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.TopMost = true;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
