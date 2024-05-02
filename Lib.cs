@@ -5,6 +5,7 @@ using System.Diagnostics.Contracts;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -25,6 +26,23 @@ namespace TetrisFunzioni
         public int Riga;
         public TextBox Casella;
     }
+    public struct Giocatori
+    {
+        public string Nome;
+        public int Punteggio;
+        public DateTime TempoRecord;
+        public int Lines;
+        public int Livello;
+        public int StatI;
+        public int StatJ;
+        public int StatL;
+        public int StatO;
+        public int StatS;
+        public int StatT;
+        public int StatZ;
+    }
+
+    
 
     public enum Pezzi
     {
@@ -266,7 +284,7 @@ namespace TetrisFunzioni
         #endregion Genera
 
         #region Scendi
-        public static void Scendi(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
+        public static void Scendi(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione, ref int Grids)
         {
             for (int x = 0; x < elePosizioni.Length; x++)
             {
@@ -274,24 +292,31 @@ namespace TetrisFunzioni
                 {
                     case (int)Pezzi.IBlock:
                         Lib.ScendiIBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
                     case (int)Pezzi.JBlock:
                         Lib.ScendiJBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
                     case (int)Pezzi.LBlock:
                         Lib.ScendiLBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
                     case (int)Pezzi.OBlock:
                         Lib.ScendiOBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
                     case (int)Pezzi.SBlock:
                         Lib.ScendiSBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
                     case (int)Pezzi.TBlock:
                         Lib.ScendiTBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
                     case (int)Pezzi.ZBlock:
                         Lib.ScendiZBlock(ele, elePosizioni, Rotazione, x);
+                        Grids += 1;
                         break;
 
                 }
@@ -2901,5 +2926,80 @@ namespace TetrisFunzioni
             
         }
         #endregion Statistica
+
+        #region Leaderboard
+        public static void SalvaDati(Giocatori[] ele, int n)
+        {
+            StreamWriter mioFile;
+
+
+            mioFile = new StreamWriter("statistica");
+            int x = 0;
+            while (x < n)
+            {
+                Giocatori tmpGiocatore = ele[x];
+                mioFile.WriteLine(tmpGiocatore.Nome);
+                mioFile.WriteLine(tmpGiocatore.Punteggio);
+                mioFile.WriteLine(tmpGiocatore.TempoRecord);
+                mioFile.WriteLine(tmpGiocatore.Lines);
+                mioFile.WriteLine(tmpGiocatore.Livello);
+                mioFile.WriteLine(tmpGiocatore.StatI);
+                mioFile.WriteLine(tmpGiocatore.StatJ);
+                mioFile.WriteLine(tmpGiocatore.StatL);
+                mioFile.WriteLine(tmpGiocatore.StatO);
+                mioFile.WriteLine(tmpGiocatore.StatS);
+                mioFile.WriteLine(tmpGiocatore.StatT);
+                mioFile.WriteLine(tmpGiocatore.StatZ);
+                x++;
+            }
+
+            mioFile.Close();
+
+
+        }
+
+        public static void CaricaDati(Giocatori[] ele, ref int n)
+        {
+            StreamReader miofile;
+            miofile = new StreamReader("statistica");
+            while(n<10000 && miofile.EndOfStream == false)
+            {
+                Giocatori nuovoGiocatore = default;
+                nuovoGiocatore.Nome = miofile.ReadLine();
+                nuovoGiocatore.Punteggio = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.TempoRecord = Convert.ToDateTime(miofile.ReadLine());
+                nuovoGiocatore.Lines = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.Livello = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatI = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatJ = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatL = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatO = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatS = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatT = Convert.ToInt32(miofile.ReadLine());
+                nuovoGiocatore.StatZ = Convert.ToInt32(miofile.ReadLine());
+                ele[n] = nuovoGiocatore;
+                n++;
+            }
+            miofile.Close();
+        }
+
+        public static class Player
+        {
+            public static string Nickname { get; set; }
+            public static int Punteggio { get; set; }
+            public static int StatI { get; set; }
+            public static int Linee {  get; set; }
+            public static int Livello { get; set; }
+            public static int StatJ { get; set;}
+            public static int StatL { get; set;}
+            public static int StatO { get; set;}
+            public static int StatS { get; set;}
+            public static int StatT { get; set;}
+            public static int StatZ { get; set;}
+            public static DateTime Data { get; set;}
+        }
+
+        
+        #endregion Leaderboard
     }
 }

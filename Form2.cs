@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-
+using TetrisFunzioni;
+using System.Diagnostics;
 
 namespace ProgettoFineAnno
 {
@@ -22,90 +22,50 @@ namespace ProgettoFineAnno
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
             this.TopMost = true;
-        }
-
-        public struct giocatori
-        {
-            public string nome;
-            public int punteggio;
-
-        }
-        public giocatori[] Elegiocatori = new giocatori[69];
-        private int num = 0;
-        public static void SalvaFile(giocatori[] ele, int n)
-        {
-            StreamWriter mioFile;
-
-
-            mioFile = new StreamWriter("statistica");
-            int x = 0;
-            while (x < n)
+            Lib.CaricaDati(eleGiocatori, ref numPlayer);
+            for(int x = 0; x < numPlayer; x++)
             {
-                giocatori tmpGiocatore = ele[x];
-                mioFile.WriteLine(tmpGiocatore.nome);
-                mioFile.WriteLine(tmpGiocatore.punteggio);
-
+                var riga = new ListViewItem(new string[]
+                {
+                    eleGiocatori[x].Nome,
+                    eleGiocatori[x].Punteggio.ToString(),
+                });
+                leaderboard.Items.Add(riga);
                 x++;
             }
-
-            mioFile.Close();
-
-
         }
 
+        
+        public Giocatori[] eleGiocatori = new Giocatori[69];
+        private int numPlayer = 0;
+       
 
+
+
+       
+
+        
+        private void b_gioca_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_nickname.Text)) return;
+            
+
+            Lib.Player.Nickname = txt_nickname.Text;
+            this.Close();
+           
+           
+
+        }
+        private void b_esci_Click(object sender, EventArgs e)
+        {
+            
+            Application.Exit();
+            
+        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Form2_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            giocatori nuovigiocatori = default;
-
-            if (string.IsNullOrEmpty(textBox1.Text))
-            {
-                MessageBox.Show("inserisci nickname");
-                return;
-
-            }
-            nuovigiocatori.nome = textBox1.Text;
-            nuovigiocatori.punteggio = 1;
-
-            Elegiocatori[num] = nuovigiocatori;
-            num++;
-            textBox1.Clear();
-
-
-            SalvaFile(Elegiocatori, num);
-            ListViewItem item = new ListViewItem(nuovigiocatori.nome);
-            item.SubItems.Add(nuovigiocatori.punteggio.ToString());
-            listView1.Items.Add(item);
-
-
-            
-            Form1 form1 = new Form1();
-            form1.Show();
-            Form2 form2 = new Form2();
-            form2.Close();
-
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

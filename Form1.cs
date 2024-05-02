@@ -5,18 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TetrisFunzioni;
 using static System.Windows.Forms.AxHost;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
 namespace ProgettoFineAnno
 {
     public partial class Form1 : Form
     {
         private Matrice[] eleMatrice = new Matrice[230];
         private MatriceNextPiece[] eleMatricePezzoSuccessivo = new MatriceNextPiece[8];
+        private Giocatori[] eleGiocatori = new Giocatori[20000];
         private int num = 230;
         private string[] Colonna = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
         private string[] ColonnaRandom = { "X", "Z" };
@@ -37,24 +38,28 @@ namespace ProgettoFineAnno
         private int Lines = 0;
         private int PezzoSuccessivo = -1;
         private int[] ArrPosizioniCanc = new int[4]; 
-        private int keyPress = default;
+        private bool keyPress = default;
+        private int numPlayer = default;
+        private Form4 LoadScreen = new Form4();
+        private int Grids;
         public Form1()
         {
-            InitializeComponent();
             
+            
+            LoadScreen.Owner = this;
+            LoadScreen.Show();
+            InitializeComponent();
             timer_screenupdate.Interval = 48000 / 64;
             timer_screenupdate.Tick += Timer_Tick;
             this.KeyDown += Form1_KeyDown;
             this.KeyUp += Form1_KeyUp;
             timer_screenupdate.Start();
-            this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.TopMost = true;
+            
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-
+            bool GiàPremuto = false;
 
             #region PezzoScendi
             int[] stop = { 19, 42, 65, 88, 111, 134, 157, 180, 203, 226 };
@@ -68,7 +73,7 @@ namespace ProgettoFineAnno
                 if (contienevalori == false && stopPezzo == false)
                 {
 
-                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo, RotazionePezzo, ref Grids);
 
 
                     
@@ -90,7 +95,38 @@ namespace ProgettoFineAnno
                 if (Righe == 0)
                 {
                     Pezzo = Lib.GeneraPezzo(eleMatrice, PosPezzo, ref RotazionePezzo, PezzoSuccessivo);
-                    if (Pezzo == -1) Close();
+                    if (Pezzo == -1)
+                    {
+                        
+                        Giocatori nuovaGiocatore = default;
+                        nuovaGiocatore.Nome = Lib.Player.Nickname;
+                        nuovaGiocatore.Punteggio = Punteggio;
+                        nuovaGiocatore.TempoRecord = DateTime.Now;
+                        nuovaGiocatore.Lines = Lines;
+                        nuovaGiocatore.Livello = Lib.Livello(Lines);
+                        nuovaGiocatore.StatI = StatI;
+                        nuovaGiocatore.StatJ = StatJ;
+                        nuovaGiocatore.StatL = StatL;
+                        nuovaGiocatore.StatO = StatO;
+                        nuovaGiocatore.StatS = StatS;
+                        nuovaGiocatore.StatT = StatT;
+                        nuovaGiocatore.StatZ = StatZ;
+                        eleGiocatori[numPlayer] = nuovaGiocatore;
+                        numPlayer++;
+                        Lib.Player.Punteggio = Punteggio;
+                        Lib.Player.Data = DateTime.Now;
+                        Lib.Player.Linee = Lines;
+                        Lib.Player.Livello = Lib.Livello(Lines);
+                        Lib.Player.StatI = StatI;
+                        Lib.Player.StatJ = StatJ;
+                        Lib.Player.StatL = StatL;
+                        Lib.Player.StatO = StatO;
+                        Lib.Player.StatS = StatS;
+                        Lib.Player.StatT = StatT;
+                        Lib.Player.StatZ = StatZ;
+                        Lib.SalvaDati(eleGiocatori, numPlayer);
+                        Close();
+                    }
                     PezzoSuccessivo = Lib.PezzoSuccessivo(eleMatricePezzoSuccessivo);
 
                     #region Statistica
@@ -220,11 +256,18 @@ namespace ProgettoFineAnno
 
             bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
             
-            if(QualcosaSotto == true | contienevalori == true)
+            if(QualcosaSotto == true && keyPress == true && GiàPremuto == false| contienevalori == true && keyPress == true && GiàPremuto == false)
             {
-                Punteggio += keyPress;
-                keyPress = 0;
+                Punteggio += Grids;
+                Grids = 0;
+                GiàPremuto = true;
             }
+
+            if(keyPress == false)
+            {
+                Grids = 0;
+            }
+
             switch (Punteggio)
             {
                 case int n when n < 10:
@@ -250,6 +293,7 @@ namespace ProgettoFineAnno
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             #region Matrice Main
             Matrice nuovaCasella = default;
             int x = 0;
@@ -306,7 +350,14 @@ namespace ProgettoFineAnno
             #endregion Matrice Random
 
             
-           
+            Thread.Sleep(500);
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.TopMost = true;
+            Thread.Sleep(500);
+            LoadScreen.Close();
+
+            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -344,7 +395,7 @@ namespace ProgettoFineAnno
                     timer_screenupdate.Interval = 1000 / 64;
                     
                     
-                    keyPress += 1;
+                    keyPress = true;
                 }
                 
             }
@@ -353,7 +404,7 @@ namespace ProgettoFineAnno
         {
             int Righe = Lib.QuanteRighe(eleMatrice, ref Lines, ArrPosizioniCanc);
             bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-            keyPress = 0;
+            keyPress = false;
             
 
             if (e.KeyCode == Keys.Down)
@@ -419,1066 +470,10 @@ namespace ProgettoFineAnno
                 }
                
             }
-        }
-
-        private void textBox392_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox196_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox37_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox197_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox46_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox112_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox113_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox115_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox52_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox114_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox51_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox48_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox106_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox105_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox108_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox107_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox102_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox101_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox104_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox103_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox98_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox97_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox100_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox99_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox94_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox93_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox96_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox297_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox296_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox95_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox322_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox323_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox338_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox92_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox71_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox89_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox198_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox199_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox90_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox91_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox109_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox110_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox60_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox61_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox111_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox72_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox337_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox321_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox320_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox75_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox298_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox299_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox76_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox73_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox74_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox79_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox80_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox77_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox78_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox83_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox84_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox81_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox82_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox87_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox85_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox88_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox86_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox404_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox393_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox201_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox262_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox261_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox264_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox263_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox258_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox257_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox260_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox259_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox254_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox253_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox256_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox255_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox250_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox249_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox252_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox251_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox248_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox247_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox204_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox203_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox202_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox206_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox205_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox214_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox213_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox210_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox209_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox208_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox207_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox212_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox211_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox225_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox226_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox227_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox229_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox228_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox232_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox233_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox230_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox231_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox236_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox237_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox234_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox235_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox240_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox241_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox238_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox239_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox244_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox245_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox242_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox243_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox246_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
 
+            
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox395_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox394_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox403_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox402_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox399_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox398_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox397_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox396_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox401_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox400_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox405_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox391_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox390_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox43_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox41_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox42_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox44_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox18_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox19_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox45_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox40_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox69_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox68_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox70_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox58_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox56_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox17_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox55_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox53_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox38_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox59_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox57_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox64_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox62_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox63_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox39_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox355_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox27_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox29_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox28_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox30_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox26_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox32_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox49_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox34_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox36_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox33_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox354_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox31_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox24_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox22_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox23_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox356_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox357_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox359_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox358_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox20_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox50_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox25_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox21_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox371_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox373_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox362_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox370_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox375_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox376_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox372_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox374_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox367_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox369_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox363_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox364_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox365_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox366_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox368_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox379_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox377_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox378_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

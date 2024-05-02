@@ -276,12 +276,18 @@
             this.textBox51 = new System.Windows.Forms.TextBox();
             this.textBox52 = new System.Windows.Forms.TextBox();
             this.Btn_Menù = new System.Windows.Forms.Button();
+            this.date_Punteggio = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TB_linee = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TB_livello = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 107);
+            this.label1.Location = new System.Drawing.Point(96, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
@@ -292,7 +298,7 @@
             this.TB_nickname.Enabled = false;
             this.TB_nickname.Location = new System.Drawing.Point(157, 104);
             this.TB_nickname.Name = "TB_nickname";
-            this.TB_nickname.Size = new System.Drawing.Size(128, 20);
+            this.TB_nickname.Size = new System.Drawing.Size(200, 20);
             this.TB_nickname.TabIndex = 1;
             // 
             // label2
@@ -309,7 +315,7 @@
             this.TB_PuntiFatti.Enabled = false;
             this.TB_PuntiFatti.Location = new System.Drawing.Point(157, 140);
             this.TB_PuntiFatti.Name = "TB_PuntiFatti";
-            this.TB_PuntiFatti.Size = new System.Drawing.Size(128, 20);
+            this.TB_PuntiFatti.Size = new System.Drawing.Size(200, 20);
             this.TB_PuntiFatti.TabIndex = 6;
             // 
             // label4
@@ -3199,7 +3205,7 @@
             // 
             // Btn_Menù
             // 
-            this.Btn_Menù.Location = new System.Drawing.Point(52, 376);
+            this.Btn_Menù.Location = new System.Drawing.Point(124, 439);
             this.Btn_Menù.Name = "Btn_Menù";
             this.Btn_Menù.Size = new System.Drawing.Size(233, 80);
             this.Btn_Menù.TabIndex = 1181;
@@ -3207,11 +3213,67 @@
             this.Btn_Menù.UseVisualStyleBackColor = true;
             this.Btn_Menù.Click += new System.EventHandler(this.Btn_Menù_Click);
             // 
+            // date_Punteggio
+            // 
+            this.date_Punteggio.Location = new System.Drawing.Point(157, 181);
+            this.date_Punteggio.Name = "date_Punteggio";
+            this.date_Punteggio.Size = new System.Drawing.Size(200, 20);
+            this.date_Punteggio.TabIndex = 1182;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(121, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 1183;
+            this.label3.Text = "Data";
+            // 
+            // TB_linee
+            // 
+            this.TB_linee.Enabled = false;
+            this.TB_linee.Location = new System.Drawing.Point(157, 207);
+            this.TB_linee.Name = "TB_linee";
+            this.TB_linee.Size = new System.Drawing.Size(200, 20);
+            this.TB_linee.TabIndex = 1185;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(118, 210);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.TabIndex = 1184;
+            this.label6.Text = "Linee";
+            // 
+            // TB_livello
+            // 
+            this.TB_livello.Enabled = false;
+            this.TB_livello.Location = new System.Drawing.Point(157, 234);
+            this.TB_livello.Name = "TB_livello";
+            this.TB_livello.Size = new System.Drawing.Size(200, 20);
+            this.TB_livello.TabIndex = 1187;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(114, 237);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.TabIndex = 1186;
+            this.label7.Text = "Livello";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 591);
+            this.Controls.Add(this.TB_livello);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.TB_linee);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.date_Punteggio);
             this.Controls.Add(this.Btn_Menù);
             this.Controls.Add(this.textBox115);
             this.Controls.Add(this.textBox114);
@@ -3718,5 +3780,11 @@
         private System.Windows.Forms.TextBox textBox51;
         private System.Windows.Forms.TextBox textBox52;
         private System.Windows.Forms.Button Btn_Menù;
+        private System.Windows.Forms.DateTimePicker date_Punteggio;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TB_linee;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox TB_livello;
+        private System.Windows.Forms.Label label7;
     }
 }

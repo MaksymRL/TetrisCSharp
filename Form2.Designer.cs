@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_nickname = new System.Windows.Forms.TextBox();
+            this.b_gioca = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.b_esci = new System.Windows.Forms.Button();
+            this.leaderboard = new System.Windows.Forms.ListView();
             this.Nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Punteggio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Statistiche = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,27 +52,27 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "INSERISCI NICKNAME";
             // 
-            // textBox1
+            // txt_nickname
             // 
-            this.textBox1.Location = new System.Drawing.Point(605, 309);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(739, 20);
-            this.textBox1.TabIndex = 5;
+            this.txt_nickname.Location = new System.Drawing.Point(605, 309);
+            this.txt_nickname.Name = "txt_nickname";
+            this.txt_nickname.Size = new System.Drawing.Size(739, 20);
+            this.txt_nickname.TabIndex = 5;
             // 
-            // button1
+            // b_gioca
             // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 40F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Yellow;
-            this.button1.Location = new System.Drawing.Point(605, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(739, 181);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "GIOCA";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.b_gioca.BackColor = System.Drawing.Color.Navy;
+            this.b_gioca.FlatAppearance.BorderSize = 0;
+            this.b_gioca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_gioca.Font = new System.Drawing.Font("Yu Gothic UI", 40F, System.Drawing.FontStyle.Bold);
+            this.b_gioca.ForeColor = System.Drawing.Color.Yellow;
+            this.b_gioca.Location = new System.Drawing.Point(605, 386);
+            this.b_gioca.Name = "b_gioca";
+            this.b_gioca.Size = new System.Drawing.Size(739, 181);
+            this.b_gioca.TabIndex = 4;
+            this.b_gioca.Text = "GIOCA";
+            this.b_gioca.UseVisualStyleBackColor = false;
+            this.b_gioca.Click += new System.EventHandler(this.b_gioca_Click);
             // 
             // pictureBox1
             // 
@@ -82,46 +83,51 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // b_esci
             // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 40F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(605, 592);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(739, 181);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "ESCI";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.b_esci.BackColor = System.Drawing.Color.Navy;
+            this.b_esci.FlatAppearance.BorderSize = 0;
+            this.b_esci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_esci.Font = new System.Drawing.Font("Yu Gothic UI", 40F, System.Drawing.FontStyle.Bold);
+            this.b_esci.ForeColor = System.Drawing.Color.Yellow;
+            this.b_esci.Location = new System.Drawing.Point(605, 592);
+            this.b_esci.Name = "b_esci";
+            this.b_esci.Size = new System.Drawing.Size(739, 181);
+            this.b_esci.TabIndex = 11;
+            this.b_esci.Text = "ESCI";
+            this.b_esci.UseVisualStyleBackColor = false;
+            this.b_esci.Click += new System.EventHandler(this.b_esci_Click);
             // 
-            // listView1
+            // leaderboard
             // 
-            this.listView1.BackColor = System.Drawing.Color.Navy;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.leaderboard.BackColor = System.Drawing.Color.Navy;
+            this.leaderboard.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Nome,
-            this.Punteggio});
-            this.listView1.ForeColor = System.Drawing.Color.Yellow;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(28, 26);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(545, 334);
-            this.listView1.TabIndex = 12;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.Punteggio,
+            this.Statistiche});
+            this.leaderboard.ForeColor = System.Drawing.Color.Yellow;
+            this.leaderboard.HideSelection = false;
+            this.leaderboard.Location = new System.Drawing.Point(1, -5);
+            this.leaderboard.Name = "leaderboard";
+            this.leaderboard.Size = new System.Drawing.Size(598, 334);
+            this.leaderboard.TabIndex = 12;
+            this.leaderboard.UseCompatibleStateImageBehavior = false;
+            this.leaderboard.View = System.Windows.Forms.View.Details;
             // 
             // Nome
             // 
             this.Nome.Text = "Nome";
-            this.Nome.Width = 270;
+            this.Nome.Width = 200;
             // 
             // Punteggio
             // 
             this.Punteggio.Text = "Punteggio";
-            this.Punteggio.Width = 286;
+            this.Punteggio.Width = 200;
+            // 
+            // Statistiche
+            // 
+            this.Statistiche.Text = "Statistiche";
+            this.Statistiche.Width = 200;
             // 
             // Form2
             // 
@@ -130,16 +136,16 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ProgettoFineAnno.Properties.Resources.sfondo;
             this.ClientSize = new System.Drawing.Size(1428, 837);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.leaderboard);
+            this.Controls.Add(this.b_esci);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_nickname);
+            this.Controls.Add(this.b_gioca);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Form1";
-           
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,12 +154,13 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_nickname;
+        private System.Windows.Forms.Button b_gioca;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button b_esci;
+        private System.Windows.Forms.ListView leaderboard;
         private System.Windows.Forms.ColumnHeader Nome;
         private System.Windows.Forms.ColumnHeader Punteggio;
+        private System.Windows.Forms.ColumnHeader Statistiche;
     }
 }
