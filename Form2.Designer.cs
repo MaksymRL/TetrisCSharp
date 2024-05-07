@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.b_esci = new System.Windows.Forms.Button();
             this.leaderboard = new System.Windows.Forms.ListView();
+            this.Posizione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Punteggio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Statistiche = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -102,32 +103,41 @@
             // 
             this.leaderboard.BackColor = System.Drawing.Color.Navy;
             this.leaderboard.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Posizione,
             this.Nome,
             this.Punteggio,
             this.Statistiche});
             this.leaderboard.ForeColor = System.Drawing.Color.Yellow;
-            this.leaderboard.HideSelection = false;
+            this.leaderboard.FullRowSelect = true;
+            this.leaderboard.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.leaderboard.Location = new System.Drawing.Point(1, -5);
             this.leaderboard.Name = "leaderboard";
-            this.leaderboard.Size = new System.Drawing.Size(598, 334);
+            this.leaderboard.Scrollable = false;
+            this.leaderboard.Size = new System.Drawing.Size(584, 334);
             this.leaderboard.TabIndex = 12;
             this.leaderboard.UseCompatibleStateImageBehavior = false;
             this.leaderboard.View = System.Windows.Forms.View.Details;
+            this.leaderboard.MouseClick += new System.Windows.Forms.MouseEventHandler(this.leaderboard_MouseClick);
+            // 
+            // Posizione
+            // 
+            this.Posizione.Text = "Posizione";
+            this.Posizione.Width = 100;
             // 
             // Nome
             // 
             this.Nome.Text = "Nome";
-            this.Nome.Width = 200;
+            this.Nome.Width = 160;
             // 
             // Punteggio
             // 
             this.Punteggio.Text = "Punteggio";
-            this.Punteggio.Width = 200;
+            this.Punteggio.Width = 160;
             // 
             // Statistiche
             // 
             this.Statistiche.Text = "Statistiche";
-            this.Statistiche.Width = 200;
+            this.Statistiche.Width = 160;
             // 
             // Form2
             // 
@@ -159,6 +169,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button b_esci;
         private System.Windows.Forms.ListView leaderboard;
+        private System.Windows.Forms.ColumnHeader Posizione;
         private System.Windows.Forms.ColumnHeader Nome;
         private System.Windows.Forms.ColumnHeader Punteggio;
         private System.Windows.Forms.ColumnHeader Statistiche;

@@ -40,21 +40,19 @@ namespace ProgettoFineAnno
         private int[] ArrPosizioniCanc = new int[4]; 
         private bool keyPress = default;
         private int numPlayer = default;
-        private Form4 LoadScreen = new Form4();
         private int Grids;
         public Form1()
         {
-            
-            
-            LoadScreen.Owner = this;
-            LoadScreen.Show();
             InitializeComponent();
             timer_screenupdate.Interval = 48000 / 64;
             timer_screenupdate.Tick += Timer_Tick;
             this.KeyDown += Form1_KeyDown;
             this.KeyUp += Form1_KeyUp;
             timer_screenupdate.Start();
-            
+            //this.WindowState = FormWindowState.Maximized;
+            //this.FormBorderStyle = FormBorderStyle.None;
+            //this.TopMost = true;
+
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -112,7 +110,6 @@ namespace ProgettoFineAnno
                         nuovaGiocatore.StatT = StatT;
                         nuovaGiocatore.StatZ = StatZ;
                         eleGiocatori[numPlayer] = nuovaGiocatore;
-                        numPlayer++;
                         Lib.Player.Punteggio = Punteggio;
                         Lib.Player.Data = DateTime.Now;
                         Lib.Player.Linee = Lines;
@@ -124,8 +121,12 @@ namespace ProgettoFineAnno
                         Lib.Player.StatS = StatS;
                         Lib.Player.StatT = StatT;
                         Lib.Player.StatZ = StatZ;
+                        Lib.Player.FineGioco = true;
                         Lib.SalvaDati(eleGiocatori, numPlayer);
-                        Close();
+                        
+                        Form3 form3 = new Form3();
+                        form3.Show();
+                        this.Close();
                     }
                     PezzoSuccessivo = Lib.PezzoSuccessivo(eleMatricePezzoSuccessivo);
 
@@ -245,7 +246,30 @@ namespace ProgettoFineAnno
                 else
                 {
                     Punteggio = Lib.CalcoloPunteggio(eleMatrice, ref Punteggio, Livello, ref Lines);
-                   
+                    if(Punteggio > Lib.Player.TopScore)
+                    {
+                        switch (Punteggio)
+                        {
+                            case int n when n < 10:
+                                LB_punteggiomigliore.Text = $"00000{Punteggio}";
+                                break;
+                            case int n when n < 100:
+                                LB_punteggiomigliore.Text = $"0000{Punteggio}";
+                                break;
+                            case int n when n < 1000:
+                                LB_punteggiomigliore.Text = $"000{Punteggio}";
+                                break;
+                            case int n when n < 10000:
+                                LB_punteggiomigliore.Text = $"00{Punteggio}";
+                                break;
+                            case int n when n < 100000:
+                                LB_punteggiomigliore.Text = $"0{Punteggio}";
+                                break;
+                            default:
+                                LB_punteggiomigliore.Text = $"{Punteggio}";
+                                break;
+                        }
+                    }
                     txt_linee.Text = $"LINES-{Lines}";  
                     LBL_livello.Text = Lib.Livello(Lines).ToString();
                 }
@@ -260,6 +284,31 @@ namespace ProgettoFineAnno
             {
                 Punteggio += Grids;
                 Grids = 0;
+                if(Punteggio > Lib.Player.Punteggio)
+                {
+                    switch (Punteggio)
+                    {
+                        case int n when n < 10:
+                            LB_punteggiomigliore.Text = $"00000{Punteggio}";
+                            break;
+                        case int n when n < 100:
+                            LB_punteggiomigliore.Text = $"0000{Punteggio}";
+                            break;
+                        case int n when n < 1000:
+                            LB_punteggiomigliore.Text = $"000{Punteggio}";
+                            break;
+                        case int n when n < 10000:
+                            LB_punteggiomigliore.Text = $"00{Punteggio}";
+                            break;
+                        case int n when n < 100000:
+                            LB_punteggiomigliore.Text = $"0{Punteggio}";
+                            break;
+                        default:
+                            LB_punteggiomigliore.Text = $"{Punteggio}";
+                            break;
+                    }
+
+                }
                 GiàPremuto = true;
             }
 
@@ -349,15 +398,36 @@ namespace ProgettoFineAnno
             }
             #endregion Matrice Random
 
-            
-            Thread.Sleep(500);
-            this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.TopMost = true;
-            Thread.Sleep(500);
-            LoadScreen.Close();
-
-            
+            int PunteggioMigliorePosizione = Lib.Player.TopScorePosizione;
+            int PunteggioMigliore = Lib.Player.TopScore;
+            if ( PunteggioMigliorePosizione == -1)
+            {
+                LB_punteggiomigliore.Text = "000000";
+            }
+            else
+            {
+                switch (PunteggioMigliore)
+                {
+                    case int n when n < 10:
+                        LB_punteggiomigliore.Text = $"00000{PunteggioMigliore}";
+                        break;
+                    case int n when n < 100:
+                        LB_punteggiomigliore.Text = $"0000{PunteggioMigliore}";
+                        break;
+                    case int n when n < 1000:
+                        LB_punteggiomigliore.Text = $"000{PunteggioMigliore}";
+                        break;
+                    case int n when n < 10000:
+                        LB_punteggiomigliore.Text = $"00{PunteggioMigliore}";
+                        break;
+                    case int n when n < 100000:
+                        LB_punteggiomigliore.Text = $"0{PunteggioMigliore}";
+                        break;
+                    default:
+                        LB_punteggiomigliore.Text = $"{PunteggioMigliore}";
+                        break;
+                }
+            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -473,7 +543,7 @@ namespace ProgettoFineAnno
 
             
         }
+       
 
-        
     }
 }

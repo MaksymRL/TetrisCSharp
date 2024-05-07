@@ -11,6 +11,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
+
 namespace TetrisFunzioni
 {
     public struct Matrice
@@ -2927,33 +2929,28 @@ namespace TetrisFunzioni
         }
         #endregion Statistica
 
-        #region Leaderboard
+        #region Leaderboard e Player
         public static void SalvaDati(Giocatori[] ele, int n)
         {
-            StreamWriter mioFile;
+            string nomeFile = System.IO.Path.Combine(@"Risorse", "statistica");
 
-
-            mioFile = new StreamWriter("statistica");
-            int x = 0;
-            while (x < n)
+            
+            using (StreamWriter writer = new StreamWriter((nomeFile), append: true))
             {
-                Giocatori tmpGiocatore = ele[x];
-                mioFile.WriteLine(tmpGiocatore.Nome);
-                mioFile.WriteLine(tmpGiocatore.Punteggio);
-                mioFile.WriteLine(tmpGiocatore.TempoRecord);
-                mioFile.WriteLine(tmpGiocatore.Lines);
-                mioFile.WriteLine(tmpGiocatore.Livello);
-                mioFile.WriteLine(tmpGiocatore.StatI);
-                mioFile.WriteLine(tmpGiocatore.StatJ);
-                mioFile.WriteLine(tmpGiocatore.StatL);
-                mioFile.WriteLine(tmpGiocatore.StatO);
-                mioFile.WriteLine(tmpGiocatore.StatS);
-                mioFile.WriteLine(tmpGiocatore.StatT);
-                mioFile.WriteLine(tmpGiocatore.StatZ);
-                x++;
+                Giocatori tmpGiocatore = ele[n];
+                writer.WriteLine(tmpGiocatore.Nome);
+                writer.WriteLine(tmpGiocatore.Punteggio);
+                writer.WriteLine(tmpGiocatore.TempoRecord);
+                writer.WriteLine(tmpGiocatore.Lines);
+                writer.WriteLine(tmpGiocatore.Livello);
+                writer.WriteLine(tmpGiocatore.StatI);
+                writer.WriteLine(tmpGiocatore.StatJ);
+                writer.WriteLine(tmpGiocatore.StatL);
+                writer.WriteLine(tmpGiocatore.StatO);
+                writer.WriteLine(tmpGiocatore.StatS);
+                writer.WriteLine(tmpGiocatore.StatT);
+                writer.WriteLine(tmpGiocatore.StatZ);
             }
-
-            mioFile.Close();
 
 
         }
@@ -2961,28 +2958,33 @@ namespace TetrisFunzioni
         public static void CaricaDati(Giocatori[] ele, ref int n)
         {
             StreamReader miofile;
-            miofile = new StreamReader("statistica");
-            while(n<10000 && miofile.EndOfStream == false)
+            string nomeFile = System.IO.Path.Combine(@"Risorse", "statistica");
+            if(System.IO.File.Exists(nomeFile))
             {
-                Giocatori nuovoGiocatore = default;
-                nuovoGiocatore.Nome = miofile.ReadLine();
-                nuovoGiocatore.Punteggio = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.TempoRecord = Convert.ToDateTime(miofile.ReadLine());
-                nuovoGiocatore.Lines = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.Livello = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatI = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatJ = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatL = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatO = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatS = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatT = Convert.ToInt32(miofile.ReadLine());
-                nuovoGiocatore.StatZ = Convert.ToInt32(miofile.ReadLine());
-                ele[n] = nuovoGiocatore;
-                n++;
+                miofile = new StreamReader(nomeFile);
+                while (n < 10000 && miofile.EndOfStream == false)
+                {
+                    Giocatori nuovoGiocatore = default;
+                    nuovoGiocatore.Nome = miofile.ReadLine();
+                    nuovoGiocatore.Punteggio = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.TempoRecord = Convert.ToDateTime(miofile.ReadLine());
+                    nuovoGiocatore.Lines = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.Livello = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatI = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatJ = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatL = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatO = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatS = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatT = Convert.ToInt32(miofile.ReadLine());
+                    nuovoGiocatore.StatZ = Convert.ToInt32(miofile.ReadLine());
+                    ele[n] = nuovoGiocatore;
+                    n++;
+                }
+                miofile.Close();
             }
-            miofile.Close();
+           
         }
-
+        
         public static class Player
         {
             public static string Nickname { get; set; }
@@ -2997,9 +2999,54 @@ namespace TetrisFunzioni
             public static int StatT { get; set;}
             public static int StatZ { get; set;}
             public static DateTime Data { get; set;}
+            public static int QualePlayerScelto { get; set;}
+            public static bool FineGioco = false;
+            public static int TopScorePosizione { get; set;}
+            public static int TopScore {  get; set;}
         }
 
-        
-        #endregion Leaderboard
+        public static void SortLeaderboard(Giocatori[] ele, int inizio, int fine)
+        {
+            if (fine > inizio)
+            {
+                int pivot = ele[inizio].Punteggio;
+                int l = inizio + 1;
+                int r = fine + 1;
+                while (l < r)
+                {
+                    if (ele[l].Punteggio > pivot) l++;
+                    else
+                    {
+                        r--;
+                        Swap(ref ele[l], ref ele[r]);
+                    }
+
+                }
+                l--;
+                Swap(ref ele[inizio], ref ele[l]);
+                SortLeaderboard(ele, inizio, l);
+                SortLeaderboard(ele, r, fine);
+            }
+
+        }
+        public static void Swap(ref Giocatori y, ref Giocatori x)
+        {
+            Giocatori temp = y;
+            y = x;
+            x = temp;
+        }
+
+        public static int Cerca(Giocatori[] ele , string x)
+        {
+            for(int k = 0; k < ele.Length; k++)
+            {
+                if (ele[k].Nome == x) return k;
+            }
+
+
+            return -1;
+        }
+
+        #endregion Leaderboard e Player
     }
 }

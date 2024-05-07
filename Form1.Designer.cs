@@ -337,7 +337,7 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LB_punteggiomigliore = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -4660,16 +4660,18 @@
             this.textBox15.Size = new System.Drawing.Size(22, 20);
             this.textBox15.TabIndex = 533;
             // 
-            // label3
+            // LB_punteggiomigliore
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(682, 175);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 22);
-            this.label3.TabIndex = 532;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.LB_punteggiomigliore.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LB_punteggiomigliore.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LB_punteggiomigliore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_punteggiomigliore.ForeColor = System.Drawing.Color.White;
+            this.LB_punteggiomigliore.Location = new System.Drawing.Point(682, 175);
+            this.LB_punteggiomigliore.Name = "LB_punteggiomigliore";
+            this.LB_punteggiomigliore.Size = new System.Drawing.Size(110, 22);
+            this.LB_punteggiomigliore.TabIndex = 532;
+            this.LB_punteggiomigliore.Text = "000000";
+            this.LB_punteggiomigliore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBox16
             // 
@@ -9124,7 +9126,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.BackgroundImage = global::ProgettoFineAnno.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 668);
             this.Controls.Add(this.LBL_livello);
@@ -9474,7 +9475,7 @@
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LB_punteggiomigliore);
             this.Controls.Add(this.Z2);
             this.Controls.Add(this.Z1);
             this.Controls.Add(this.Z4);
@@ -10095,7 +10096,7 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LB_punteggiomigliore;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;

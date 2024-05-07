@@ -282,48 +282,62 @@
             this.label6 = new System.Windows.Forms.Label();
             this.TB_livello = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.b_replay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 111);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(81, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(88, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nickname";
             // 
             // TB_nickname
             // 
+            this.TB_nickname.BackColor = System.Drawing.Color.DarkBlue;
             this.TB_nickname.Enabled = false;
-            this.TB_nickname.Location = new System.Drawing.Point(157, 104);
+            this.TB_nickname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_nickname.ForeColor = System.Drawing.SystemColors.Window;
+            this.TB_nickname.Location = new System.Drawing.Point(175, 103);
             this.TB_nickname.Name = "TB_nickname";
-            this.TB_nickname.Size = new System.Drawing.Size(200, 20);
+            this.TB_nickname.Size = new System.Drawing.Size(200, 29);
             this.TB_nickname.TabIndex = 1;
+            this.TB_nickname.Text = "dada";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(154, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.Size = new System.Drawing.Size(168, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "Statistiche Giocatore";
             // 
             // TB_PuntiFatti
             // 
+            this.TB_PuntiFatti.BackColor = System.Drawing.Color.DarkBlue;
             this.TB_PuntiFatti.Enabled = false;
-            this.TB_PuntiFatti.Location = new System.Drawing.Point(157, 140);
+            this.TB_PuntiFatti.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_PuntiFatti.ForeColor = System.Drawing.SystemColors.Window;
+            this.TB_PuntiFatti.Location = new System.Drawing.Point(175, 139);
             this.TB_PuntiFatti.Name = "TB_PuntiFatti";
-            this.TB_PuntiFatti.Size = new System.Drawing.Size(200, 20);
+            this.TB_PuntiFatti.Size = new System.Drawing.Size(200, 29);
             this.TB_PuntiFatti.TabIndex = 6;
+            this.TB_PuntiFatti.Text = "dada";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 143);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(-1, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
+            this.label4.Size = new System.Drawing.Size(170, 21);
             this.label4.TabIndex = 5;
             this.label4.Text = "Punteggio raggiunto";
             // 
@@ -3205,69 +3219,104 @@
             // 
             // Btn_Menù
             // 
+            this.Btn_Menù.BackColor = System.Drawing.Color.Navy;
+            this.Btn_Menù.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Menù.Location = new System.Drawing.Point(124, 439);
             this.Btn_Menù.Name = "Btn_Menù";
             this.Btn_Menù.Size = new System.Drawing.Size(233, 80);
             this.Btn_Menù.TabIndex = 1181;
             this.Btn_Menù.Text = "Torna al menù principale";
-            this.Btn_Menù.UseVisualStyleBackColor = true;
+            this.Btn_Menù.UseVisualStyleBackColor = false;
             this.Btn_Menù.Click += new System.EventHandler(this.Btn_Menù_Click);
             // 
             // date_Punteggio
             // 
-            this.date_Punteggio.Location = new System.Drawing.Point(157, 181);
+            this.date_Punteggio.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.date_Punteggio.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.date_Punteggio.Enabled = false;
+            this.date_Punteggio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_Punteggio.Location = new System.Drawing.Point(175, 180);
             this.date_Punteggio.Name = "date_Punteggio";
-            this.date_Punteggio.Size = new System.Drawing.Size(200, 20);
+            this.date_Punteggio.Size = new System.Drawing.Size(200, 29);
             this.date_Punteggio.TabIndex = 1182;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(121, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.Size = new System.Drawing.Size(46, 21);
             this.label3.TabIndex = 1183;
             this.label3.Text = "Data";
             // 
             // TB_linee
             // 
+            this.TB_linee.BackColor = System.Drawing.Color.DarkBlue;
             this.TB_linee.Enabled = false;
-            this.TB_linee.Location = new System.Drawing.Point(157, 207);
+            this.TB_linee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_linee.ForeColor = System.Drawing.SystemColors.Window;
+            this.TB_linee.Location = new System.Drawing.Point(175, 220);
             this.TB_linee.Name = "TB_linee";
-            this.TB_linee.Size = new System.Drawing.Size(200, 20);
+            this.TB_linee.Size = new System.Drawing.Size(200, 29);
             this.TB_linee.TabIndex = 1185;
+            this.TB_linee.Text = "dada";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(118, 210);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(118, 221);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.Size = new System.Drawing.Size(51, 21);
             this.label6.TabIndex = 1184;
             this.label6.Text = "Linee";
             // 
             // TB_livello
             // 
+            this.TB_livello.BackColor = System.Drawing.Color.DarkBlue;
             this.TB_livello.Enabled = false;
-            this.TB_livello.Location = new System.Drawing.Point(157, 234);
+            this.TB_livello.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_livello.ForeColor = System.Drawing.SystemColors.Window;
+            this.TB_livello.Location = new System.Drawing.Point(175, 258);
             this.TB_livello.Name = "TB_livello";
-            this.TB_livello.Size = new System.Drawing.Size(200, 20);
+            this.TB_livello.Size = new System.Drawing.Size(200, 29);
             this.TB_livello.TabIndex = 1187;
+            this.TB_livello.Text = "dada";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(114, 237);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(114, 259);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.Size = new System.Drawing.Size(61, 21);
             this.label7.TabIndex = 1186;
             this.label7.Text = "Livello";
+            // 
+            // b_replay
+            // 
+            this.b_replay.BackColor = System.Drawing.Color.Navy;
+            this.b_replay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_replay.Location = new System.Drawing.Point(124, 340);
+            this.b_replay.Name = "b_replay";
+            this.b_replay.Size = new System.Drawing.Size(233, 80);
+            this.b_replay.TabIndex = 1188;
+            this.b_replay.Text = "Gioca ancora";
+            this.b_replay.UseVisualStyleBackColor = false;
+            this.b_replay.Visible = false;
+            this.b_replay.Click += new System.EventHandler(this.b_replay_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(653, 591);
+            this.Controls.Add(this.b_replay);
             this.Controls.Add(this.TB_livello);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.TB_linee);
@@ -3522,8 +3571,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TB_nickname);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "dada";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -3786,5 +3836,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TB_livello;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button b_replay;
     }
 }
