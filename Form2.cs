@@ -20,17 +20,26 @@ namespace ProgettoFineAnno
     {
         public Giocatori[] eleGiocatori = new Giocatori[10000];
         private int numPlayer = 0;
+        private int originalFormWidth;
+        private int originalFormHeight;
         public Form2()
         {
             
             InitializeComponent();
-            //this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
-            //this.TopMost = true;
+            originalFormWidth = this.Width;
+            originalFormHeight = this.Height;
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.TopMost = true;
 
-            
+
             Lib.CaricaDati(eleGiocatori, ref numPlayer);
             Lib.SortLeaderboard(eleGiocatori, 0, numPlayer - 1);
+            
+                TXT_Top1.Text = eleGiocatori[0].Nome;
+                TXT_Top2.Text = eleGiocatori[1].Nome;
+                TXT_Top3.Text = eleGiocatori[2].Nome;
+            
             
             int Posizione = 0;
             for(int x = 0; x < numPlayer; x++)
@@ -82,10 +91,7 @@ namespace ProgettoFineAnno
             
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void leaderboard_MouseClick(object sender, MouseEventArgs e)
         {
@@ -124,12 +130,33 @@ namespace ProgettoFineAnno
                 }
             
         }
-       
 
-        
-        
-        
+        //private void Form2_Resize(object sender, EventArgs e)
+        //{
+        //    // Calculate scaling factor based on the new size of the form and original size
+        //    float scaleX = (float)this.ClientSize.Width / originalFormWidth;
+        //    float scaleY = (float)this.ClientSize.Height / originalFormHeight;
 
+        //    // Scale controls based on the scaling factor
+        //    ScaleControls(this.Controls, scaleX, scaleY);
+        //}
 
+        //private void ScaleControls(Control.ControlCollection controls, float scaleX, float scaleY)
+        //{
+        //    foreach (Control control in controls)
+        //    {
+        //        // Adjust size and position of each control
+        //        control.Left = (int)(control.Left * scaleX);
+        //        control.Top = (int)(control.Top * scaleY);
+        //        control.Width = (int)(control.Width * scaleX);
+        //        control.Height = (int)(control.Height * scaleY);
+
+        //        // Recursively scale child controls
+        //        if (control.Controls.Count > 0)
+        //        {
+        //            ScaleControls(control.Controls, scaleX, scaleY);
+        //        }
+        //    }
+        //}
     }
 }

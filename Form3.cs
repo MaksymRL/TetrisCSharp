@@ -19,9 +19,9 @@ namespace ProgettoFineAnno
         public Form3()
         {
             InitializeComponent();
-            //this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
-            //this.TopMost = true;
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.TopMost = true;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -30,11 +30,11 @@ namespace ProgettoFineAnno
             Lib.SortLeaderboard(eleGiocatori, 0, numPlayer - 1);    
             if (Lib.Player.FineGioco == true)
             {
-                TB_nickname.Text = Lib.Player.Nickname.ToString();
-                TB_PuntiFatti.Text = Lib.Player.Punteggio.ToString();
-                TB_linee.Text = Lib.Player.Linee.ToString();
-                TB_livello.Text = Lib.Player.Livello.ToString();
-                date_Punteggio.Value = Lib.Player.Data;
+                LB_Nickname.Text = Lib.Player.Nickname.ToString();
+                LB_punteggio.Text = Lib.Player.Punteggio.ToString();
+                LB_linee.Text = Lib.Player.Linee.ToString();
+                LB_livello.Text = Lib.Player.Livello.ToString();
+                LB_data.Text = Lib.Player.Data.ToString();
                 end_statisticaI.Text = Lib.Player.StatI.ToString();
                 end_statisticaJ.Text = Lib.Player.StatJ.ToString();
                 end_statisticaL.Text = Lib.Player.StatL.ToString();
@@ -48,11 +48,11 @@ namespace ProgettoFineAnno
             {
                 
                 int posizioneScelta = Lib.Player.QualePlayerScelto;
-                TB_nickname.Text = eleGiocatori[posizioneScelta].Nome;
-                TB_PuntiFatti.Text = eleGiocatori[posizioneScelta].Punteggio.ToString();
-                TB_linee.Text = eleGiocatori[posizioneScelta].Lines.ToString();
-                TB_livello.Text = eleGiocatori[posizioneScelta].Livello.ToString();
-                date_Punteggio.Value = eleGiocatori[posizioneScelta].TempoRecord;
+                LB_Nickname.Text = eleGiocatori[posizioneScelta].Nome;
+                LB_punteggio.Text = eleGiocatori[posizioneScelta].Punteggio.ToString();
+                LB_linee.Text = eleGiocatori[posizioneScelta].Lines.ToString();
+                LB_livello.Text = eleGiocatori[posizioneScelta].Livello.ToString();
+                LB_data.Text = eleGiocatori[posizioneScelta].TempoRecord.ToString();
                 end_statisticaI.Text = eleGiocatori[posizioneScelta].StatI.ToString();
                 end_statisticaJ.Text = eleGiocatori[posizioneScelta].StatJ.ToString();
                 end_statisticaL.Text = eleGiocatori[posizioneScelta].StatL.ToString();

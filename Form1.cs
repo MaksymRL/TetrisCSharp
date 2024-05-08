@@ -44,14 +44,15 @@ namespace ProgettoFineAnno
         public Form1()
         {
             InitializeComponent();
+            Cursor.Hide();
             timer_screenupdate.Interval = 48000 / 64;
             timer_screenupdate.Tick += Timer_Tick;
             this.KeyDown += Form1_KeyDown;
             this.KeyUp += Form1_KeyUp;
             timer_screenupdate.Start();
-            //this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
-            //this.TopMost = true;
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.TopMost = true;
 
         }
 
@@ -544,6 +545,5 @@ namespace ProgettoFineAnno
             
         }
        
-
     }
 }
