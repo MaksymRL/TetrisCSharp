@@ -73,7 +73,7 @@ namespace ProgettoFineAnno
 
         private void b_replay_Click(object sender, EventArgs e)
         {
-            Lib.Player.TopScorePosizione = Lib.Cerca(eleGiocatori, TB_nickname.Text);
+            Lib.Player.TopScorePosizione = Lib.Cerca(eleGiocatori, LB_Nickname.Text);
             Lib.Player.TopScore = eleGiocatori[Lib.Player.TopScorePosizione].Punteggio;
             Form1 form1 = new Form1();
             form1.Show();

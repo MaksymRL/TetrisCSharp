@@ -222,7 +222,6 @@
             this.b_replay = new System.Windows.Forms.Button();
             this.LB_Nickname = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.LB_punteggio = new System.Windows.Forms.Label();
             this.LB_data = new System.Windows.Forms.Label();
             this.LB_linee = new System.Windows.Forms.Label();
@@ -312,7 +311,6 @@
             this.TB_nickname.Name = "TB_nickname";
             this.TB_nickname.Size = new System.Drawing.Size(200, 29);
             this.TB_nickname.TabIndex = 1;
-            this.TB_nickname.Text = "dada";
             // 
             // label2
             // 
@@ -2525,7 +2523,7 @@
             this.TB_livello.Enabled = false;
             this.TB_livello.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_livello.ForeColor = System.Drawing.SystemColors.Window;
-            this.TB_livello.Location = new System.Drawing.Point(535, 398);
+            this.TB_livello.Location = new System.Drawing.Point(535, 397);
             this.TB_livello.Name = "TB_livello";
             this.TB_livello.Size = new System.Drawing.Size(200, 29);
             this.TB_livello.TabIndex = 1187;
@@ -2574,17 +2572,6 @@
             this.textBox1.Size = new System.Drawing.Size(200, 29);
             this.textBox1.TabIndex = 1190;
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkBlue;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(535, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 29);
-            this.textBox2.TabIndex = 1;
-            // 
             // LB_punteggio
             // 
             this.LB_punteggio.AutoSize = true;
@@ -2618,9 +2605,8 @@
             this.LB_livello.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_livello.Location = new System.Drawing.Point(537, 401);
             this.LB_livello.Name = "LB_livello";
-            this.LB_livello.Size = new System.Drawing.Size(48, 21);
+            this.LB_livello.Size = new System.Drawing.Size(0, 21);
             this.LB_livello.TabIndex = 1194;
-            this.LB_livello.Text = "dada";
             // 
             // textBox3
             // 
@@ -3568,7 +3554,6 @@
             this.Controls.Add(this.TB_PuntiFatti);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.TB_nickname);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -3776,7 +3761,6 @@
         private System.Windows.Forms.Button b_replay;
         private System.Windows.Forms.Label LB_Nickname;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label LB_punteggio;
         private System.Windows.Forms.Label LB_data;
         private System.Windows.Forms.Label LB_linee;
