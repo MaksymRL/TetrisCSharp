@@ -40,7 +40,6 @@ namespace ProgettoFineAnno
         private int[] ArrPosizioniCanc = new int[4]; 
         private bool keyPress = default;
         private int numPlayer = default;
-        private int Grids;
         public Form1()
         {
             InitializeComponent();
@@ -58,7 +57,7 @@ namespace ProgettoFineAnno
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            bool GiàPremuto = false;
+           
 
             #region PezzoScendi
             int[] stop = { 19, 42, 65, 88, 111, 134, 157, 180, 203, 226 };
@@ -72,9 +71,8 @@ namespace ProgettoFineAnno
                 if (contienevalori == false && stopPezzo == false)
                 {
 
-                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo, RotazionePezzo, ref Grids);
-
-
+                    Lib.Scendi(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
+                    
                     
                 }
                 else
@@ -124,7 +122,7 @@ namespace ProgettoFineAnno
                         Lib.Player.StatZ = StatZ;
                         Lib.Player.FineGioco = true;
                         Lib.SalvaDati(eleGiocatori, numPlayer);
-                        
+                        Cursor.Show();
                         Form3 form3 = new Form3();
                         form3.Show();
                         this.Close();
@@ -281,42 +279,9 @@ namespace ProgettoFineAnno
 
             bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
             
-            if(QualcosaSotto == true && keyPress == true && GiàPremuto == false| contienevalori == true && keyPress == true && GiàPremuto == false)
-            {
-                Punteggio += Grids;
-                Grids = 0;
-                if(Punteggio > Lib.Player.Punteggio)
-                {
-                    switch (Punteggio)
-                    {
-                        case int n when n < 10:
-                            LB_punteggiomigliore.Text = $"00000{Punteggio}";
-                            break;
-                        case int n when n < 100:
-                            LB_punteggiomigliore.Text = $"0000{Punteggio}";
-                            break;
-                        case int n when n < 1000:
-                            LB_punteggiomigliore.Text = $"000{Punteggio}";
-                            break;
-                        case int n when n < 10000:
-                            LB_punteggiomigliore.Text = $"00{Punteggio}";
-                            break;
-                        case int n when n < 100000:
-                            LB_punteggiomigliore.Text = $"0{Punteggio}";
-                            break;
-                        default:
-                            LB_punteggiomigliore.Text = $"{Punteggio}";
-                            break;
-                    }
+            
 
-                }
-                GiàPremuto = true;
-            }
-
-            if(keyPress == false)
-            {
-                Grids = 0;
-            }
+           
 
             switch (Punteggio)
             {

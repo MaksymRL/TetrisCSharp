@@ -286,7 +286,7 @@ namespace TetrisFunzioni
         #endregion Genera
 
         #region Scendi
-        public static void Scendi(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione, ref int Grids)
+        public static void Scendi(Matrice[] ele, int[] elePosizioni, int Pezzo, int Rotazione)
         {
             for (int x = 0; x < elePosizioni.Length; x++)
             {
@@ -294,31 +294,31 @@ namespace TetrisFunzioni
                 {
                     case (int)Pezzi.IBlock:
                         Lib.ScendiIBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                        
                         break;
                     case (int)Pezzi.JBlock:
                         Lib.ScendiJBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                       
                         break;
                     case (int)Pezzi.LBlock:
                         Lib.ScendiLBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                      
                         break;
                     case (int)Pezzi.OBlock:
                         Lib.ScendiOBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                        
                         break;
                     case (int)Pezzi.SBlock:
                         Lib.ScendiSBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                       
                         break;
                     case (int)Pezzi.TBlock:
                         Lib.ScendiTBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                       
                         break;
                     case (int)Pezzi.ZBlock:
                         Lib.ScendiZBlock(ele, elePosizioni, Rotazione, x);
-                        Grids += 1;
+                       
                         break;
 
                 }
