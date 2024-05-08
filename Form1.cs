@@ -38,7 +38,7 @@ namespace ProgettoFineAnno
         private int Lines = 0;
         private int PezzoSuccessivo = -1;
         private int[] ArrPosizioniCanc = new int[4]; 
-        private bool keyPress = default;
+        private bool keyPress = true;
         private int numPlayer = default;
         public Form1()
         {
@@ -244,6 +244,7 @@ namespace ProgettoFineAnno
                 }
                 else
                 {
+                    keyPress = false;
                     Punteggio = Lib.CalcoloPunteggio(eleMatrice, ref Punteggio, Livello, ref Lines);
                     if(Punteggio > Lib.Player.TopScore)
                     {
@@ -304,6 +305,8 @@ namespace ProgettoFineAnno
                     LBL_punteggio.Text = $"{Punteggio}";
                     break;
             }
+
+            keyPress = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -400,7 +403,7 @@ namespace ProgettoFineAnno
         {
             bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
             int Righe = Lib.QuanteRighe(eleMatrice, ref Lines, ArrPosizioniCanc);
-            if (conta == 1 && Righe == 0)
+            if (conta == 1 && Righe == 0 && keyPress == true)
             {
                 if (e.KeyCode == Keys.Left && PosPezzo[0] - 22 > 0)
                 {
@@ -430,8 +433,6 @@ namespace ProgettoFineAnno
 
                     timer_screenupdate.Interval = 1000 / 64;
                     
-                    
-                    keyPress = true;
                 }
                 
             }
@@ -440,7 +441,6 @@ namespace ProgettoFineAnno
         {
             int Righe = Lib.QuanteRighe(eleMatrice, ref Lines, ArrPosizioniCanc);
             bool QualcosaSotto = Lib.QualcosaSotto(eleMatrice, PosPezzo, Pezzo, RotazionePezzo);
-            keyPress = false;
             
 
             if (e.KeyCode == Keys.Down)
