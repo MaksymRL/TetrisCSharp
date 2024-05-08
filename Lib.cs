@@ -2932,7 +2932,7 @@ namespace TetrisFunzioni
         #region Leaderboard e Player
         public static void SalvaDati(Giocatori[] ele, int n)
         {
-            string nomeFile = System.IO.Path.Combine(@"Risorse", "statistica");
+            string nomeFile =  "statistica";
 
             
             using (StreamWriter writer = new StreamWriter((nomeFile), append: true))
@@ -2958,7 +2958,7 @@ namespace TetrisFunzioni
         public static void CaricaDati(Giocatori[] ele, ref int n)
         {
             StreamReader miofile;
-            string nomeFile = System.IO.Path.Combine(@"Risorse", "statistica");
+            string nomeFile = "statistica";
             if(System.IO.File.Exists(nomeFile))
             {
                 miofile = new StreamReader(nomeFile);
